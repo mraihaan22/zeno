@@ -4,31 +4,28 @@ FROM mcr.microsoft.com/devcontainers/base:alpine-3.20
 # Set user ke root
 USER root
 
-# Instal dependencies untuk Docker dan alat tambahan
-RUN apk update && apk add --no-cache \
-    docker \
-    docker-compose \
-    openrc \
-    nodejs \
-    npm \
-    sudo \
-    python3 \
-    py3-pip \
-    git \
+# Instal paket yang diperlukan
+RUN apk update && \
+    apk add --no-cache \
     bash \
+    bat \
     curl \
     nano \
-    && rc-update add docker boot
+    navi \
+    nodejs \
+    npm \
+    docker \
+    docker-compose \
+    openssh
 
-# Konfigurasi Docker untuk root user
-RUN mkdir -p /etc/docker && \
-    echo '{"debug":true}' > /etc/docker/daemon.json
+# Instal pnpm versi spesifik
+RUN npm install -g pnpm@9.4.0
 
-# Tambahkan script entrypoint untuk memastikan Docker berjalan
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh
+# Aktifkan corepack untuk manajemen paket
+RUN corepack enable 
 
 # Tetapkan user default ke root
 USER root
 
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+# Setel direktori kerja
+WORKDIR /workspace 
