@@ -1,7 +1,10 @@
 {
 	"name": "Alpine",
 	"build": {
-		"dockerfile": "Dockerfile"
+		"dockerfile": "Dockerfile",
+		"args": {
+      "BUILDKIT_INLINE_CACHE": "0"
+		}
 	},
 	"remoteUser": "root", 
     "runArgs": ["--privileged"],
