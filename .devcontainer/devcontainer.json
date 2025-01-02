@@ -1,36 +1,19 @@
 {
-	"name": "Alpine",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-      "BUILDKIT_INLINE_CACHE": "0"
-		}
-	},
-	"remoteUser": "root", 
-    "runArgs": ["--privileged"],
-	"features": {
-		"ghcr.io/cirolosapio/devcontainers-features/alpine-bash:0": {},
-		"ghcr.io/cirolosapio/devcontainers-features/alpine-bat:0": {},
-		"ghcr.io/cirolosapio/devcontainers-features/alpine-curl:0": {},
-		"ghcr.io/cirolosapio/devcontainers-features/alpine-nano:0": {},
-		"ghcr.io/cirolosapio/devcontainers-features/alpine-navi:0": {},
-		"ghcr.io/cirolosapio/devcontainers-features/alpine-node:0": {
-			"corepack": true,
-			"pnpmVersion": "9.4.0"
-		},
-		"ghcr.io/devcontainers/features/sshd:1": {}
+  "name": "Simple Alpine",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "root",
+  "runArgs": ["--privileged"],
+  "features": {
+	  "ghcr.io/devcontainers/features/sshd:1": {}
 	},
 	"extensions": [
-		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode",
-		"dsznajder.es7-react-js-snippets",
-		"xabikos.javascriptsnippets",
-		"streetsidesoftware.code-spell-checker",
-		"editorconfig.editorconfig",
-		"ms-vscode.vscode-typescript-next",
-		"eamodio.gitlens",
-		"formulahendry.auto-close-tag",
-		"formulahendry.auto-rename-tag"
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-azuretools.vscode-docker",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker"
 	],
-	"postCreateCommand": "apk update && apk add --no-cache docker docker-compose"
-} 
+  "postCreateCommand": "apk update && apk add --no-cache bash docker nodejs npm"
+}
