@@ -1,21 +1,28 @@
-FROM mcr.microsoft.com/devcontainers/base:alpine-3.13
+FROM mcr.microsoft.com/devcontainers/base:alpine
 
+# Set root user as default
 USER root
-# Install dependencies
-RUN apk update && \
-    apk add --no-cache \
+
+# Install required packages
+RUN apk update && apk add --no-cache \
     bash \
     git \
     openssh \
     curl \
     nodejs \
-    npm
+    npm \
+    docker \
+    docker-cli \
+    openrc
 
-# Set default user to root
-USER root
+# Initialize openrc (needed for service management in Alpine)
+RUN openrc && touch /run/openrc/softlevel
 
-# Set working directory
+# Create workspace directory
 WORKDIR /workspace
 
 # Expose SSH port
 EXPOSE 22
+
+# Set default user back to root
+USER root
