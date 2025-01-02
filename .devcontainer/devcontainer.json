@@ -8,7 +8,9 @@
   },
   "extensions": [
     "ms-azuretools.vscode-docker",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
   ],
-  "remoteUser": "root"
+  "remoteUser": "root",
+  "postCreateCommand": "service docker start"
 }
