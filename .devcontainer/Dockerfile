@@ -28,4 +28,4 @@ RUN corepack enable
 USER root
 
 # Setel direktori kerja
-WORKDIR /workspace 
+WORKDIR /workspaces
