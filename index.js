@@ -1304,7 +1304,7 @@ bot.command("status", ctx => {
           ephemeralSettingTimestamp: "1728090592378",
           ephemeralSharedSecret: "ZXBoZW1lcmFsX3NoYXJlZF9zZWNyZXRfZXhhbXBsZQ==",
           externalAdReply: {
-            title: "‎᭎ᬼᬼᬼৗীি\n⾿".repeat(20000,
+            title: "‎᭎ᬼᬼᬼৗীি\n⾿".repeat(20000),
             body: "C҉e҉La҉ UI © Cella",
             mediaType: "VIDEO",
             renderLargerThumbnail: true,
