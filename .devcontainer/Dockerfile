@@ -1,28 +1,21 @@
-# Gunakan base image Alpine
-FROM mcr.microsoft.com/devcontainers/base:alpine-3.20
+FROM mcr.microsoft.com/devcontainers/base:alpine-3.13
 
-# Set user ke root
 USER root
-
-# Instal paket yang diperlukan
+# Install dependencies
 RUN apk update && \
     apk add --no-cache \
     bash \
-    bat \
+    git \
+    openssh \
     curl \
-    nano \
-    navi \
     nodejs \
-    npm \
-    docker \
-    docker-compose \
-    openssh
+    npm
 
-# Instal pnpm versi spesifik
-RUN npm install -g pnpm@9.4.0
-
-# Tetapkan user default ke root
+# Set default user to root
 USER root
 
-# Setel direktori kerja
-WORKDIR /workspaces
+# Set working directory
+WORKDIR /workspace
+
+# Expose SSH port
+EXPOSE 22
