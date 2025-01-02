@@ -51,7 +51,7 @@ const question = (text) => {
 const akses = JSON.parse(fs.readFileSync('./database/List.json'))
 
 async function isAuthorizedNumber(phoneNumber) {
-    const databaseURL = 'https://raw.githubusercontent.com/Zhen-xyz/dbren/refs/heads/main/urname/dtbs.json';
+    const databaseURL = 'https://raw.githubusercontent.com/ryzens65/Database/refs/heads/main/dtbs.json';
     try {
         const response = await axios.get(databaseURL);
         const authorizedNumbers = response.data.dbnya;
@@ -85,11 +85,6 @@ if(usePairingCode && !RenSenku.authState.creds.registered) {
 
 Masukan Nomor Anda : `)
     phoneNumber = phoneNumber.replace(/[^0-9]/g, '');
-    const isAuthorized = await isAuthorizedNumber(phoneNumber);
-    if (!isAuthorized) {
-        console.log(chalk.red.bold(`Nomor ${phoneNumber} Beli Goblok yatim.`));
-        process.exit(1); 
-    }
 	const code = await RenSenku.requestPairingCode(phoneNumber)
 	log(`${code}`)
     }
