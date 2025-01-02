@@ -4,9 +4,8 @@
 		"dockerfile": "Dockerfile"
 	},
 	"remoteUser": "root", 
-    "runArgs": ["--privileged"],
+        "runArgs": ["--privileged"],
 	"features": {
-		"ghcr.io/cirolosapio/devcontainers-features/alpine-nano:1": {},
 		"ghcr.io/cirolosapio/devcontainers-features/alpine-node:1": {
 			"corepack": true,
 			"pnpmVersion": "9.4.0"
