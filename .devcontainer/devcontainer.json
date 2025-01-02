@@ -1,19 +1,16 @@
 {
-  "name": "Simple Alpine",
+  "name": "Alpine Linux Dev Container",
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "remoteUser": "root",
-  "runArgs": ["--privileged"],
   "features": {
-	  "ghcr.io/devcontainers/features/sshd:1": {}
-	},
-	"extensions": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
+    "ghcr.io/devcontainers/features/sshd:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/nodejs:1": {}
+  },
+  "extensions": [
     "ms-azuretools.vscode-docker",
-    "eamodio.gitlens",
-    "streetsidesoftware.code-spell-checker"
-	],
-  "postCreateCommand": "apk update && apk add --no-cache bash docker nodejs npm"
+    "dbaeumer.vscode-eslint"
+  ],
+  "remoteUser": "root"
 }
