@@ -5,6 +5,7 @@ const {
     makeInMemoryStore,
     fetchLatestBaileysVersion,
     useMultiFileAuthState,
+    proto,
     generateWAMessageFromContent,
     DisconnectReason,
 } = require("@whiskeysockets/baileys");
