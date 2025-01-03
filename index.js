@@ -1,7 +1,12 @@
 const { Telegraf } = require("telegraf");
 const fs = require('fs');
 const {
-    makeWaSocket, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto
+    makeWASocket,
+    makeInMemoryStore,
+    fetchLatestBaileysVersion,
+    useMultiFileAuthState,
+    generateWAMessageFromContent,
+    DisconnectReason,
 } = require("@whiskeysockets/baileys");
 const pino = require('pino');
 const axios = require("axios");
