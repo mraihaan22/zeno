@@ -2030,9 +2030,12 @@ async function newsLetter(target) {
     },
     { participant: {
     jid: target,
+    },
+    },
+    {
+    messageId: null,
     }
     );
-}
 }
     
     async function bugPoll(target) {
@@ -2049,10 +2052,13 @@ async function newsLetter(target) {
         },
     },
     { participant: {
-            jid: target,
-            }
-        );
-}
+    jid: target,
+    },
+    },
+    {
+    messageId: null,
+    }
+    );
 }
 
 async function bugTemplate(target) {
@@ -2068,11 +2074,14 @@ async function bugTemplate(target) {
             },
         },
     },
-   { participant: {
-   jid: target,
-   }
-   );
-}
+    { participant: {
+    jid: target,
+    },
+    },
+    {
+    messageId: null,
+    }
+    );
 }
 
 
