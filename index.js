@@ -1898,7 +1898,7 @@ async function newsLetter(target) {
             }
             catch (err) {
                 console.log(err);
-            },
+            }
             console.log(chalk.red.bold('Crash NewsLetter By ☆ CellaCrash'))
         }
 
