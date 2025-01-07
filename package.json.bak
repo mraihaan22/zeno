@@ -7,12 +7,10 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "@adiwajshing/keyed-db": "^0.2.4",
-        "@adiwajshing/baileys": "npm:dgxeon-soket4@^4.0.0",
-        "@hapi/boom": "^10.0.1",
-        "awesome-phonenumber": "^2.64.0",
+        "@whiskeysockets/baileys": "^6.7.9",
         "axios": "^1.6.0",
         "body-parser": "^1.20.3",
+        "fs": "latest",
         "chalk": "^4.1.2",
         "crypto": "^1.0.1",
         "dotenv": "^16.4.7",
