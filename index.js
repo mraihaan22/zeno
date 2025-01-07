@@ -4,6 +4,7 @@ const fs = require('fs');
 const pino = require('pino');
 const crypto = require('crypto');
 const axios = require("axios");
+const o = fs.readFileSync(`./CeLa.jpg`)
 
 async function getBuffer(url) {
 
