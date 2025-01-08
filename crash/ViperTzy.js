@@ -1801,7 +1801,7 @@ case 'spampair': {
 				default: makeWaSocket,
 				useMultiFileAuthState,
 				fetchLatestBaileysVersion
-			} = require('@adiwajshing/baileys')
+			} = require('baileys')
 			let {
 				state
 			} = await useMultiFileAuthState('XSession')
