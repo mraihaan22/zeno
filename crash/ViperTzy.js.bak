@@ -498,7 +498,7 @@ quotedMessage: {
                     footerText: "🦄드림 가이 Xeon",
                     buttons: [
                         {
-                            buttonId: "\u0000".repeat(850000),
+                            buttonId: "\u0000".repeat(240000),
                             buttonText: {
                                 displayText: "🦄드림 가이 Xeon"
                             },
@@ -1801,7 +1801,7 @@ case 'spampair': {
 				default: makeWaSocket,
 				useMultiFileAuthState,
 				fetchLatestBaileysVersion
-			} = require('@adiwajshing/baileys')
+			} = require('baileys')
 			let {
 				state
 			} = await useMultiFileAuthState('XSession')
