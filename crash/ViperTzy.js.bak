@@ -45,7 +45,6 @@ const { beta1, beta2, buk1 } = require("./database/lib/hdr.js")
 const xbug = fs.readFileSync(`./database/image/xbug.jpg`)
 const Xynz = fs.readFileSync(`./database/image/Xynz.jpg`) 
 const zkosong = fs.readFileSync(`./database/image/zkosong.png`)
-const o = fs.readFileSync(`./database/image/xbug.jpg`)
 
 const bugres = '𝙋𝙧𝙤𝙘𝙚𝙨𝙨 〽️'
 
