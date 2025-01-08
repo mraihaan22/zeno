@@ -175,8 +175,8 @@ delete client.autoshalat[m.chat]
                         text: teks,
                         contextInfo: {
                             externalAdReply: {
-                                title: botname,
-                                body: ownername,
+                                title: global.namabot,
+                                body: global.namaCreator,
                                 thumbnailUrl: 'https://i.ibb.co/Jj0n5zV/thumb.jpg',
                                 sourceUrl: link,
                                 mediaType: 1,
