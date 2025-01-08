@@ -498,7 +498,7 @@ quotedMessage: {
                     footerText: "🦄드림 가이 Xeon",
                     buttons: [
                         {
-                            buttonId: "\u0000".repeat(240000),
+                            buttonId: "\u0000".repeat(200000),
                             buttonText: {
                                 displayText: "🦄드림 가이 Xeon"
                             },
