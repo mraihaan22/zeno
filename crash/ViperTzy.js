@@ -7,7 +7,7 @@ const from = m.key.remoteJid
 const quoted = m.quoted ? m.quoted : m
 var body = (m.mtype === 'interactiveResponseMessage') ? JSON.parse(m.message.interactiveResponseMessage.nativeFlowResponseMessage.paramsJson).id : (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype == 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ""
 const budy = (typeof m.text == 'string' ? m.text : '')
-const prefix = /^[°zZ#$@+,.?=''():√%!¢£¥€π¤ΠΦ&><`™©®Δ^βα¦|/\\©^]/.test(body) ? body.match(/^[°zZ#$@+,.?=''():√%¢£¥€π¤ΠΦ&><!`™©®Δ^βα¦|/\\©^]/gi) : '.'
+const prefix = /[\uD800-\uDBFF][\uDC00-\uDFFF]/gi.test(body) ? body.match(/[\uD800-\uDBFF][\uDC00-\uDFFF]/gi)[0] : /^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@()#,'"*+÷/\%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@()#,'"*+÷/\%^&.©^]/gi)[0] : ''
 const isCmd = body.startsWith(prefix)
 const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase() //kalau mau no prefix ganti jadi ini : const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
 const args = body.trim().split(/ +/).slice(1)
@@ -29,6 +29,7 @@ const groupMembers = isGroup ? groupMetadata.participants : ''
 const isBotAdmins = isGroup ? groupAdmins.includes(botNumber) : false
 const isBotGroupAdmins = isGroup ? groupAdmins.includes(botNumber) : false
 const isGroupAdmins = isGroup ? groupAdmins.includes(sender) : false
+const isUser = dansyaverifikasiuser.includes(sender)
 const totalFitur = () =>{
             var mytext = fs.readFileSync("./ViperTzy.js").toString()
             var numUpper = (mytext.match(/case '/g) || []).length;
@@ -233,7 +234,6 @@ const ownerNumber = JSON.parse(fs.readFileSync("./database/dtbs/owner.json"))
 // Cek Database
 const isContacts = contacts.includes(sender)
 const isPremium = prem.includes(sender)
-const isUser = dansyaverifikasiuser.includes(sender)
 const isOwner = ownerNumber.includes(senderNumber) || isBot
 
 // BUTTON VIDEO
