@@ -178,7 +178,7 @@ delete client.autoshalat[m.chat]
                                 title: global.namabot,
                                 body: global.namaCreator,
                                 thumbnailUrl: 'https://i.ibb.co/Jj0n5zV/thumb.jpg',
-                                sourceUrl: link,
+                                sourceUrl: global.isLink,
                                 mediaType: 1,
                             }
                             }
