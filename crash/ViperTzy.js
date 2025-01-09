@@ -1870,6 +1870,21 @@ case 'spampair': {
 			await sleep(15000)
 			}
 		break
+		
+case "listgc":{
+	if (!isPremium) return replygcxeon(mess.premium)
+let getGroups = await viper.groupFetchAllParticipating()
+let groups = Object.entries(getGroups).slice(0).map((entry) => entry[1])
+let anu = groups.map((v) => v.id)
+let hituet = 0
+let teks = `⬣ *LIST OF GROUP BELOW*\n\nTotal Group : ${anu.length} Group\n\n`
+for (let x of anu) {
+let metadata2 = await viper.groupMetadata(x)
+teks += `❏ Group ${hituet+=1}\n│⭔ *Name :* ${metadata2.subject}\n│⭔ *ID :* ${metadata2.id}\n│⭔ *MEMBER :* ${metadata2.participants.length}\n╰────|\n\n`
+}
+m.reply(teks)
+}
+break
 
 case 'closegroup': {
 if (!isGroup) return reply(`Khusus Group Bego`)
