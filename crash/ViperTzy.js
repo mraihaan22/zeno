@@ -1823,6 +1823,11 @@ if (!isOwner) return reply(mess.only.owner)
 viper.sendMessage(m.chat, { text : text ? text : '' , mentions: participants.map(a => a.id)}, { quoted: m })
 break
 
+case 'clearchat':{
+m.reply('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+                    }
+break
+
 case "tagall": {
 if (!isOwner && !isAdmins) return reply(mess.admin)
 if (!isGroup) return joreply(mess.only.group)
