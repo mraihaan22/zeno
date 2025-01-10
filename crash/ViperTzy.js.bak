@@ -617,7 +617,7 @@ canRequestFeedback: true
 forwardedNewsletterMessageInfo: {
 newsletterJid: "120363222395675670@newsletter",
 serverMessageId: 1,
-newsletterName: `𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚${"ꥈꥈꥈꥈꥈꥈ".repeat(10)}`,
+newsletterName: `𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚${"ꥈꥈꥈꥈꥈꥈ".repeat(5)}`,
 contentType: 3,
 accessibilityText: "kontol"
 },
