@@ -232,6 +232,9 @@ ticket_id: crypto.randomBytes(16),
 };
 
 exports.buk1 = async (viper, target, ptcp = true) => {
+const crypto = require('crypto')
+const fs = require('fs')
+const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
     try {
                 const message = {
             botInvokeMessage: {
