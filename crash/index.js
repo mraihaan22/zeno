@@ -23,11 +23,16 @@ const { version, isLatest } = await fetchLatestBaileysVersion()
     console.log(chalk.red.bold('╔╗──╔╦══╦═══╦═══╦═══╗\n║╚╗╔╝╠╣╠╣╔═╗║╔══╣╔═╗║\n╚╗║║╔╝║║║╚═╝║╚══╣╚═╝║\n─║╚╝║─║║║╔══╣╔══╣╔╗╔╝\n─╚╗╔╝╔╣╠╣║──║╚══╣║║╚╗\n──╚╝─╚══╩╝──╚═══╩╝╚═╝\n╔════╦════╦╗──╔╗\n║╔╗╔╗╠══╗═║╚╗╔╝║\n╚╝║║╚╝─╔╝╔╩╗╚╝╔╝\n──║║──╔╝╔╝─╚╗╔╝─\n──║║─╔╝═╚═╗─║║──\n──╚╝─╚════╝─╚╝──\n\n𝐕𝐢𝐩𝐓𝐳𝐲 𝐕𝐞𝐫𝐬𝐢 𝟏.𝟏 𝐏𝐞𝐫𝐝𝐚𝐧𝐚\n\n𝐂𝐫𝐞𝐚𝐭𝐞𝐝 : 𝐕𝐢𝐩𝐞𝐫𝐓𝐳𝐲\n𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 : @vipertzyy\n𝐘𝐨𝐮𝐭𝐮𝐛𝐞 : @vipertzyoffc'))
 const connectionOptions = {
 version,
+syncFullHistory: true,
+markOnlineOnConnect: true,
 keepAliveIntervalMs: 30000,
+connectTimeoutMs: 60000,
+defaultQueryTimeoutMs: 0,
+generateHighQualityLinkPreview: true,
 printQRInTerminal: !usePairingCode,
 logger: pino({ level: "fatal" }),
 auth: state,
-browser: Browsers.windows('Firefox')
+browser: ["Ubuntu", "Chrome", "20.0.04"],
 // browser: ['Chrome (Linux)', '', '']
 }
 const viper = func.makeWASocket(connectionOptions)
