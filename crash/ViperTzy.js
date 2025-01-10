@@ -2659,7 +2659,7 @@ target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 						highlight_label: "🔵⃟⌁⃰𝐙𝐫͢𝐧𝟐 𝑪͢𝒓𝒂ͯ͢𝒔𝒉ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐙𝐫͢𝐧𝟐',
-							id: `attack ${target}`
+							id: `xbeta ${target}`
 						}]
 					},
 					{
@@ -2696,7 +2696,7 @@ target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 						highlight_label: "🙂‍↔️⃟ ⌁⃰𝐕𝐢𝐩𝐞͢𝐫ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐕𝐢𝐩𝐞͢𝐫 𝐂͢𝐫𝐚ͯ𝐬͢𝐡',
-							id: `vipercrash ${target}`
+							id: `xeon ${target}`
 						}]
 					},
 					{
