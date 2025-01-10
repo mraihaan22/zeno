@@ -2276,9 +2276,9 @@ case "cekidgc": case "cekidgroup": case "idgc":
 if (!isOwner) return reply(mess.only.owner)
 reply(`
 ┌────────── [     *GROUP CHAT*     ] ──────────┐
-│ 🕒 Time         : ${chalk.green(new Date().toISOString().slice(0, 19).replace('T', ' '))}
-│ 🏠 Group Name : ${chalk.yellow(groupName)}
-│ 👤 The Id       : ${chalk.cyan(m.chat)}
+│ 🕒 *Time*         : _*${new Date().toISOString().slice(0, 19).replace('T', ' ')}*_
+│ 🏠 *Group Name* : _*${groupName}*_
+│ 👤 *The Id*       : _*${m.chat}*_
 └────────────────────────────────────────┘
     `)
 break
