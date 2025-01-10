@@ -870,9 +870,9 @@ var baralod = [
 "*LOADING 98%*",
 "*LOADING 99%*",
 "*LOADING 100%*",
-await sleep(3000);
+await sleep(3000)
 "𝑯᪱͢͢𝑒͢𝑙͢𝑙͢𝑜͢ 𝑰͢𝑚 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
-await sleep(1000);
+await sleep(1000)
 "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓᪱ 𝑰͢𝑠 𝑯͢͢𝑒͢𝑟͢𝑒"
 ]
 let { key } = await viper.sendMessage(from, {text: '"*LOADING 1%*"'})
