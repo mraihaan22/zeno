@@ -5,10 +5,7 @@ require("./database/global")
 
 const func = require("./database/place")
 const readline = require("readline");
-const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
-const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 const usePairingCode = true
-const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const question = (text) => {
   const rl = readline.createInterface({
 input: process.stdin,
@@ -20,68 +17,26 @@ rl.question(text, resolve)
 };
 
 async function startSesi() {
-	const {  saveCreds, state } = await useMultiFileAuthState(`./session`)
-	const msgRetryCounterCache = new NodeCache()
-    	const viper = makeWASocket({
-        logger: pino({ level: 'silent' }),
-        printQRInTerminal: !pairingCode, // popping up QR in terminal log
-      mobile: useMobile, // mobile api (prone to bans)
-     auth: {
-         creds: state.creds,
-         keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
-      },
-      browser: Browsers.windows('Firefox'),  // for this issues https://github.com/WhiskeySockets/Baileys/issues/328
-      patchMessageBeforeSending: (message) => {
-            const requiresPatch = !!(
-                message.buttonsMessage ||
-                message.templateMessage ||
-                message.listMessage
-            );
-            if (requiresPatch) {
-                message = {
-                    viewOnceMessage: {
-                        message: {
-                            messageContextInfo: {
-                                deviceListMetadataVersion: 2,
-                                deviceListMetadata: {},
-                            },
-                            ...message,
-                        },
-                    },
-                };
-            }
-            return message;
-        },
-      auth: {
-         creds: state.creds,
-         keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "fatal" }).child({ level: "fatal" })),
-      },
-connectTimeoutMs: 60000,
-defaultQueryTimeoutMs: 0,
-keepAliveIntervalMs: 10000,
-emitOwnEvents: true,
-fireInitQueries: true,
-generateHighQualityLinkPreview: true,
-syncFullHistory: true,
-markOnlineOnConnect: true,
-      getMessage: async (key) => {
-            if (store) {
-                const msg = await store.loadMessage(key.remoteJid, key.id)
-                return msg.message || undefined
-            }
-            return {
-                conversation: "Cheems Bot Here!"
-            }
-        },
-      msgRetryCounterCache, // Resolve waiting messages
-      defaultQueryTimeoutMs: undefined, // for this issues https://github.com/WhiskeySockets/Baileys/issues/276
-   })
-if (!viper.authState.creds.registered) {
-const phoneNumber = await question('Masukan Nomer Yang Aktif Awali Dengan 62  :\n');
-let code = await viper.requestPairingCode(phoneNumber);
-code = code?.match(/.{1,4}/g)?.join("-") || code;
-console.log(`𝙽𝙸 𝙺𝙾𝙳𝙴 𝙿𝙰𝙸𝚁𝙸𝙽𝙶 𝙻𝚄 :`, code);
+const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
+const { state, saveCreds } = await useMultiFileAuthState(`./session`)
+const { version, isLatest } = await fetchLatestBaileysVersion()
+    console.log(chalk.red.bold('╔╗──╔╦══╦═══╦═══╦═══╗\n║╚╗╔╝╠╣╠╣╔═╗║╔══╣╔═╗║\n╚╗║║╔╝║║║╚═╝║╚══╣╚═╝║\n─║╚╝║─║║║╔══╣╔══╣╔╗╔╝\n─╚╗╔╝╔╣╠╣║──║╚══╣║║╚╗\n──╚╝─╚══╩╝──╚═══╩╝╚═╝\n╔════╦════╦╗──╔╗\n║╔╗╔╗╠══╗═║╚╗╔╝║\n╚╝║║╚╝─╔╝╔╩╗╚╝╔╝\n──║║──╔╝╔╝─╚╗╔╝─\n──║║─╔╝═╚═╗─║║──\n──╚╝─╚════╝─╚╝──\n\n𝐕𝐢𝐩𝐓𝐳𝐲 𝐕𝐞𝐫𝐬𝐢 𝟏.𝟏 𝐏𝐞𝐫𝐝𝐚𝐧𝐚\n\n𝐂𝐫𝐞𝐚𝐭𝐞𝐝 : 𝐕𝐢𝐩𝐞𝐫𝐓𝐳𝐲\n𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 : @vipertzyy\n𝐘𝐨𝐮𝐭𝐮𝐛𝐞 : @vipertzyoffc'))
+const connectionOptions = {
+version,
+keepAliveIntervalMs: 30000,
+printQRInTerminal: !usePairingCode,
+logger: pino({ level: "fatal" }),
+auth: state,
+browser: Browsers.windows('Firefox')  
+// browser: ['Chrome (Linux)', '', '']
 }
+const viper = func.makeWASocket(connectionOptions)
+if(usePairingCode && !viper.authState.creds.registered) {
+		const phoneNumber = await question(chalk.green('\nEnter Your Number\nNumber : '));
+		const code = await viper.requestPairingCode(phoneNumber.trim())
+		console.log(chalk.green(`Your Pairing Code : ${code} `))
+
+	}
 store.bind(viper.ev)
 
 viper.ev.on('connection.update', async (update) => {
@@ -134,7 +89,7 @@ if (m.key && m.key.remoteJid === 'status@broadcast') return viper.readMessages([
 if (!viper.public && !m.key.fromMe && chatUpdate.type === 'notify') return
 if (m.key.id.startsWith('BAE5') && m.key.id.length === 16) return
 m = func.smsg(viper, m, store)
-require("./ViperTzy")(viper, m, store)
+require("./viperTzy")(viper, m, store)
 } catch (err) {
 console.log(err)
 }
