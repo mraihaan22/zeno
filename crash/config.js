@@ -1,14 +1,14 @@
 require("./database/module")
 
 //GLOBAL PAYMENT
-global.storename = "𝐕𝐢𝐩𝐓𝐳𝐲"
-global.dana = "083809358811"
+global.storename = "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
+global.dana = "-"
 global.qris = "https://b.top4top.io/p_3199egvlc0.jpg"
 
 
 // GLOBAL SETTING
 global.owner = "6285929014979"
-global.namabot = " 𝐗 𝐕𝐢𝐩𝐞𝐫"
+global.namabot = "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
 global.nomorbot = "6285929014979"
 global.namaCreator = "𝐕𝐢𝐩𝐞𝐫 𝐈𝐬 𝐇𝐞𝐫𝐞✰"
 global.linkyt = "https://youtube.com/@vipertzyoffc"

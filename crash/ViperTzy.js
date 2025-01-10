@@ -199,7 +199,7 @@ delete client.autoshalat[m.chat]
                             externalAdReply: {
                                 title: global.namabot,
                                 body: global.namaCreator,
-                                thumbnailUrl: 'https://i.ibb.co/Jj0n5zV/thumb.jpg',
+                                thumbnailUrl: 'https://b.top4top.io/p_31995kalq0.jpg',
                                 sourceUrl: global.isLink,
                                 mediaType: 1,
                             }
