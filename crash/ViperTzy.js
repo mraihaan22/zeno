@@ -200,7 +200,7 @@ delete client.autoshalat[m.chat]
                                 title: global.namabot,
                                 body: global.namaCreator,
                                 thumbnailUrl: 'https://b.top4top.io/p_31995kalq0.jpg',
-                                sourceUrl: 'wa.me/settings',
+                                sourceUrl: 'https://chat.whatsapp.com',
                                 mediaType: 1,
                             }
                             }
