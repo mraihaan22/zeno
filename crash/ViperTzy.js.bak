@@ -2272,15 +2272,6 @@ for (let i = 0; i < 10; i++) {
   );
 break;
 
-case "cekidgc": case "cekidgroup": case "idgc":
-if (!isOwner) return reply(mess.only.owner)
-reply(`
-┌────────── [     *GROUP CHAT*     ] ──────────┐
-│ 🕒 Time         : ${chalk.green(new Date().toISOString().slice(0, 19).replace('T', ' '))}
-│ 🏠 Group Name : ${chalk.yellow(groupName)}
-│ 👤 The Id       : ${chalk.cyan(m.chat)}
-└────────────────────────────────────────┘
-    `)
 	case 'xgroup':
 	if (!isPremium) return reply(mess.premium)
 	if (!q) return reply(`Example:\n ${prefix + command} 120363047626537xxx@g.us\n\nTo get group id, please type .listgc\n\nTo get group id from a group link, type .group-id link `)
