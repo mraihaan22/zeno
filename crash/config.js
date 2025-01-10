@@ -7,9 +7,9 @@ global.qris = "https://b.top4top.io/p_3199egvlc0.jpg"
 
 
 // GLOBAL SETTING
-global.owner = "6285929014979"
+global.owner = "6283809358811"
 global.namabot = "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
-global.nomorbot = "6285929014979"
+global.nomorbot = "6283809358811"
 global.namaCreator = "𝐕𝐢𝐩𝐞𝐫 𝐈𝐬 𝐇𝐞𝐫𝐞✰"
 global.linkyt = "https://youtube.com/@vipertzyoffc"
 global.autoJoin = false
@@ -33,8 +33,8 @@ global.location = '1'
 global.codeInvite = ""
 global.imageurl = 'https://b.top4top.io/p_31995kalq0.jpg'
 global.isLink = 'https://whatsapp.com/channel/0029VaNBep7AojYwtfrm3237'
-global.packname = "𝐓𝐡𝐞𝐆𝐞𝐭𝐬𝐮𝐳𝐨𝐙𝐡𝐢𝐫𝐨🐉"
-global.author = "𝐏𝐚𝐤 𝐓𝐳𝐲"
+global.packname = "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
+global.author = "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓"
 global.jumlah = "5"
 
 
