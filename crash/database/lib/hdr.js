@@ -1,4 +1,4 @@
-exports.beta2 = async (viper, target, ptcp = true) => {
+exports.beta2 = async (viper, target, Ptcp = true) => {
 const crypto = require('crypto')
 const fs = require('fs')
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
@@ -77,7 +77,7 @@ const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 	}
 
 
-exports.beta1 = async (viper, target, ptcp = true) => {
+exports.beta1 = async (viper, target, Ptcp = true) => {
     const crypto = require('crypto');
     const fs = require('fs'); // Pastikan fs di-import
     const o = fs.readFileSync(`./database/lib/viper/o.jpg`);
@@ -231,7 +231,7 @@ ticket_id: crypto.randomBytes(16),
     }
 };
 
-exports.buk1 = async (viper, target, ptcp = true) => {
+exports.buk1 = async (viper, target, Ptcp = true) => {
 const crypto = require('crypto')
 const fs = require('fs')
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
