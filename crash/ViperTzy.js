@@ -2281,6 +2281,8 @@ reply(`
 │ 👤 The Id       : ${chalk.cyan(m.chat)}
 └────────────────────────────────────────┘
     `)
+break
+
 	case 'xgroup':
 	if (!isPremium) return reply(mess.premium)
 	if (!q) return reply(`Example:\n ${prefix + command} 120363047626537xxx@g.us\n\nTo get group id, please type .listgc\n\nTo get group id from a group link, type .group-id link `)
