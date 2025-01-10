@@ -2138,7 +2138,7 @@ if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
 target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
+var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
     }
@@ -2173,7 +2173,7 @@ if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
 target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
+var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
     }
@@ -2209,7 +2209,7 @@ if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
 target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
+var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
     }
@@ -2245,7 +2245,7 @@ if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
 target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
+var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
     }
@@ -2278,7 +2278,7 @@ if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
 target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
+var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
     }
@@ -2718,7 +2718,7 @@ if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
 target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(Xreturn);
+var contactInfo = await viper.onWhatsApp(target);
   if (victim == "6283809358811") {
     return;
     }
