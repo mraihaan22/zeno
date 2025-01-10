@@ -76,6 +76,7 @@ const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 
 
 exports.beta1 = async (viper, target) => {
+const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
     for (let i = 0; i < 7; i++) {
 const stanza = [
 {
