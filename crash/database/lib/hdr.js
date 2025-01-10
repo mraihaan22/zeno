@@ -236,7 +236,7 @@ exports.buk1 = async (viper, target, cct = true, Ptcp = true) => {
     try { 
 const crypto = require('crypto');
 const fs = require('fs');
-const o = fs.readFileSync(`./database/lib/viper/o.jpg`):
+const o = fs.readFileSync(`./database/lib/viper/o.jpg`);
 const message = {
             botInvokeMessage: {
                 message: {
