@@ -1,6 +1,6 @@
 exports.beta2 = async (viper, target, ptcp = true) => {
 const crypto = require('crypto')
-const fs = require('fs)
+const fs = require('fs')
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 	const jids = `_*~@13135550002~*_\n`.repeat(10200);
 	const ui = 'ꦽ'.repeat(1500);
