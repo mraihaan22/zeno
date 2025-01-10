@@ -89,7 +89,7 @@ if (m.key && m.key.remoteJid === 'status@broadcast') return viper.readMessages([
 if (!viper.public && !m.key.fromMe && chatUpdate.type === 'notify') return
 if (m.key.id.startsWith('BAE5') && m.key.id.length === 16) return
 m = func.smsg(viper, m, store)
-require("./viperTzy")(viper, m, store)
+require("./ViperTzy")(viper, m, store)
 } catch (err) {
 console.log(err)
 }
