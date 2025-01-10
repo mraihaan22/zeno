@@ -2786,6 +2786,52 @@ reply(`${meg.result}`)
 }
 break
 
+case 'tourl': {
+async function uploadwidipe(poto) {
+  const axios = require("axios");
+const fs = require("fs");
+const FormData = require("form-data");
+const path = require('path');
+    try {
+      const mime = require('mime-types');
+  const form = new FormData();
+  const contentType = mime.lookup(poto);
+  const fileName = path.basename(poto);
+  form.append('file', fs.createReadStream(poto), {
+    contentType: contentType || 'application/octet-stream',
+    filename: fileName,
+  });
+      const response = await axios.post('https://cdn.elxyzgpt.xyz/', form, {
+        headers: form.getHeaders(),
+        onUploadProgress: (progressEvent) => {
+          if (progressEvent.lengthComputable) {
+            console.log(`🚀 Upload Progress: ${(progressEvent.loaded * 100) / progressEvent.total}%`);
+          }
+        }
+      });
+    const hasilnya = response.data.fileUrl
+      console.log('🎉 File Upload Success:', response.data);
+      return hasilnya;
+    } catch (error) {
+      console.error('🚫 Upload Failed:', error);
+      reject(error);
+    }
+}
+  try {
+    const media = await viper.downloadAndSaveMediaMessage(quoted);
+    const anuu = await uploadwidipe(media);
+    reply(`📮 *L I N K :*
+${anuu}
+📊 *S I Z E :* ${media.length} Byte
+📛 *E x p i r e d :* No Expiry Date`);
+    await fs.unlinkSync(media);
+  } catch (error) {
+    console.error('Error:', error);
+    reply('Error uploading file.');
+  }
+}
+  break;
+
 case '1gb': {
 if(!isPremium){
 reply(mess.only.premium)
