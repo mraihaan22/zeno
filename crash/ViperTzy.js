@@ -807,7 +807,7 @@ viper.relayMessage(jid, order.message, { messageId: order.key.id})
 }
 
 // Function Reply
-const reply = (teks) => {
+const replyviper = (teks) => {
             viper.sendMessage(m.chat,
 {
     text: teks,
