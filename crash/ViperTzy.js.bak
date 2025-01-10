@@ -544,7 +544,7 @@ quotedMessage: {
                     footerText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚",
                     buttons: [
                         {
-                            buttonId: "\u0000".repeat(60200),
+                            buttonId: "\u0000".repeat(1020000),
                             buttonText: {
                                 displayText: "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚"
                             },
