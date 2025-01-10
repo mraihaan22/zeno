@@ -199,8 +199,8 @@ delete client.autoshalat[m.chat]
                             externalAdReply: {
                                 title: global.namabot,
                                 body: global.namaCreator,
-                                thumbnailUrl: 'https://www.dropbox.com/scl/fi/x9eqn1fwhkvw57yky1dx0/o.jpg?rlkey=kafrgha8haw5flj5zuclfjcs1&st=874d5zjj&dl=0',
-                                sourceUrl: 'https://chat.whatsapp.com',
+                                thumbnailUrl: 'https://files.catbox.moe/q0cmpf.jpg',
+                                sourceUrl: '𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚',
                                 mediaType: 1,
                             }
                             }
