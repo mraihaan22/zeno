@@ -72,8 +72,7 @@ startSesi()
 start(`1`, `Connecting...`)
 } else if (connection === "open") {
 success(`1`, `Tersambung`)
-viper.sendMessage(`6285929014979@s.whatsapp.net`, { text: `\`𝐇𝐚𝐥𝐨 𝐕𝐢𝐩𝐞𝐫\`
-  > Mantap`})
+
 if (autoJoin) {
 viper.groupAcceptInvite(codeInvite)
 }
