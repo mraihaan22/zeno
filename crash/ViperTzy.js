@@ -1478,8 +1478,60 @@ hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.read
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
+  "name": "single_select",
+"buttonParamsJson": 
+`{
+  "title": "「 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 」",
+  "sections": [
+    {
+      "title": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓᪱ 𝑰͢𝑠 𝑯͢͢𝑒͢𝑟͢𝑒",
+      "rows": [
+        {
+          "header": "𝑨᪳͢ᤡ𝒍𝒍𝒎᪳᪳͢𝒆𝒏᪲͢𝒖",
+          "title": "*List*",
+          "description": "𒈔",
+          "id": "allmenu"
+        },
+        {
+          "header": "'᪳ᤡ᪳ᤡ𝐗᪲᪲᪲͢𝐗᪳͢ᤡ᪲᪲𝐕᪳͢ᤡ᪳ᤡ᪳ᤡ𝐈𝐏᪳᪳᪲᪲᪲᪳᪳᪳᪳",
+          "title": "*List*",
+          "description": "𝐕𝐕𝐈𝐏",
+          "id": "bugmenu"
+        },
+        {
+          "header": "𝑱͢𝒆᪳᪳𝒃᪲͢𝒆᪳ᤡ",
+          "title": "*List*",
+          "description": "𖣔",
+          "id": "storemenu"
+        },
+        {
+          "header": "𝑪᪳͢ᤡ𝒑𝒂᪱᪲͢ᤡ᪳𝒏𝒆᪳᪳͢𝒍",
+          "title": "*List*",
+          "description": "𖣐",
+          "id": "panelmenu"
+        },
+        {
+          "header": "𝑻᪱᪲͢ᤡ᪳𝒐𝒐᪳͢ᤡ𝒍𝒔᪳᪳",
+          "title": "*List*",
+          "description": "𒁂",
+          "id": "toolsmenu"
+        },
+        {
+          "header": "𝑮᪲͢𝒓𝒐᪳ᤡ𝒖͢𝒑᪳᪳",
+          "title": "*List*",
+          "description": "𒆜",
+          "id": "groupmenu"
+        },
+        {
+          "header": "𝑶᪳᪳͢𝒘᪲𝒏͢𝒆᪲᪳᪳𝒓",
+          "title": "*List*",
+          "description": "♾︎",
+          "id": "ownermenu"
+        }
+      ]
+    }
+  ]
+}` 
 },
  {
  "name": "cta_url",
@@ -1605,8 +1657,60 @@ hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.read
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
+  "name": "single_select",
+"buttonParamsJson": 
+`{
+  "title": "「 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 」",
+  "sections": [
+    {
+      "title": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓᪱ 𝑰͢𝑠 𝑯͢͢𝑒͢𝑟͢𝑒",
+      "rows": [
+        {
+          "header": "𝑨᪳͢ᤡ𝒍𝒍𝒎᪳᪳͢𝒆𝒏᪲͢𝒖",
+          "title": "*List*",
+          "description": "𒈔",
+          "id": "allmenu"
+        },
+        {
+          "header": "'᪳ᤡ᪳ᤡ𝐗᪲᪲᪲͢𝐗᪳͢ᤡ᪲᪲𝐕᪳͢ᤡ᪳ᤡ᪳ᤡ𝐈𝐏᪳᪳᪲᪲᪲᪳᪳᪳᪳",
+          "title": "*List*",
+          "description": "𝐕𝐕𝐈𝐏",
+          "id": "bugmenu"
+        },
+        {
+          "header": "𝑱͢𝒆᪳᪳𝒃᪲͢𝒆᪳ᤡ",
+          "title": "*List*",
+          "description": "𖣔",
+          "id": "storemenu"
+        },
+        {
+          "header": "𝑪᪳͢ᤡ𝒑𝒂᪱᪲͢ᤡ᪳𝒏𝒆᪳᪳͢𝒍",
+          "title": "*List*",
+          "description": "𖣐",
+          "id": "panelmenu"
+        },
+        {
+          "header": "𝑻᪱᪲͢ᤡ᪳𝒐𝒐᪳͢ᤡ𝒍𝒔᪳᪳",
+          "title": "*List*",
+          "description": "𒁂",
+          "id": "toolsmenu"
+        },
+        {
+          "header": "𝑮᪲͢𝒓𝒐᪳ᤡ𝒖͢𝒑᪳᪳",
+          "title": "*List*",
+          "description": "𒆜",
+          "id": "groupmenu"
+        },
+        {
+          "header": "𝑶᪳᪳͢𝒘᪲𝒏͢𝒆᪲᪳᪳𝒓",
+          "title": "*List*",
+          "description": "♾︎",
+          "id": "ownermenu"
+        }
+      ]
+    }
+  ]
+}` 
 },
  {
  "name": "cta_url",
@@ -1720,8 +1824,60 @@ hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.read
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
+  "name": "single_select",
+"buttonParamsJson": 
+`{
+  "title": "「 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 」",
+  "sections": [
+    {
+      "title": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓᪱ 𝑰͢𝑠 𝑯͢͢𝑒͢𝑟͢𝑒",
+      "rows": [
+        {
+          "header": "𝑨᪳͢ᤡ𝒍𝒍𝒎᪳᪳͢𝒆𝒏᪲͢𝒖",
+          "title": "*List*",
+          "description": "𒈔",
+          "id": "allmenu"
+        },
+        {
+          "header": "'᪳ᤡ᪳ᤡ𝐗᪲᪲᪲͢𝐗᪳͢ᤡ᪲᪲𝐕᪳͢ᤡ᪳ᤡ᪳ᤡ𝐈𝐏᪳᪳᪲᪲᪲᪳᪳᪳᪳",
+          "title": "*List*",
+          "description": "𝐕𝐕𝐈𝐏",
+          "id": "bugmenu"
+        },
+        {
+          "header": "𝑱͢𝒆᪳᪳𝒃᪲͢𝒆᪳ᤡ",
+          "title": "*List*",
+          "description": "𖣔",
+          "id": "storemenu"
+        },
+        {
+          "header": "𝑪᪳͢ᤡ𝒑𝒂᪱᪲͢ᤡ᪳𝒏𝒆᪳᪳͢𝒍",
+          "title": "*List*",
+          "description": "𖣐",
+          "id": "panelmenu"
+        },
+        {
+          "header": "𝑻᪱᪲͢ᤡ᪳𝒐𝒐᪳͢ᤡ𝒍𝒔᪳᪳",
+          "title": "*List*",
+          "description": "𒁂",
+          "id": "toolsmenu"
+        },
+        {
+          "header": "𝑮᪲͢𝒓𝒐᪳ᤡ𝒖͢𝒑᪳᪳",
+          "title": "*List*",
+          "description": "𒆜",
+          "id": "groupmenu"
+        },
+        {
+          "header": "𝑶᪳᪳͢𝒘᪲𝒏͢𝒆᪲᪳᪳𝒓",
+          "title": "*List*",
+          "description": "♾︎",
+          "id": "ownermenu"
+        }
+      ]
+    }
+  ]
+}` 
 },
  {
  "name": "cta_url",
@@ -1874,8 +2030,60 @@ hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.read
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
+  "name": "single_select",
+"buttonParamsJson": 
+`{
+  "title": "「 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 」",
+  "sections": [
+    {
+      "title": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓᪱ 𝑰͢𝑠 𝑯͢͢𝑒͢𝑟͢𝑒",
+      "rows": [
+        {
+          "header": "𝑨᪳͢ᤡ𝒍𝒍𝒎᪳᪳͢𝒆𝒏᪲͢𝒖",
+          "title": "*List*",
+          "description": "𒈔",
+          "id": "allmenu"
+        },
+        {
+          "header": "'᪳ᤡ᪳ᤡ𝐗᪲᪲᪲͢𝐗᪳͢ᤡ᪲᪲𝐕᪳͢ᤡ᪳ᤡ᪳ᤡ𝐈𝐏᪳᪳᪲᪲᪲᪳᪳᪳᪳",
+          "title": "*List*",
+          "description": "𝐕𝐕𝐈𝐏",
+          "id": "bugmenu"
+        },
+        {
+          "header": "𝑱͢𝒆᪳᪳𝒃᪲͢𝒆᪳ᤡ",
+          "title": "*List*",
+          "description": "𖣔",
+          "id": "storemenu"
+        },
+        {
+          "header": "𝑪᪳͢ᤡ𝒑𝒂᪱᪲͢ᤡ᪳𝒏𝒆᪳᪳͢𝒍",
+          "title": "*List*",
+          "description": "𖣐",
+          "id": "panelmenu"
+        },
+        {
+          "header": "𝑻᪱᪲͢ᤡ᪳𝒐𝒐᪳͢ᤡ𝒍𝒔᪳᪳",
+          "title": "*List*",
+          "description": "𒁂",
+          "id": "toolsmenu"
+        },
+        {
+          "header": "𝑮᪲͢𝒓𝒐᪳ᤡ𝒖͢𝒑᪳᪳",
+          "title": "*List*",
+          "description": "𒆜",
+          "id": "groupmenu"
+        },
+        {
+          "header": "𝑶᪳᪳͢𝒘᪲𝒏͢𝒆᪲᪳᪳𝒓",
+          "title": "*List*",
+          "description": "♾︎",
+          "id": "ownermenu"
+        }
+      ]
+    }
+  ]
+}` 
 },
  {
  "name": "cta_url",
@@ -1986,8 +2194,60 @@ hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.read
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
+  "name": "single_select",
+"buttonParamsJson": 
+`{
+  "title": "「 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 」",
+  "sections": [
+    {
+      "title": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓᪱ 𝑰͢𝑠 𝑯͢͢𝑒͢𝑟͢𝑒",
+      "rows": [
+        {
+          "header": "𝑨᪳͢ᤡ𝒍𝒍𝒎᪳᪳͢𝒆𝒏᪲͢𝒖",
+          "title": "*List*",
+          "description": "𒈔",
+          "id": "allmenu"
+        },
+        {
+          "header": "'᪳ᤡ᪳ᤡ𝐗᪲᪲᪲͢𝐗᪳͢ᤡ᪲᪲𝐕᪳͢ᤡ᪳ᤡ᪳ᤡ𝐈𝐏᪳᪳᪲᪲᪲᪳᪳᪳᪳",
+          "title": "*List*",
+          "description": "𝐕𝐕𝐈𝐏",
+          "id": "bugmenu"
+        },
+        {
+          "header": "𝑱͢𝒆᪳᪳𝒃᪲͢𝒆᪳ᤡ",
+          "title": "*List*",
+          "description": "𖣔",
+          "id": "storemenu"
+        },
+        {
+          "header": "𝑪᪳͢ᤡ𝒑𝒂᪱᪲͢ᤡ᪳𝒏𝒆᪳᪳͢𝒍",
+          "title": "*List*",
+          "description": "𖣐",
+          "id": "panelmenu"
+        },
+        {
+          "header": "𝑻᪱᪲͢ᤡ᪳𝒐𝒐᪳͢ᤡ𝒍𝒔᪳᪳",
+          "title": "*List*",
+          "description": "𒁂",
+          "id": "toolsmenu"
+        },
+        {
+          "header": "𝑮᪲͢𝒓𝒐᪳ᤡ𝒖͢𝒑᪳᪳",
+          "title": "*List*",
+          "description": "𒆜",
+          "id": "groupmenu"
+        },
+        {
+          "header": "𝑶᪳᪳͢𝒘᪲𝒏͢𝒆᪲᪳᪳𝒓",
+          "title": "*List*",
+          "description": "♾︎",
+          "id": "ownermenu"
+        }
+      ]
+    }
+  ]
+}` 
 },
  {
  "name": "cta_url",
@@ -2100,8 +2360,60 @@ hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.read
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
+  "name": "single_select",
+"buttonParamsJson": 
+`{
+  "title": "「 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 」",
+  "sections": [
+    {
+      "title": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓᪱ 𝑰͢𝑠 𝑯͢͢𝑒͢𝑟͢𝑒",
+      "rows": [
+        {
+          "header": "𝑨᪳͢ᤡ𝒍𝒍𝒎᪳᪳͢𝒆𝒏᪲͢𝒖",
+          "title": "*List*",
+          "description": "𒈔",
+          "id": "allmenu"
+        },
+        {
+          "header": "'᪳ᤡ᪳ᤡ𝐗᪲᪲᪲͢𝐗᪳͢ᤡ᪲᪲𝐕᪳͢ᤡ᪳ᤡ᪳ᤡ𝐈𝐏᪳᪳᪲᪲᪲᪳᪳᪳᪳",
+          "title": "*List*",
+          "description": "𝐕𝐕𝐈𝐏",
+          "id": "bugmenu"
+        },
+        {
+          "header": "𝑱͢𝒆᪳᪳𝒃᪲͢𝒆᪳ᤡ",
+          "title": "*List*",
+          "description": "𖣔",
+          "id": "storemenu"
+        },
+        {
+          "header": "𝑪᪳͢ᤡ𝒑𝒂᪱᪲͢ᤡ᪳𝒏𝒆᪳᪳͢𝒍",
+          "title": "*List*",
+          "description": "𖣐",
+          "id": "panelmenu"
+        },
+        {
+          "header": "𝑻᪱᪲͢ᤡ᪳𝒐𝒐᪳͢ᤡ𝒍𝒔᪳᪳",
+          "title": "*List*",
+          "description": "𒁂",
+          "id": "toolsmenu"
+        },
+        {
+          "header": "𝑮᪲͢𝒓𝒐᪳ᤡ𝒖͢𝒑᪳᪳",
+          "title": "*List*",
+          "description": "𒆜",
+          "id": "groupmenu"
+        },
+        {
+          "header": "𝑶᪳᪳͢𝒘᪲𝒏͢𝒆᪲᪳᪳𝒓",
+          "title": "*List*",
+          "description": "♾︎",
+          "id": "ownermenu"
+        }
+      ]
+    }
+  ]
+}` 
 },
  {
  "name": "cta_url",
@@ -2219,8 +2531,60 @@ hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: await fs.read
 }), 
 nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
 buttons: [{
-"name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage) 
+  "name": "single_select",
+"buttonParamsJson": 
+`{
+  "title": "「 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 」",
+  "sections": [
+    {
+      "title": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓᪱ 𝑰͢𝑠 𝑯͢͢𝑒͢𝑟͢𝑒",
+      "rows": [
+        {
+          "header": "𝑨᪳͢ᤡ𝒍𝒍𝒎᪳᪳͢𝒆𝒏᪲͢𝒖",
+          "title": "*List*",
+          "description": "𒈔",
+          "id": "allmenu"
+        },
+        {
+          "header": "'᪳ᤡ᪳ᤡ𝐗᪲᪲᪲͢𝐗᪳͢ᤡ᪲᪲𝐕᪳͢ᤡ᪳ᤡ᪳ᤡ𝐈𝐏᪳᪳᪲᪲᪲᪳᪳᪳᪳",
+          "title": "*List*",
+          "description": "𝐕𝐕𝐈𝐏",
+          "id": "bugmenu"
+        },
+        {
+          "header": "𝑱͢𝒆᪳᪳𝒃᪲͢𝒆᪳ᤡ",
+          "title": "*List*",
+          "description": "𖣔",
+          "id": "storemenu"
+        },
+        {
+          "header": "𝑪᪳͢ᤡ𝒑𝒂᪱᪲͢ᤡ᪳𝒏𝒆᪳᪳͢𝒍",
+          "title": "*List*",
+          "description": "𖣐",
+          "id": "panelmenu"
+        },
+        {
+          "header": "𝑻᪱᪲͢ᤡ᪳𝒐𝒐᪳͢ᤡ𝒍𝒔᪳᪳",
+          "title": "*List*",
+          "description": "𒁂",
+          "id": "toolsmenu"
+        },
+        {
+          "header": "𝑮᪲͢𝒓𝒐᪳ᤡ𝒖͢𝒑᪳᪳",
+          "title": "*List*",
+          "description": "𒆜",
+          "id": "groupmenu"
+        },
+        {
+          "header": "𝑶᪳᪳͢𝒘᪲𝒏͢𝒆᪲᪳᪳𝒓",
+          "title": "*List*",
+          "description": "♾︎",
+          "id": "ownermenu"
+        }
+      ]
+    }
+  ]
+}` 
 },
  {
  "name": "cta_url",
@@ -3266,8 +3630,60 @@ let msg = generateWAMessageFromContent(m.chat, {
  nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
  buttons: [ 
  {
- "name": "single_select",
-"buttonParamsJson": JSON.stringify(listMessage)
+   "name": "single_select",
+"buttonParamsJson": 
+`{
+  "title": "「 𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓𝑻᪳᪳͢𝒛𝒚 」",
+  "sections": [
+    {
+      "title": "𝑽᪱͢͢𝒊𝒑𝒆᪳͢ᤡ𝒓᪱ 𝑰͢𝑠 𝑯͢͢𝑒͢𝑟͢𝑒",
+      "rows": [
+        {
+          "header": "𝑨᪳͢ᤡ𝒍𝒍𝒎᪳᪳͢𝒆𝒏᪲͢𝒖",
+          "title": "*List*",
+          "description": "𒈔",
+          "id": "allmenu"
+        },
+        {
+          "header": "'᪳ᤡ᪳ᤡ𝐗᪲᪲᪲͢𝐗᪳͢ᤡ᪲᪲𝐕᪳͢ᤡ᪳ᤡ᪳ᤡ𝐈𝐏᪳᪳᪲᪲᪲᪳᪳᪳᪳",
+          "title": "*List*",
+          "description": "𝐕𝐕𝐈𝐏",
+          "id": "bugmenu"
+        },
+        {
+          "header": "𝑱͢𝒆᪳᪳𝒃᪲͢𝒆᪳ᤡ",
+          "title": "*List*",
+          "description": "𖣔",
+          "id": "storemenu"
+        },
+        {
+          "header": "𝑪᪳͢ᤡ𝒑𝒂᪱᪲͢ᤡ᪳𝒏𝒆᪳᪳͢𝒍",
+          "title": "*List*",
+          "description": "𖣐",
+          "id": "panelmenu"
+        },
+        {
+          "header": "𝑻᪱᪲͢ᤡ᪳𝒐𝒐᪳͢ᤡ𝒍𝒔᪳᪳",
+          "title": "*List*",
+          "description": "𒁂",
+          "id": "toolsmenu"
+        },
+        {
+          "header": "𝑮᪲͢𝒓𝒐᪳ᤡ𝒖͢𝒑᪳᪳",
+          "title": "*List*",
+          "description": "𒆜",
+          "id": "groupmenu"
+        },
+        {
+          "header": "𝑶᪳᪳͢𝒘᪲𝒏͢𝒆᪲᪳᪳𝒓",
+          "title": "*List*",
+          "description": "♾︎",
+          "id": "ownermenu"
+        }
+      ]
+    }
+  ]
+}`
 },  {
  "name": "cta_url",
  "buttonParamsJson": "{\"display_text\":\"My Creator\",\"url\":\"https://youtube.con/@vipertzyoffc\",\"merchant_url\":\"https://youtube.com/@vipertzyoffc\"}"
